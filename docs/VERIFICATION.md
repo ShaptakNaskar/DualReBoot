@@ -2,7 +2,7 @@
 
 ## Public build pipeline
 
-The active entry point is `scripts/build.py`. It was run with the legitimate local reference APK supplied from **outside** the public tree, an initially empty `build/work/` and an initially empty dependency/tool cache.
+The active entry point is `scripts/build.py`. It was run with the local reference APK supplied from **outside** the public tree, an initially empty `build/work/` and an initially empty dependency/tool cache.
 
 The command successfully:
 
@@ -26,7 +26,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/check_source_only.py
 ```
 
-The test suite currently contains 16 tests covering supported/repacked inputs, altered or missing code/assets, extra payloads, traversal and duplicate entries, unsupported ZIP entry types, exact renderer patch sites, EGL color parameters, quoted/numeric SDK metadata, component contracts, ELF architecture/alignment, and staged binary publication prevention.
+The test suite currently contains 17 tests covering supported/repacked inputs, altered or missing code/assets, extra payloads, traversal and duplicate entries, unsupported ZIP entry types, exact renderer patch sites, EGL color parameters, quoted/numeric SDK metadata, component contracts, ELF architecture/alignment, toolchain path validation, and staged binary publication prevention.
 
 The source-only checker reads **Git's indexed blobs**. A clean text working copy cannot hide a previously staged binary from this check. It also rejects private-key material, likely GitHub credentials, generated engine-payload headers and prohibited filenames/extensions.
 

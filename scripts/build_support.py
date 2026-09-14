@@ -137,3 +137,13 @@ def fetch_unicorn(cache: Path) -> Path:
         raise RuntimeError("Unicorn checkout does not match the pinned revision")
     run(["git", "-C", dependency, "diff", "--quiet", "HEAD"])
     return dependency
+
+
+def validate_build_paths(*paths: Path) -> None:
+    # Unicorn 2.1.4's configure/create_config shell pipeline mishandles spaces
+    # in build paths and can generate an empty config-host.h without failing CMake.
+    for path in paths:
+        if any(character.isspace() for character in str(path)):
+            raise ValueError("Unicorn requires build, cache and SDK paths without whitespace: "
+                             f"{path}. Choose --work-dir/--cache-dir paths without spaces. "
+                             "The input APK path may contain spaces.")

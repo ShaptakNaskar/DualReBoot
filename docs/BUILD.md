@@ -30,6 +30,8 @@ Required versions/components:
 
 No Python packages from PyPI are needed.
 
+**Use build, dependency-cache and SDK directories without whitespace.** Unicorn 2.1.4's configure scripts can otherwise emit an empty configuration header. The builder rejects this with a clear diagnostic. The APK filename/path may contain spaces. If the checkout itself has spaces, pass e.g. `--work-dir /tmp/dualreboot-work --cache-dir /tmp/dualreboot-cache` so native generation happens in safe paths.
+
 ## 2. Install the Android SDK components
 
 Use Android Studio's SDK Manager or the official Android command-line tools. Find your SDK directory; a common Linux location is `$HOME/Android/Sdk`.

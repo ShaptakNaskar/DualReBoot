@@ -11,7 +11,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_support import validate_apk
+from build_support import validate_apk, validate_build_paths
 from package_apk import (ANDROID, inspect_elf, patch_color_config,
                          patch_manifest, patch_renderer, patch_sdk_metadata)
 
@@ -124,6 +124,13 @@ class CompatibilityPatchTests(unittest.TestCase):
             self.assertEqual(app.get(ANDROID + 'extractNativeLibs'), 'true')
             dream = next(n for n in app if n.get(ANDROID + 'name') == '.Main$Dream')
             self.assertEqual(dream.get(ANDROID + 'permission'), 'android.permission.BIND_DREAM_SERVICE')
+
+
+class BuildPathTests(unittest.TestCase):
+    def test_toolchain_paths_reject_whitespace_with_a_clear_error(self):
+        validate_build_paths(Path('/tmp/work'), Path('/tmp/cache'))
+        with self.assertRaisesRegex(ValueError, 'without whitespace'):
+            validate_build_paths(Path('/tmp/work with spaces'))
 
 
 class ElfContractTests(unittest.TestCase):

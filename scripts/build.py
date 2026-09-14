@@ -13,7 +13,7 @@ import sys
 import zipfile
 
 from build_support import (ROOT, apktool_command, fetch_unicorn, find_command,
-                           load_profile, run, sha256, validate_apk)
+                           load_profile, run, sha256, validate_apk, validate_build_paths)
 from package_apk import package_apk
 
 
@@ -73,6 +73,7 @@ def main() -> None:
         parser.error("The documented build host is Linux x86_64 (including WSL2); see docs/BUILD.md")
     sdk_value = args.sdk or os.environ.get("ANDROID_SDK_ROOT") or os.environ.get("ANDROID_HOME") or Path.home() / "Android/Sdk"
     sdk = Path(sdk_value).expanduser().resolve()
+    validate_build_paths(work, cache, sdk)
     ndk = sdk / "ndk/27.1.12297006"
     toolchain = ndk / "build/cmake/android.toolchain.cmake"
     for path in [toolchain, sdk / "build-tools/36.0.0/apksigner", sdk / "build-tools/36.0.0/zipalign"]:
