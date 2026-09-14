@@ -1,0 +1,10 @@
+/* 0004de3c | STG::LLogicSceneWrapper::GetAnimTimeData */
+
+/* STG::LLogicSceneWrapper::GetAnimTimeData() const */
+
+int __thiscall STG::LLogicSceneWrapper::GetAnimTimeData(LLogicSceneWrapper *this)
+
+{
+  return *(int *)this + 0x238;
+}
+

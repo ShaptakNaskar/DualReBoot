@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/payment_frame_divider" android:background="?android:listDivider" android:paddingTop="@dimen/spacing.small" android:paddingBottom="@dimen/spacing.small" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_frame" android:layout_below="@id/payment_frame_divider" style="@style/DualBoot.Style.Layout" />
+</merge>

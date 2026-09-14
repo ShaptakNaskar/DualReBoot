@@ -1,0 +1,57 @@
+package com.dualboot;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class d {
+    public static final int cb_show_next_time = 2131296266;
+    public static final int dream_overlay_clock = 2131296256;
+    public static final int help_intent_buttons = 2131296274;
+    public static final int help_intent_frame = 2131296272;
+    public static final int help_intent_more_resources = 2131296273;
+    public static final int intent_help_url = 2131296277;
+    public static final int intent_play_services = 2131296276;
+    public static final int intent_settings_network = 2131296275;
+    public static final int intro_copyright_text = 2131296264;
+    public static final int intro_footer = 2131296258;
+    public static final int intro_logo_img = 2131296263;
+    public static final int intro_main = 2131296260;
+    public static final int intro_picker_directions = 2131296257;
+    public static final int intro_summary_text = 2131296261;
+    public static final int intro_version = 2131296265;
+    public static final int iv_social_facebook = 2131296294;
+    public static final int iv_social_gplus = 2131296293;
+    public static final int iv_social_twitter = 2131296295;
+    public static final int iv_social_ytube = 2131296292;
+    public static final int lv_item_list = 2131296284;
+    public static final int offer_details = 2131296268;
+    public static final int offer_details_footer = 2131296281;
+    public static final int offer_details_scrollview = 2131296280;
+    public static final int payment_bar = 2131296287;
+    public static final int payment_desc = 2131296290;
+    public static final int payment_frame = 2131296279;
+    public static final int payment_frame_divider = 2131296278;
+    public static final int payment_icon = 2131296288;
+    public static final int payment_price = 2131296291;
+    public static final int payment_type = 2131296289;
+    public static final int shared_moreapps = 2131296262;
+    public static final int shared_moreapps_img = 2131296300;
+    public static final int shared_moreapps_text = 2131296301;
+    public static final int simple_progress_text = 2131296302;
+    public static final int sv_intro_scroll = 2131296259;
+    public static final int thumb_frame = 2131296267;
+    public static final int tv_na = 2131296271;
+    public static final int tv_offer_desc = 2131296269;
+    public static final int tv_offer_name = 2131296282;
+    public static final int tv_offer_prereq = 2131296283;
+    public static final int tv_offer_price = 2131296270;
+    public static final int tv_offer_theme = 2131296286;
+    public static final int tv_offer_theme_thanks = 2131296285;
+    public static final int tv_social_facebook = 2131296298;
+    public static final int tv_social_gplus = 2131296297;
+    public static final int tv_social_twitter = 2131296299;
+    public static final int tv_social_ytube = 2131296296;
+    public static final int whatsnew_btn_continue = 2131296305;
+    public static final int whatsnew_content = 2131296307;
+    public static final int whatsnew_footer = 2131296303;
+    public static final int whatsnew_scrollview = 2131296306;
+    public static final int whatsnew_shownexttime = 2131296304;
+}

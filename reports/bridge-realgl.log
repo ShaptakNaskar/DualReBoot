@@ -1,0 +1,17 @@
+Real GL: 4.6.0 NVIDIA 615.71.09
+ELF loaded and constructors executed
+Engine created: 0x500470
+Scene loaded, heap=1014080
+Resources loaded, heap=1027152
+Frame 0: 26.4527 ms; heap=1054128
+Frame 1: 1.88043 ms; heap=1054128
+Frame 2: 2.57955 ms; heap=1054128
+Frame 3: 1.62621 ms; heap=1054128
+Frame 4: 1.62524 ms; heap=1054128
+Frame 5: 1.64413 ms; heap=1054128
+Frame 6: 1.59645 ms; heap=1054128
+Frame 7: 1.69824 ms; heap=1054128
+Frame 8: 1.63576 ms; heap=1054128
+Frame 9: 1.6952 ms; heap=1054128
+GL error after readback: 0
+PASS: creation, original scene, original textures, 10 frames, destruction; see GL mode above.

@@ -1,0 +1,60 @@
+mDefaultWallpaperComponent=ComponentInfo{com.android.systemui/com.android.systemui.wallpapers.ImageWallpaper}
+mImageWallpaper=ComponentInfo{com.android.systemui/com.android.systemui.wallpapers.ImageWallpaper}
+System wallpaper state:
+ User 0: id=3: mWhich=1: mSystemWasBoth=true: mBindSource=SET_LIVE
+ Display state:
+  displayId=0
+  mWidth=3200  mHeight=1600
+  mPadding=Rect(0, 0 - 0, 0)
+  mCropHint=Rect(0, 0 - 0, 0)
+  mCropHints={}
+  mName=
+  mAllowBackup=true
+  mWallpaperComponent=ComponentInfo{com.dualboot.apps.beach/com.dualboot.apps.beach.BeachService}
+  mWallpaperDimAmount=0.0
+  isColorExtracted=false
+  mUidToDimAmount:
+  Wallpaper connection com.android.server.wallpaper.WallpaperManagerService$WallpaperConnection@b8c2eaa:
+    mInfo.component=ComponentInfo{com.dualboot.apps.beach/com.dualboot.apps.beach.BeachService}
+     mDisplayId=0
+     mToken=android.os.Binder@21b8577
+     mEngine=android.service.wallpaper.IWallpaperEngine$Stub$Proxy@5b56fc6
+    mService=android.service.wallpaper.IWallpaperService$Stub$Proxy@f731b87
+    mLastDiedTime=-1651919
+Lock wallpaper state:
+ User 0: id=2: mWhich=2: mSystemWasBoth=false: mBindSource=UNKNOWN
+ Display state:
+  displayId=0
+  mWidth=3200  mHeight=1600
+  mPadding=Rect(0, 0 - 0, 0)
+  mCropHint=Rect(0, 0 - 0, 0)
+  mCropHints={}
+  mName=
+  mAllowBackup=true
+  mWallpaperComponent=ComponentInfo{com.android.systemui/com.android.systemui.wallpapers.ImageWallpaper}
+  mWallpaperDimAmount=0.0
+  isColorExtracted=false
+  mUidToDimAmount:
+  Wallpaper connection com.android.server.wallpaper.WallpaperManagerService$WallpaperConnection@551b3de:
+     mDisplayId=0
+     mToken=android.os.Binder@7e0d4f9
+     mEngine=android.service.wallpaper.IWallpaperEngine$Stub$Proxy@7d00ab4
+    mService=android.service.wallpaper.IWallpaperService$Stub$Proxy@20f96dd
+    mLastDiedTime=-1651919
+Fallback wallpaper state:
+ User 0: id=1: mWhich=1: mSystemWasBoth=false: mBindSource=INITIALIZE_FALLBACK
+ Display state:
+  displayId=0
+  mWidth=3200  mHeight=1600
+  mPadding=Rect(0, 0 - 0, 0)
+  mCropHint=Rect(0, 0 - 0, 0)
+  mCropHints={}
+  mName=
+  mAllowBackup=false
+  mWallpaperComponent=ComponentInfo{com.android.systemui/com.android.systemui.wallpapers.ImageWallpaper}
+  mWallpaperDimAmount=0.0
+  isColorExtracted=false
+  mUidToDimAmount:
+  Wallpaper connection com.android.server.wallpaper.WallpaperManagerService$WallpaperConnection@b60086c:
+    mService=android.service.wallpaper.IWallpaperService$Stub$Proxy@c88c252
+    mLastDiedTime=-1651919

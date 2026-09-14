@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="clickableItemBackground" format="reference">
+    </attr>
+    <attr name="img_bitmap_src" format="reference">
+    </attr>
+    <attr name="img_bitmap_src_override" format="reference">
+    </attr>
+    <attr name="img_bitmap_crop" format="dimension">
+    </attr>
+    <attr name="img_bitmap_round_bottom" format="boolean">
+    </attr>
+    <attr name="img_layout_height_scale" format="float">
+    </attr>
+    <attr name="img_corner_radius" format="dimension">
+    </attr>
+    <attr name="img_stroke_enabled" format="boolean">
+    </attr>
+    <attr name="img_stroke_width" format="float">
+    </attr>
+    <attr name="img_stroke_color" format="reference|color">
+    </attr>
+    <attr name="img_stroke_alpha" format="float">
+    </attr>
+    <attr name="img_gradient_color" format="reference|color">
+    </attr>
+    <attr name="img_gradient_color_end" format="reference|color">
+    </attr>
+    <attr name="img_state_toggle_default" format="boolean">
+    </attr>
+    <attr name="img_state_toggle_click" format="boolean">
+    </attr>
+    <attr name="img_scroll_to_view" format="boolean">
+    </attr>
+    <attr name="use_link_color" format="boolean">
+    </attr>
+    <attr name="offer_id" format="reference|string">
+    </attr>
+    <attr name="theme_name" format="reference|string">
+    </attr>
+    <attr name="file_scene" format="reference|string">
+    </attr>
+    <attr name="file_settings" format="reference|string">
+    </attr>
+</resources>

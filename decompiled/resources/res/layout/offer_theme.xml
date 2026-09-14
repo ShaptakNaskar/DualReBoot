@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing.small"
+        android:layout_marginRight="@dimen/spacing.small">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <include layout="@layout/offer_merge_thumb"/>
+        </FrameLayout>
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/tv_offer_theme_thanks"
+            android:layout_marginBottom="@dimen/spacing"
+            android:text="@string/OfferThanks"
+            style="@style/DualBoot.Style.Text.Primary"/>
+        <TextView
+            android:id="@+id/tv_offer_theme"
+            android:layout_marginBottom="@dimen/spacing"
+            android:text="@string/OfferTheme"
+            style="@style/DualBoot.Style.Text"/>
+    </LinearLayout>
+</ScrollView>

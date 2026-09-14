@@ -1,0 +1,77 @@
+[1/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/gtestutils.c.o
+[2/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/glist.c.o
+[3/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/gmem.c.o
+[4/70] Building C object CMakeFiles/unicorn-common.dir/list.c.o
+[5/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/gslice.c.o
+[6/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/crc32c.c.o
+[7/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/grand.c.o
+[8/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/bitops.c.o
+[9/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/cutils.c.o
+[10/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/getauxval.c.o
+[11/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/guest-random.c.o
+[12/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/host-utils.c.o
+[13/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/gtree.c.o
+[14/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/osdep.c.o
+[15/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/gpattern.c.o
+[16/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/glib_compat.c.o
+<workspace>/tools/unicorn/glib_compat/glib_compat.c: In function ‘g_strsplit’:
+<workspace>/tools/unicorn/glib_compat/glib_compat.c:1434:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1434 |     s = strstr (remainder, delimiter);
+      |       ^
+<workspace>/tools/unicorn/glib_compat/glib_compat.c:1448:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1448 |             s = strstr (remainder, delimiter);
+      |               ^
+[17/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/qemu-timer-common.c.o
+[18/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/bitmap.c.o
+[19/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/range.c.o
+[20/70] Building C object CMakeFiles/unicorn-common.dir/glib_compat/garray.c.o
+[21/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/qemu-timer.c.o
+[22/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/cacheinfo.c.o
+[23/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/pagesize.c.o
+[24/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/qemu-thread-posix.c.o
+[25/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/oslib-posix.c.o
+[26/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/exec-vary.c.o
+[27/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/softmmu/cpus.c.o
+[28/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/softmmu/ioport.c.o
+[29/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/qht.c.o
+[30/70] Building C object CMakeFiles/unicorn-common.dir/qemu/util/qdist.c.o
+[31/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/softmmu/memory_mapping.c.o
+[32/70] Building C object CMakeFiles/unicorn-common.dir/qemu/crypto/aes.c.o
+[33/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/softmmu/memory.c.o
+[34/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cpu-exec.c.o
+[35/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op-vec.c.o
+[36/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cpu-exec-common.c.o
+[37/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-all.c.o
+[38/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-runtime.c.o
+[39/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/exec.c.o
+[40/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/tcg/optimize.c.o
+[41/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/translator.c.o
+[42/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/softmmu/unicorn_vtlb.c.o
+[43/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/translate-all.c.o
+[44/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/crypto_helper.c.o
+[45/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/cpu.c.o
+[46/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/debug_helper.c.o
+[47/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op.c.o
+[48/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op-gvec.c.o
+[49/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg.c.o
+[50/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cputlb.c.o
+[51/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/psci.c.o
+[52/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/m_helper.c.o
+[53/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/tlb_helper.c.o
+[54/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/op_helper.c.o
+[55/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/iwmmxt_helper.c.o
+[56/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/neon_helper.c.o
+[57/70] Linking C static library libunicorn-common.a
+[58/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/unicorn_arm.c.o
+[59/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/vfp_helper.c.o
+[60/70] Building C object CMakeFiles/unicorn.dir/qemu/softmmu/vl.c.o
+[61/70] Building C object CMakeFiles/unicorn.dir/qemu/hw/core/cpu.c.o
+[62/70] Building C object CMakeFiles/unicorn.dir/uc.c.o
+[63/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/vec_helper.c.o
+[64/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-runtime-gvec.c.o
+[65/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/helper.c.o
+[66/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/fpu/softfloat.c.o
+[67/70] Building C object CMakeFiles/arm-softmmu.dir/qemu/target/arm/translate.c.o
+[68/70] Linking C static library libarm-softmmu.a
+[69/70] Linking C static library libunicorn-static.a
+[70/70] Linking C static library libunicorn.a

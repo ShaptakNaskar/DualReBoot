@@ -1,0 +1,6 @@
+--------- beginning of main
+09-13 23:11:34.136   236   269 W libc    : Unable to set property "ctl.interface_start" to "aidl/android.system.keystore2.IKeystoreService/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-13 23:11:36.122   545   545 I libc    : malloc_limit: Allocation limit enabled, max size 536870912 bytes
+09-13 23:11:36.420   476   476 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-13 23:11:36.426   476   476 I AndroidRuntime: Using default boot image
+09-13 23:11:36.426   476   476 I AndroidRuntime: Leaving lock profiling enabled

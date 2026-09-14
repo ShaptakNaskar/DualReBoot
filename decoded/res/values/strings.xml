@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Copyright">Copyright © 2011–2014 DualBoot Games, LLC</string>
+    <string name="Loading">Loading settings…</string>
+    <string name="Continue">Continue</string>
+    <string name="MoreApps">Want more great apps? Tap the icons for more apps by DualBoot!</string>
+    <string name="Intro_SettingsDirections">"Tap 'Settings…' to customize your wallpaper. You can open the app to return to this page at any time. Thank you for your support!"</string>
+    <string name="Intro_Continue">@string/Continue</string>
+    <string name="Intro_Settings">Settings…</string>
+    <string name="Intro_Summary">Thank you for installing %1$s! %1$s is a 3D Live Wallpaper.</string>
+    <string name="Intro_PickerDirections">"Tap 'Continue' and select '%1$s' from the following screen to set this wallpaper.
+
+The screen may look similar to this example image:"</string>
+    <string name="Intro_PickerDirections_JellyBean">"Tap 'Continue' and select 'Set wallpaper' from the following screen to set this wallpaper."</string>
+    <string name="Intro_Toast">Please select \"%1$s\"</string>
+    <string name="Intro_Version">v%1$s.%2$s</string>
+    <string name="UpsellTitle">Upgrade Today!</string>
+    <string name="UpsellGetFull">@string/Continue</string>
+    <string name="UpsellCancel">Not Now</string>
+    <string name="UpsellDesc">The full version has many customization options and even better graphics! Upgrade today, and thank you for your support!</string>
+    <string name="UpsellCaption">Available in the full version</string>
+    <string name="OfferAbout_Title">About Add-Ons</string>
+    <string name="OfferAbout_Content">"Optional add-on packs are available for purchase, allowing you to choose the extra features most meaningful to you.
+
+The upgrades are completely optional, and will not limit your current scene in any way. Your current scene and the add-ons will continue to receive new features too!
+
+We hope you enjoy the new add-ons, and thank you for your support."</string>
+    <string name="OfferAbout_ShowNextTime">Show this next time</string>
+    <string name="OfferThanks">Thank you for purchasing the %1$s!</string>
+    <string name="OfferTheme">This pack includes new themes. Would you like to apply the &lt;b>%1$s&lt;/b> theme now?</string>
+    <string name="OfferName">%1$s</string>
+    <string name="OfferDesc">%1$s</string>
+    <string name="OfferPrice">%1$s</string>
+    <string name="OfferSummaryOwned">You own this item. Thank you for your support!</string>
+    <string name="OfferSummaryNotOwned">Select this item to unlock and learn more!</string>
+    <string name="ItemNotAvailable">The %1$s adds several new features to your scene. Unlock the %1$s today, and thank you for your support!</string>
+    <string name="ItemNotAvailableMulti">This theme will be unlocked when you acquire the items below. Select a pack to learn more!</string>
+    <string name="SelectToLearn"><i>Select for more information</i></string>
+    <string name="SocialTitle">Social</string>
+    <string name="SocialSummary">Connect with us</string>
+    <string name="Social_GooglePlus">Google+</string>
+    <string name="Social_Facebook">Facebook</string>
+    <string name="Social_Twitter">Twitter</string>
+    <string name="Social_YouTube">YouTube</string>
+    <string name="WhatsNew_Title_Default">"What's New"</string>
+    <string name="WhatsNew_Title_ComingSoon">Coming Soon</string>
+    <string name="WhatsNew_Title_NowAvailable">Now Available</string>
+    <string name="WhatsNew_ShowNextTime">Show this next time</string>
+    <string name="MarketURL_Google">market://details?id=</string>
+    <string name="MarketURL_Google_HTTPS">https://play.google.com/store/apps/details?id=</string>
+    <string name="app_name">My Beach HD</string>
+    <string name="app_desc">A beautiful day at your own private beach - in true 3D.</string>
+    <string name="component_service">com.dualboot.apps.beach.BeachService</string>
+    <string name="component_settings">com.dualboot.apps.beach.Main$Settings</string>
+    <string name="component_settings_dream">com.dualboot.apps.beach/com.dualboot.util.DreamSettings</string>
+    <string name="activity_name">@string/app_name</string>
+    <string name="activity_desc">@string/app_desc</string>
+    <string name="service_name">@string/app_name</string>
+    <string name="service_desc">@string/app_desc</string>
+    <string name="settings_name">@string/app_name</string>
+    <string name="settings_desc">@string/app_desc</string>
+    <string name="offer_detail_title">Optional Add-Ons</string>
+    <string name="offer_error_summary">The %1$s is not available at this time. Please try again later.</string>
+    <string name="offer_error_help">"It may not be released yet, or there was a problem contacting the servers.
+
+Unlocking an add-on pack requires a network connection, a Google account, and the latest version of the Google Play Services."</string>
+    <string name="offer_error_intents">Additional resources</string>
+    <string name="offer_missing_requirement">"Requires '%1$s'"</string>
+    <string name="offer_help_txt_network_settings">View wireless settings</string>
+    <string name="offer_help_txt_google_play_services">Download Google Play services</string>
+    <string name="offer_help_url_google_play_services">https://play.google.com/store/apps/details?id=com.google.android.gms</string>
+    <string name="offer_help_txt_dualboot_support">Contact DualBoot support</string>
+    <string name="offer_help_url_dualboot_support">http://www.dualbootgames.com/support/</string>
+    <string name="offer_refresh_group">Advanced</string>
+    <string name="offer_refresh_title">Refresh Add-Ons</string>
+    <string name="offer_refresh_title_refreshing">Refreshing…</string>
+    <string name="offer_refresh_summary">Refresh the add-on packs. It may take up to a few hours to see purchases made on other devices</string>
+    <string name="payment_type">Google Play</string>
+    <string name="payment_desc">Buy now with Google Play</string>
+    <string name="payment_price">$0.99</string>
+    <string name="payment_type_google">Google Play</string>
+    <string name="payment_desc_google">Buy now with Google Play</string>
+    <string name="payment_type_license">Google Play</string>
+    <string name="payment_desc_license">Get the full version from Google Play</string>
+    <string name="pref_whatsnew_title">"What's New"</string>
+    <string name="pref_whatsnew_summary">See the latest changes and announcements</string>
+    <string name="dream_interactive">Interactive</string>
+    <string name="dream_interactive_on">The scene is fully interactive. Swipe to change the view</string>
+    <string name="dream_interactive_off">The view will smoothly pan. Touch the screen to exit the Daydream</string>
+    <string name="dream_brightness">Bright screen</string>
+    <string name="dream_brightness_summary">Keep the screen bright when Daydreaming</string>
+    <string name="dream_wallpaper_settings_key">pref_dream_wallpaper_settings</string>
+    <string name="dream_wallpaper_settings_title">Customization</string>
+    <string name="dream_wallpaper_settings_summary">Customize your scene. Changes also affect the Live Wallpaper</string>
+    <string name="dream_clock">Clock overlay</string>
+    <string name="dream_clock_summary">Show the clock overlay when Daydreaming</string>
+    <string name="dream_clock_position">Clock position</string>
+    <string name="dream_clock_position_summary">Change the position of the clock</string>
+    <string name="dream_clock_position_default">bottom</string>
+    <string name="dream_clock_size">Clock size</string>
+    <string name="dream_clock_size_summary">Change the size of the clock</string>
+    <string name="dream_clock_size_default">medium</string>
+    <string name="vcs_hash">f31d908258df1804fd70be1d969435e2c8250b4a</string>
+    <string name="vcs_time">Thu, 3 Jul 2014 02:03:31 -0400</string>
+    <string name="vcs_rev">1512</string>
+    <string name="notify_whatsnew_title">New in %1$s</string>
+    <string name="notify_whatsnew_content">"See what's new and customize %1$s."</string>
+    <string name="whatsnew_iday_new_features">New Features</string>
+    <string name="whatsnew_iday_new_features_summary">Celebrate the summer with these free new features and improvements. Tap the images to learn more!</string>
+    <string name="whatsnew_iday_theme_set_fireworksatnight">"Set the 'Fireworks at Night' Theme"</string>
+    <string name="whatsnew_iday_theme_set_independence">"Set the 'Independence Day' Theme"</string>
+    <string name="whatsnew_iday_theme_id_fireworksatnight">theme_fireworks_at_night</string>
+    <string name="whatsnew_iday_theme_id_independence">theme_independence_day</string>
+    <string name="whatsnew_iday_feature_fireworksatnight">New amusement park, plane lights, interactive buoy, and more!</string>
+    <string name="whatsnew_iday_feature_independence">Tap the new interactive bottle rockets to light up the sky!</string>
+    <string name="whatsnew_iday_feature_orange">New orange color option for the towel and umbrella!</string>
+    <string name="whatsnew_iday_feature_seagull">Watch the new animated seagulls flying overhead!</string>
+    <string name="whatsnew_iday_feature_cruiseship">New cruise ship option!</string>
+    <string name="whatsnew_iday_feature_sign">"New 'Dog Crossing' sign option!"</string>
+</resources>

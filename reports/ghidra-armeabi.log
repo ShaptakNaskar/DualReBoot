@@ -1,0 +1,265 @@
+openjdk version "25.0.3" 2026-04-21
+OpenJDK Runtime Environment (build 25.0.3+-15898627-b508.16)
+OpenJDK 64-Bit Server VM (build 25.0.3+-15898627-b508.16, mixed mode)
+INFO  Using log config file: jar:file:<workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: <user-home>/.config/ghidra/ghidra_12.1.3_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: <user-home>/.config/ghidra/ghidra_12.1.3_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1793 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3632 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:<workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    <workspace>/scripts/ghidra
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    <workspace>/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: <workspace>/native/ghidra-projects/armeabi/BeachEngine (HeadlessAnalyzer)  
+INFO  Creating project: <workspace>/native/ghidra-projects/armeabi/BeachEngine (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: <workspace>/native/ghidra-projects/armeabi/BeachEngine (HeadlessAnalyzer)  
+INFO  IMPORTING: file://<workspace>/decoded/lib/armeabi/libdbgengine.so (HeadlessAnalyzer)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: ARM:LE:32:v8:default (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64] (ProgramLoader)  
+INFO  Additional info:
+Loading file://<workspace>/decoded/lib/armeabi/libdbgengine.so?MD5=40768b75c0691d204d462834ca63a7e7...
+Setting block .data.rel.ro.local to read-only
+Setting block .fini_array to read-only
+Setting block .data.rel.ro to read-only
+Setting block .init_array to read-only
+Setting block .dynamic to read-only
+------------------------------------------------
+
+Linking the External Programs of 'libdbgengine.so' to imported libraries...
+  [libGLESv1_CM.so] -> not found in project
+  [libdl.so] -> not found in project
+  [liblog.so] -> not found in project
+  [libandroid.so] -> not found in project
+  [libstdc++.so] -> not found in project
+  [libm.so] -> not found in project
+  [libc.so] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/libdbgengine.so] - 127 unresolved symbols, no external libraries configured - skipping
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file://<workspace>/decoded/lib/armeabi/libdbgengine.so (HeadlessAnalyzer)  
+INFO  Packed database cache: /var/tmp/local-user-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+WARN  Decompiling 00075098, pcode error at 00075044: Unable to resolve constructor at 00075044 (DecompileCallback)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            4.366 secs
+    ARM Symbol                                 0.008 secs
+    ASCII Strings                              0.549 secs
+    Apply Data Archives                        0.594 secs
+    Call Convention ID                         5.756 secs
+    Call-Fixup Installer                       0.283 secs
+    Create Address Tables                      0.079 secs
+    Create Address Tables - One Time           0.167 secs
+    Create Function                            0.165 secs
+    Data Reference                             0.174 secs
+    Decompiler Switch Analysis                 2.196 secs
+    Demangler GNU                              1.374 secs
+    Disassemble                                0.043 secs
+    Disassemble Entry Points                   4.663 secs
+    Embedded Media                             0.018 secs
+    External Entry References                  0.040 secs
+    Function ID                                0.026 secs
+    Function Start Pre Search                  0.034 secs
+    Function Start Search                      0.439 secs
+    Function Start Search After Code           0.356 secs
+    Function Start Search After Data           0.368 secs
+    Function Start Search delayed - One Time   0.005 secs
+    Non-Returning Functions - Discovered       0.443 secs
+    Non-Returning Functions - Known            0.012 secs
+    Reference                                  0.179 secs
+    Shared Return Calls                        0.114 secs
+    Stack                                      3.806 secs
+    Subroutine References                      0.166 secs
+    Subroutine References - One Time           0.000 secs
+-----------------------------------------------------
+     Total Time   26 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file://<workspace>/decoded/lib/armeabi/libdbgengine.so (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportNative.java '<workspace>/native/armeabi'  (HeadlessAnalyzer)  
+INFO  SCRIPT: <workspace>/scripts/ghidra/ExportNative.java (HeadlessAnalyzer)  
+INFO  ExportNative.java> Exported 100 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 200 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 300 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 400 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 500 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 600 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 700 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 800 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 900 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 1000 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 1100 functions; 0 failures (GhidraScript)  
+INFO  ExportNative.java> Exported 1200 functions; 0 failures (GhidraScript)  
+WARN  Decompiling 00075098, pcode error at 00075044: Unable to resolve constructor at 00075044 (DecompileCallback)  
+WARN  Decompiling 000753e0, pcode error at 000754bc: Failed to resolve varnode <thv_Qd1>, index=15 (DecompileCallback)  
+WARN  Decompiling 000753e0, pcode error at 000754c0: Unable to resolve constructor at 000754c0 (DecompileCallback)  
+INFO  ExportNative.java> Exported 1300 functions; 0 failures (GhidraScript)  
+WARN  Decompiling 00083000, pcode error at 00083000: Unable to disassemble EXTERNAL block location: 00083000 (DecompileCallback)  
+WARN  Decompiling 00083004, pcode error at 00083004: Unable to disassemble EXTERNAL block location: 00083004 (DecompileCallback)  
+WARN  Decompiling 00083008, pcode error at 00083008: Unable to disassemble EXTERNAL block location: 00083008 (DecompileCallback)  
+WARN  Decompiling 0008300c, pcode error at 0008300c: Unable to disassemble EXTERNAL block location: 0008300c (DecompileCallback)  
+WARN  Decompiling 00083014, pcode error at 00083014: Unable to disassemble EXTERNAL block location: 00083014 (DecompileCallback)  
+WARN  Decompiling 00083018, pcode error at 00083018: Unable to disassemble EXTERNAL block location: 00083018 (DecompileCallback)  
+WARN  Decompiling 0008301c, pcode error at 0008301c: Unable to disassemble EXTERNAL block location: 0008301c (DecompileCallback)  
+WARN  Decompiling 00083020, pcode error at 00083020: Unable to disassemble EXTERNAL block location: 00083020 (DecompileCallback)  
+WARN  Decompiling 00083024, pcode error at 00083024: Unable to disassemble EXTERNAL block location: 00083024 (DecompileCallback)  
+WARN  Decompiling 00083028, pcode error at 00083028: Unable to disassemble EXTERNAL block location: 00083028 (DecompileCallback)  
+WARN  Decompiling 0008302c, pcode error at 0008302c: Unable to disassemble EXTERNAL block location: 0008302c (DecompileCallback)  
+WARN  Decompiling 00083030, pcode error at 00083030: Unable to disassemble EXTERNAL block location: 00083030 (DecompileCallback)  
+WARN  Decompiling 00083034, pcode error at 00083034: Unable to disassemble EXTERNAL block location: 00083034 (DecompileCallback)  
+WARN  Decompiling 00083038, pcode error at 00083038: Unable to disassemble EXTERNAL block location: 00083038 (DecompileCallback)  
+WARN  Decompiling 0008303c, pcode error at 0008303c: Unable to disassemble EXTERNAL block location: 0008303c (DecompileCallback)  
+WARN  Decompiling 00083048, pcode error at 00083048: Unable to disassemble EXTERNAL block location: 00083048 (DecompileCallback)  
+WARN  Decompiling 0008304c, pcode error at 0008304c: Unable to disassemble EXTERNAL block location: 0008304c (DecompileCallback)  
+WARN  Decompiling 00083050, pcode error at 00083050: Unable to disassemble EXTERNAL block location: 00083050 (DecompileCallback)  
+WARN  Decompiling 00083054, pcode error at 00083054: Unable to disassemble EXTERNAL block location: 00083054 (DecompileCallback)  
+WARN  Decompiling 00083058, pcode error at 00083058: Unable to disassemble EXTERNAL block location: 00083058 (DecompileCallback)  
+WARN  Decompiling 0008305c, pcode error at 0008305c: Unable to disassemble EXTERNAL block location: 0008305c (DecompileCallback)  
+WARN  Decompiling 00083060, pcode error at 00083060: Unable to disassemble EXTERNAL block location: 00083060 (DecompileCallback)  
+WARN  Decompiling 00083064, pcode error at 00083064: Unable to disassemble EXTERNAL block location: 00083064 (DecompileCallback)  
+WARN  Decompiling 00083068, pcode error at 00083068: Unable to disassemble EXTERNAL block location: 00083068 (DecompileCallback)  
+WARN  Decompiling 0008306c, pcode error at 0008306c: Unable to disassemble EXTERNAL block location: 0008306c (DecompileCallback)  
+WARN  Decompiling 00083070, pcode error at 00083070: Unable to disassemble EXTERNAL block location: 00083070 (DecompileCallback)  
+INFO  ExportNative.java> Exported 1400 functions; 0 failures (GhidraScript)  
+WARN  Decompiling 00083074, pcode error at 00083074: Unable to disassemble EXTERNAL block location: 00083074 (DecompileCallback)  
+WARN  Decompiling 00083078, pcode error at 00083078: Unable to disassemble EXTERNAL block location: 00083078 (DecompileCallback)  
+WARN  Decompiling 0008307c, pcode error at 0008307c: Unable to disassemble EXTERNAL block location: 0008307c (DecompileCallback)  
+WARN  Decompiling 00083080, pcode error at 00083080: Unable to disassemble EXTERNAL block location: 00083080 (DecompileCallback)  
+WARN  Decompiling 00083084, pcode error at 00083084: Unable to disassemble EXTERNAL block location: 00083084 (DecompileCallback)  
+WARN  Decompiling 00083088, pcode error at 00083088: Unable to disassemble EXTERNAL block location: 00083088 (DecompileCallback)  
+WARN  Decompiling 0008308c, pcode error at 0008308c: Unable to disassemble EXTERNAL block location: 0008308c (DecompileCallback)  
+WARN  Decompiling 00083090, pcode error at 00083090: Unable to disassemble EXTERNAL block location: 00083090 (DecompileCallback)  
+WARN  Decompiling 00083094, pcode error at 00083094: Unable to disassemble EXTERNAL block location: 00083094 (DecompileCallback)  
+WARN  Decompiling 00083098, pcode error at 00083098: Unable to disassemble EXTERNAL block location: 00083098 (DecompileCallback)  
+WARN  Decompiling 0008309c, pcode error at 0008309c: Unable to disassemble EXTERNAL block location: 0008309c (DecompileCallback)  
+WARN  Decompiling 000830a0, pcode error at 000830a0: Unable to disassemble EXTERNAL block location: 000830a0 (DecompileCallback)  
+WARN  Decompiling 000830a4, pcode error at 000830a4: Unable to disassemble EXTERNAL block location: 000830a4 (DecompileCallback)  
+WARN  Decompiling 000830a8, pcode error at 000830a8: Unable to disassemble EXTERNAL block location: 000830a8 (DecompileCallback)  
+WARN  Decompiling 000830ac, pcode error at 000830ac: Unable to disassemble EXTERNAL block location: 000830ac (DecompileCallback)  
+WARN  Decompiling 000830b0, pcode error at 000830b0: Unable to disassemble EXTERNAL block location: 000830b0 (DecompileCallback)  
+WARN  Decompiling 000830b4, pcode error at 000830b4: Unable to disassemble EXTERNAL block location: 000830b4 (DecompileCallback)  
+WARN  Decompiling 000830b8, pcode error at 000830b8: Unable to disassemble EXTERNAL block location: 000830b8 (DecompileCallback)  
+WARN  Decompiling 000830bc, pcode error at 000830bc: Unable to disassemble EXTERNAL block location: 000830bc (DecompileCallback)  
+WARN  Decompiling 000830c0, pcode error at 000830c0: Unable to disassemble EXTERNAL block location: 000830c0 (DecompileCallback)  
+WARN  Decompiling 000830c4, pcode error at 000830c4: Unable to disassemble EXTERNAL block location: 000830c4 (DecompileCallback)  
+WARN  Decompiling 000830c8, pcode error at 000830c8: Unable to disassemble EXTERNAL block location: 000830c8 (DecompileCallback)  
+WARN  Decompiling 000830cc, pcode error at 000830cc: Unable to disassemble EXTERNAL block location: 000830cc (DecompileCallback)  
+WARN  Decompiling 000830d0, pcode error at 000830d0: Unable to disassemble EXTERNAL block location: 000830d0 (DecompileCallback)  
+WARN  Decompiling 000830d4, pcode error at 000830d4: Unable to disassemble EXTERNAL block location: 000830d4 (DecompileCallback)  
+WARN  Decompiling 000830d8, pcode error at 000830d8: Unable to disassemble EXTERNAL block location: 000830d8 (DecompileCallback)  
+WARN  Decompiling 000830dc, pcode error at 000830dc: Unable to disassemble EXTERNAL block location: 000830dc (DecompileCallback)  
+WARN  Decompiling 000830e0, pcode error at 000830e0: Unable to disassemble EXTERNAL block location: 000830e0 (DecompileCallback)  
+WARN  Decompiling 000830e4, pcode error at 000830e4: Unable to disassemble EXTERNAL block location: 000830e4 (DecompileCallback)  
+WARN  Decompiling 000830e8, pcode error at 000830e8: Unable to disassemble EXTERNAL block location: 000830e8 (DecompileCallback)  
+WARN  Decompiling 000830ec, pcode error at 000830ec: Unable to disassemble EXTERNAL block location: 000830ec (DecompileCallback)  
+WARN  Decompiling 000830f0, pcode error at 000830f0: Unable to disassemble EXTERNAL block location: 000830f0 (DecompileCallback)  
+WARN  Decompiling 000830f4, pcode error at 000830f4: Unable to disassemble EXTERNAL block location: 000830f4 (DecompileCallback)  
+WARN  Decompiling 000830f8, pcode error at 000830f8: Unable to disassemble EXTERNAL block location: 000830f8 (DecompileCallback)  
+WARN  Decompiling 000830fc, pcode error at 000830fc: Unable to disassemble EXTERNAL block location: 000830fc (DecompileCallback)  
+WARN  Decompiling 00083100, pcode error at 00083100: Unable to disassemble EXTERNAL block location: 00083100 (DecompileCallback)  
+WARN  Decompiling 00083104, pcode error at 00083104: Unable to disassemble EXTERNAL block location: 00083104 (DecompileCallback)  
+WARN  Decompiling 00083108, pcode error at 00083108: Unable to disassemble EXTERNAL block location: 00083108 (DecompileCallback)  
+WARN  Decompiling 0008310c, pcode error at 0008310c: Unable to disassemble EXTERNAL block location: 0008310c (DecompileCallback)  
+WARN  Decompiling 00083110, pcode error at 00083110: Unable to disassemble EXTERNAL block location: 00083110 (DecompileCallback)  
+WARN  Decompiling 00083114, pcode error at 00083114: Unable to disassemble EXTERNAL block location: 00083114 (DecompileCallback)  
+WARN  Decompiling 00083118, pcode error at 00083118: Unable to disassemble EXTERNAL block location: 00083118 (DecompileCallback)  
+WARN  Decompiling 0008311c, pcode error at 0008311c: Unable to disassemble EXTERNAL block location: 0008311c (DecompileCallback)  
+WARN  Decompiling 00083120, pcode error at 00083120: Unable to disassemble EXTERNAL block location: 00083120 (DecompileCallback)  
+WARN  Decompiling 00083124, pcode error at 00083124: Unable to disassemble EXTERNAL block location: 00083124 (DecompileCallback)  
+WARN  Decompiling 00083128, pcode error at 00083128: Unable to disassemble EXTERNAL block location: 00083128 (DecompileCallback)  
+WARN  Decompiling 0008312c, pcode error at 0008312c: Unable to disassemble EXTERNAL block location: 0008312c (DecompileCallback)  
+WARN  Decompiling 00083130, pcode error at 00083130: Unable to disassemble EXTERNAL block location: 00083130 (DecompileCallback)  
+WARN  Decompiling 00083134, pcode error at 00083134: Unable to disassemble EXTERNAL block location: 00083134 (DecompileCallback)  
+WARN  Decompiling 00083138, pcode error at 00083138: Unable to disassemble EXTERNAL block location: 00083138 (DecompileCallback)  
+WARN  Decompiling 0008313c, pcode error at 0008313c: Unable to disassemble EXTERNAL block location: 0008313c (DecompileCallback)  
+WARN  Decompiling 00083140, pcode error at 00083140: Unable to disassemble EXTERNAL block location: 00083140 (DecompileCallback)  
+WARN  Decompiling 00083144, pcode error at 00083144: Unable to disassemble EXTERNAL block location: 00083144 (DecompileCallback)  
+WARN  Decompiling 00083148, pcode error at 00083148: Unable to disassemble EXTERNAL block location: 00083148 (DecompileCallback)  
+WARN  Decompiling 0008314c, pcode error at 0008314c: Unable to disassemble EXTERNAL block location: 0008314c (DecompileCallback)  
+WARN  Decompiling 00083150, pcode error at 00083150: Unable to disassemble EXTERNAL block location: 00083150 (DecompileCallback)  
+WARN  Decompiling 00083154, pcode error at 00083154: Unable to disassemble EXTERNAL block location: 00083154 (DecompileCallback)  
+WARN  Decompiling 00083158, pcode error at 00083158: Unable to disassemble EXTERNAL block location: 00083158 (DecompileCallback)  
+WARN  Decompiling 0008315c, pcode error at 0008315c: Unable to disassemble EXTERNAL block location: 0008315c (DecompileCallback)  
+WARN  Decompiling 00083160, pcode error at 00083160: Unable to disassemble EXTERNAL block location: 00083160 (DecompileCallback)  
+WARN  Decompiling 00083164, pcode error at 00083164: Unable to disassemble EXTERNAL block location: 00083164 (DecompileCallback)  
+WARN  Decompiling 00083168, pcode error at 00083168: Unable to disassemble EXTERNAL block location: 00083168 (DecompileCallback)  
+WARN  Decompiling 0008316c, pcode error at 0008316c: Unable to disassemble EXTERNAL block location: 0008316c (DecompileCallback)  
+WARN  Decompiling 00083170, pcode error at 00083170: Unable to disassemble EXTERNAL block location: 00083170 (DecompileCallback)  
+WARN  Decompiling 00083174, pcode error at 00083174: Unable to disassemble EXTERNAL block location: 00083174 (DecompileCallback)  
+WARN  Decompiling 00083178, pcode error at 00083178: Unable to disassemble EXTERNAL block location: 00083178 (DecompileCallback)  
+WARN  Decompiling 0008317c, pcode error at 0008317c: Unable to disassemble EXTERNAL block location: 0008317c (DecompileCallback)  
+WARN  Decompiling 00083180, pcode error at 00083180: Unable to disassemble EXTERNAL block location: 00083180 (DecompileCallback)  
+WARN  Decompiling 00083184, pcode error at 00083184: Unable to disassemble EXTERNAL block location: 00083184 (DecompileCallback)  
+WARN  Decompiling 00083188, pcode error at 00083188: Unable to disassemble EXTERNAL block location: 00083188 (DecompileCallback)  
+WARN  Decompiling 0008318c, pcode error at 0008318c: Unable to disassemble EXTERNAL block location: 0008318c (DecompileCallback)  
+WARN  Decompiling 00083190, pcode error at 00083190: Unable to disassemble EXTERNAL block location: 00083190 (DecompileCallback)  
+WARN  Decompiling 00083194, pcode error at 00083194: Unable to disassemble EXTERNAL block location: 00083194 (DecompileCallback)  
+WARN  Decompiling 00083198, pcode error at 00083198: Unable to disassemble EXTERNAL block location: 00083198 (DecompileCallback)  
+WARN  Decompiling 0008319c, pcode error at 0008319c: Unable to disassemble EXTERNAL block location: 0008319c (DecompileCallback)  
+WARN  Decompiling 000831a0, pcode error at 000831a0: Unable to disassemble EXTERNAL block location: 000831a0 (DecompileCallback)  
+WARN  Decompiling 000831a4, pcode error at 000831a4: Unable to disassemble EXTERNAL block location: 000831a4 (DecompileCallback)  
+WARN  Decompiling 000831a8, pcode error at 000831a8: Unable to disassemble EXTERNAL block location: 000831a8 (DecompileCallback)  
+WARN  Decompiling 000831ac, pcode error at 000831ac: Unable to disassemble EXTERNAL block location: 000831ac (DecompileCallback)  
+WARN  Decompiling 000831b0, pcode error at 000831b0: Unable to disassemble EXTERNAL block location: 000831b0 (DecompileCallback)  
+WARN  Decompiling 000831b4, pcode error at 000831b4: Unable to disassemble EXTERNAL block location: 000831b4 (DecompileCallback)  
+WARN  Decompiling 000831b8, pcode error at 000831b8: Unable to disassemble EXTERNAL block location: 000831b8 (DecompileCallback)  
+WARN  Decompiling 000831bc, pcode error at 000831bc: Unable to disassemble EXTERNAL block location: 000831bc (DecompileCallback)  
+WARN  Decompiling 000831c0, pcode error at 000831c0: Unable to disassemble EXTERNAL block location: 000831c0 (DecompileCallback)  
+WARN  Decompiling 000831c4, pcode error at 000831c4: Unable to disassemble EXTERNAL block location: 000831c4 (DecompileCallback)  
+WARN  Decompiling 000831c8, pcode error at 000831c8: Unable to disassemble EXTERNAL block location: 000831c8 (DecompileCallback)  
+WARN  Decompiling 000831cc, pcode error at 000831cc: Unable to disassemble EXTERNAL block location: 000831cc (DecompileCallback)  
+WARN  Decompiling 000831d0, pcode error at 000831d0: Unable to disassemble EXTERNAL block location: 000831d0 (DecompileCallback)  
+WARN  Decompiling 000831d4, pcode error at 000831d4: Unable to disassemble EXTERNAL block location: 000831d4 (DecompileCallback)  
+WARN  Decompiling 000831d8, pcode error at 000831d8: Unable to disassemble EXTERNAL block location: 000831d8 (DecompileCallback)  
+WARN  Decompiling 000831dc, pcode error at 000831dc: Unable to disassemble EXTERNAL block location: 000831dc (DecompileCallback)  
+WARN  Decompiling 000831e0, pcode error at 000831e0: Unable to disassemble EXTERNAL block location: 000831e0 (DecompileCallback)  
+WARN  Decompiling 000831e4, pcode error at 000831e4: Unable to disassemble EXTERNAL block location: 000831e4 (DecompileCallback)  
+WARN  Decompiling 000831e8, pcode error at 000831e8: Unable to disassemble EXTERNAL block location: 000831e8 (DecompileCallback)  
+WARN  Decompiling 000831f0, pcode error at 000831f0: Unable to disassemble EXTERNAL block location: 000831f0 (DecompileCallback)  
+WARN  Decompiling 000831f4, pcode error at 000831f4: Unable to disassemble EXTERNAL block location: 000831f4 (DecompileCallback)  
+WARN  Decompiling 000831f8, pcode error at 000831f8: Unable to disassemble EXTERNAL block location: 000831f8 (DecompileCallback)  
+WARN  Decompiling 000831fc, pcode error at 000831fc: Unable to disassemble EXTERNAL block location: 000831fc (DecompileCallback)  
+WARN  Decompiling 00083200, pcode error at 00083200: Unable to disassemble EXTERNAL block location: 00083200 (DecompileCallback)  
+WARN  Decompiling 00083204, pcode error at 00083204: Unable to disassemble EXTERNAL block location: 00083204 (DecompileCallback)  
+INFO  ExportNative.java> Exported 1500 functions; 0 failures (GhidraScript)  
+WARN  Decompiling 00083208, pcode error at 00083208: Unable to disassemble EXTERNAL block location: 00083208 (DecompileCallback)  
+INFO  ExportNative.java> Export complete: 1501 functions, 0 failures (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file://<workspace>/decoded/lib/armeabi/libdbgengine.so (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file://<workspace>/decoded/lib/armeabi/libdbgengine.so (HeadlessAnalyzer)  
+INFO  /libdbgengine.so: file created (local-user) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /libdbgengine.so (BeachEngine:/libdbgengine.so) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

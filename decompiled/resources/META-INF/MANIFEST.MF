@@ -1,0 +1,750 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xhdpi/iab_scene.png
+SHA1-Digest: lWdRQXymCFFj7fRIHBNCChMqIvc=
+
+Name: res/drawable/thumb_header.xml
+SHA1-Digest: JOnUQ3XCvHKnTkpUjlxS0es68BY=
+
+Name: assets/tex/sailboat__a.pvr
+SHA1-Digest: /M8tGX9KhxKkaQOQTvH8BVSwGOQ=
+
+Name: assets/tex/sky_sunrise__hq.pvr
+SHA1-Digest: ARwNHmEVcqaP6JMLWuknVy2ILEY=
+
+Name: res/drawable-hdpi/fb.png
+SHA1-Digest: a2tueXKhmMqKecOd3iaeIEe8XBE=
+
+Name: res/drawable-mdpi/clock_minute.png
+SHA1-Digest: XhiAKupoAahuJ+kzEcTjZz33F4U=
+
+Name: res/drawable-hdpi/twitter_pressed.png
+SHA1-Digest: cMKau/yy/tG0IBzs1eZAiq4VI2g=
+
+Name: res/drawable-hdpi/faq.png
+SHA1-Digest: 6fgzPou03WlmEuRRayjqIgvX9ws=
+
+Name: res/drawable-hdpi/iab_scene.png
+SHA1-Digest: h+4uok0imvOkIT5/VXh/HHnBB7s=
+
+Name: res/drawable-hdpi/notify_whatsnew.png
+SHA1-Digest: 3SUWoSZO1LSbGorSgwbrFP1N9jc=
+
+Name: assets/tex/sign_text_pirates.pvr
+SHA1-Digest: YBx7XqGSkQhnfGip8lA9L7ScyIE=
+
+Name: res/drawable-mdpi/thumb.png
+SHA1-Digest: 5rGv3EkB9Rio9HbOt6j4YgjSz4c=
+
+Name: assets/tex/fire_gradient.pvr
+SHA1-Digest: A94IQuTz9zs6KxNfZ7NCZaZd0/E=
+
+Name: assets/tex/bucket_yellow.pvr
+SHA1-Digest: QIIDsVPhyqOthWlhpeTMshOdlAY=
+
+Name: assets/tex/sign_text_shark.pvr
+SHA1-Digest: E3RXMcrIC8emr1HystnymDq4/aw=
+
+Name: res/layout/whatsnew_shell.xml
+SHA1-Digest: qzyBTcoanwaZGjgD6mLJvjE96SI=
+
+Name: assets/tex/light_glow_blue.pvr
+SHA1-Digest: TJTLP2jj7QKfwaF+ejYknP5CZIY=
+
+Name: res/drawable-mdpi/faq.png
+SHA1-Digest: BzcS6tAAO1jiwWnCgFdd4LeRiJc=
+
+Name: assets/tex/cruiseship_night.pvr
+SHA1-Digest: Y6ZsRZlMBQ3abI4KAMIUnYFC5Ho=
+
+Name: assets/tex/redlight.pvr
+SHA1-Digest: d+NElC7LJSI9nGjRbo7OI5Su8kg=
+
+Name: assets/tex/ball_soccer.pvr
+SHA1-Digest: MCov/ToSQ37GzqXZyzx0bA+QZnk=
+
+Name: res/drawable-xhdpi/thumb_header.png
+SHA1-Digest: tXMVqzv3w0U854SNQtDk+h713uU=
+
+Name: res/xml/dream_prefs.xml
+SHA1-Digest: twvEPXT/oZ/8m4p2sApeRCYsa00=
+
+Name: lib/x86/libdbgengine.so
+SHA1-Digest: 30uCurIW+6vWY+Fk/9QnlfUpxQc=
+
+Name: assets/tex/contrail.pvr
+SHA1-Digest: dPQwDqwHGHOtTr7gRBqJYbcgKLw=
+
+Name: res/layout/dream_overlay.xml
+SHA1-Digest: D3L9eO8r1wDMUfCdUSctPSFt+7Y=
+
+Name: assets/tex/cooler_drink_a.pvr
+SHA1-Digest: UoFD7bliT4vGa4LtZSA/x1ru80M=
+
+Name: assets/tex/fire_glow.pvr
+SHA1-Digest: btyIBcoB592AUsTt4CLYb9dvKpA=
+
+Name: res/drawable-ldpi/iab_customize.png
+SHA1-Digest: LUxlmQxxbKPNsnVhN9kIWWQ9hy4=
+
+Name: res/drawable/stroke.xml
+SHA1-Digest: I5RYLvLfb35lGWZOafGm2pMqpe4=
+
+Name: assets/tex/light_base_a.pvr
+SHA1-Digest: ZrE3gjsAFXc1BCkuexW7LntnWf4=
+
+Name: assets/tex/billboard_sign__a.pvr
+SHA1-Digest: INPDm9VetY/HRZXD65y6kb+eoM0=
+
+Name: res/drawable-hdpi/icon_offer_refresh.png
+SHA1-Digest: T5Pf6WjcBCu4MqdocfKE9RLao3o=
+
+Name: assets/tex/ball_patriotic.pvr
+SHA1-Digest: K/9g399cQiKfILfukX0YkFVnT1E=
+
+Name: res/drawable-xhdpi/wn_sign.png
+SHA1-Digest: rxtJdGE9ec88XXozGG48t59X804=
+
+Name: assets/tex/lensflare.pvr
+SHA1-Digest: YFibW20SbX9QKF5g4u/WtmCXic8=
+
+Name: assets/tex/fire.pvr
+SHA1-Digest: Eue4PFlUwR+vEI2hfpiQ4Y3Hp+A=
+
+Name: assets/tex/seagull.pvr
+SHA1-Digest: j8kKpshHjGlH6uf8inH232uHMcs=
+
+Name: res/drawable-mdpi/gplus.png
+SHA1-Digest: Swp45SbSyMCGhwhymB/RfRYMnO4=
+
+Name: assets/tex/plane.pvr
+SHA1-Digest: NOZaHvzyuHz6papFO4owL6k6KHI=
+
+Name: res/drawable-mdpi/moreapps_pressed.png
+SHA1-Digest: TTxgJNRVn5NKBn2KB44u8zpyxpE=
+
+Name: assets/tex/distortion.pvr
+SHA1-Digest: l4ueLq/GqjR+Khjl+s9freKIhC4=
+
+Name: res/drawable-mdpi/icon_googleplay_alt.png
+SHA1-Digest: tCMqM01Irzl5F4z2nihS4ZBX0n4=
+
+Name: assets/tex/beach_towel_orange.pvr
+SHA1-Digest: OYk8kacOmRIVpE1gkdz74qPEjok=
+
+Name: res/layout/pref_faq.xml
+SHA1-Digest: QNnBaZ3CYV8JAdvKC2t65RtSvm0=
+
+Name: assets/tex/foam__a.pvr
+SHA1-Digest: xfvJQMrf4sAkI+bRLWeLoO6jGgc=
+
+Name: res/drawable-mdpi/moreapps.png
+SHA1-Digest: nn2syeWRokS9dQHae4AiGulgOws=
+
+Name: res/xml/wallpaper.xml
+SHA1-Digest: S0OmFFxeg11gLhTWL1djtD0V2ZE=
+
+Name: res/drawable-ldpi-v11/notify_whatsnew.png
+SHA1-Digest: 0ErO60V/Bw0Gepp3anrZM68YlNw=
+
+Name: res/drawable-ldpi/icon_offer_refresh.png
+SHA1-Digest: acnyKV/URsrE0zCmmUqERE4AgUE=
+
+Name: assets/tex/blank_texture_evening.pvr
+SHA1-Digest: yGFRUUzPmlVxRHrnHo+LCfdmQc4=
+
+Name: res/drawable-hdpi/icon_googleplay_alt.png
+SHA1-Digest: /nNYsgIH+grSH7KVOsYKIyk/dBw=
+
+Name: assets/tex/carnival_day__a.pvr
+SHA1-Digest: XSixNeZThzqEkEj8hsgBTfEf+0M=
+
+Name: assets/tex/clouds_painted.pvr
+SHA1-Digest: 08pYEYdltVZOHQOfrRlQUWO0mpQ=
+
+Name: res/drawable-ldpi/faq.png
+SHA1-Digest: 9FVByat/TmjPogIA1wMaAx785co=
+
+Name: res/drawable-xhdpi/twitter_pressed.png
+SHA1-Digest: pfwvA095rgG6TUIDyULNateZFMg=
+
+Name: res/drawable-hdpi-v11/notify_whatsnew.png
+SHA1-Digest: BgYJqDN0obpPgfhwddbqRahOv5A=
+
+Name: assets/tex/breaker__a.pvr
+SHA1-Digest: lCPJPEL6WsZNKEDAIYXoffagEnA=
+
+Name: res/drawable-nodpi/bullet.png
+SHA1-Digest: 0go/Pe8KuZOGOw3y81AHiSP8na0=
+
+Name: assets/tex/sign_text_here.pvr
+SHA1-Digest: VGvrKbCSTuc5QBNB5wHZeXslp9w=
+
+Name: res/drawable-xhdpi/faq.png
+SHA1-Digest: JRqgBek65PdQY0EPQT4QtpoFL6c=
+
+Name: assets/tex/clouds_dawn.pvr
+SHA1-Digest: /buwdySs7UJnH9L7h7Wz+0seTqg=
+
+Name: res/drawable-mdpi/more.png
+SHA1-Digest: CwIECchcw5Bk6PZxpMS0U96i80Y=
+
+Name: assets/tex/bluelight.pvr
+SHA1-Digest: SOh9QspEtnP5yaqWnG8EWTOddsE=
+
+Name: res/drawable/rounded_rect.xml
+SHA1-Digest: 65XNJYoyuTpbU39IwjjKQf6dvus=
+
+Name: res/layout/offer_details_footer.xml
+SHA1-Digest: wgAq62Ggglj2jqI6ZTtIZTkpCdw=
+
+Name: assets/tex/sun.pvr
+SHA1-Digest: gF/C6uKEwy5aXisIW/qm10mYFIU=
+
+Name: assets/tex/bottle_rocket.pvr
+SHA1-Digest: K8oH6i3EfAIuyksUQ9uEVoKTDxE=
+
+Name: assets/tex/beach_towel_patriotic.pvr
+SHA1-Digest: 39WeAVBa1tU8HQ9FWh4hOE95s14=
+
+Name: assets/tex/sky_morning __hq.pvr
+SHA1-Digest: +cI5S4rcS13h6QzlyyNGvT5t/vY=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: 4i3SYcPPieYX9nqfjaWefPhzMJs=
+
+Name: assets/tex/sign.pvr
+SHA1-Digest: mETlaczMmF+ks8AfzJUEms5mxco=
+
+Name: res/drawable-xhdpi/twitter.png
+SHA1-Digest: NhjEzfm4C8NzAgwfnTdYu+b8EOw=
+
+Name: res/drawable-ldpi/twitter_pressed.png
+SHA1-Digest: zfWS+YJivs45xmU8n5tuOfrouXY=
+
+Name: assets/tex/fullmoon.pvr
+SHA1-Digest: UAbd6yGTlcklUY2efUQhb80Scr8=
+
+Name: assets/tex/fireflicker.pvr
+SHA1-Digest: 0hUHTPgOVxO9OoTb++eZyL5BXbM=
+
+Name: res/drawable-mdpi/thumb_header.png
+SHA1-Digest: Efzt9vO4GO9INV9emqESgYeej+4=
+
+Name: assets/tex/umbrella_teal.pvr
+SHA1-Digest: 9IVgibQSkDdptTtc5wQ1+lU5sY8=
+
+Name: res/drawable-mdpi/offer_image.png
+SHA1-Digest: 0SKOwI9PW6JRKX8Fu3tyCO0Mgik=
+
+Name: assets/tex/bucket_red.pvr
+SHA1-Digest: i+OSSKcNUBTCbm5sSlHUAJCpTmA=
+
+Name: assets/tex/lightsocket__a.pvr
+SHA1-Digest: XfOdHiiLQ3FDpUtURnClMqztqPA=
+
+Name: res/drawable-hdpi/twitter.png
+SHA1-Digest: l05t5x7sbHSaNcjV/pSUwQUx1wY=
+
+Name: res/drawable-ldpi/fb_pressed.png
+SHA1-Digest: FDdos07oGhIQlgBaUR1eMjbkxO8=
+
+Name: assets/tex/umbrella_patriotic.pvr
+SHA1-Digest: b4vL7IRIuoKomEF4JySxDsluqx4=
+
+Name: assets/tex/moonwater.pvr
+SHA1-Digest: MZ3MYeAlUQ4D1TjQsCDzMMd+lsc=
+
+Name: res/drawable-ldpi/icon_googleplay.png
+SHA1-Digest: 5ij106P/VULPI2SCCH3RyvybvQY=
+
+Name: res/layout/intro_shell.xml
+SHA1-Digest: vwXVrV76E88E7LEdRJVb29TZPxA=
+
+Name: res/drawable-ldpi/notify_whatsnew.png
+SHA1-Digest: EUqL96CZIfFRY35ExpCoznQFmbk=
+
+Name: assets/tex/billboard_text_holiday1.pvr
+SHA1-Digest: nPI2CzfYKbmFPzuTB/05YZh5t/4=
+
+Name: res/drawable-hdpi/gplus.png
+SHA1-Digest: f9zTqak0e1aPWgIeERVzWABdQzQ=
+
+Name: res/drawable-xhdpi/fb.png
+SHA1-Digest: vXpBQiDeAjsLcvxhDWPAQf0y/yI=
+
+Name: res/drawable-ldpi/gplus_pressed.png
+SHA1-Digest: BEuWCBaQ43TUj2fO893kxcWbwH0=
+
+Name: res/drawable-xhdpi/icon_googleplay.png
+SHA1-Digest: QVUm5/0pSCbV2XcSJMnUYRJEHvs=
+
+Name: assets/tex/sky_sunset__hq.pvr
+SHA1-Digest: pwnSWrFIIKDlUyw9G7Rf/qPypQw=
+
+Name: res/drawable-hdpi/ytube_pressed.png
+SHA1-Digest: 1dkEzkr1CxgE0R216BisRIt46J4=
+
+Name: res/layout/offer_details_main_large.xml
+SHA1-Digest: KX61FAhltBDdj14zGUvGSS5SYh0=
+
+Name: assets/tex/beach_towel_pink.pvr
+SHA1-Digest: c/MirO7Q2/8rOxApODK/69XtN+Y=
+
+Name: res/drawable-hdpi/gplus_pressed.png
+SHA1-Digest: +N+0GRCT4OKtUr+l4pQZt5bLyzA=
+
+Name: res/drawable-mdpi/ytube.png
+SHA1-Digest: uKrx4aGbtnfFUqSi0n+IhYQAJhA=
+
+Name: res/drawable-xhdpi-v11/notify_whatsnew.png
+SHA1-Digest: nEWh9BXxfZflgGEeM0I57Undfqg=
+
+Name: res/layout/offer_item.xml
+SHA1-Digest: ekOzwgpjvAO6CLheIH9qqgXzmRI=
+
+Name: res/drawable-mdpi/iab_scene.png
+SHA1-Digest: INH11h/4riSlSWdf32qPVa1WDik=
+
+Name: res/drawable-xhdpi/iab_customize.png
+SHA1-Digest: OEd1WbTS6VvoZPudZ8ljr1+x5QI=
+
+Name: res/layout/payment_type.xml
+SHA1-Digest: 2hTB960B705t4HRga9QCTOG9JoE=
+
+Name: res/layout/pref_iab_scene.xml
+SHA1-Digest: DenEC5fdMcnWAMIYAA4wOClownU=
+
+Name: assets/tex/cruiseship__a.pvr
+SHA1-Digest: MyBduEL6KIZvfHHquZERoRRze2M=
+
+Name: res/drawable-ldpi/thumb_header.png
+SHA1-Digest: dNlFXKVRn6cmhv26kDTMOxCuoMM=
+
+Name: lib/armeabi-v7a/libdbgengine.so
+SHA1-Digest: aINASUxoQeDEO8JyRpgiqXofDIk=
+
+Name: res/drawable/icon_license.xml
+SHA1-Digest: arre4cmALSc4QxP6PWwGlrrpVtM=
+
+Name: assets/tex/shells__a.pvr
+SHA1-Digest: jIx0PKnI/i7TOJwbcmoKjFJneaQ=
+
+Name: assets/tex/blank_texture.pvr
+SHA1-Digest: yGFRUUzPmlVxRHrnHo+LCfdmQc4=
+
+Name: assets/tex/cooler_drink_b.pvr
+SHA1-Digest: hpsPYu+vC4xRiFjBa900wTjKEUE=
+
+Name: assets/tex/billboard_text_a.pvr
+SHA1-Digest: nPI2CzfYKbmFPzuTB/05YZh5t/4=
+
+Name: res/drawable/selector_ytube.xml
+SHA1-Digest: UKFmIa0gcYVFphPxjJFJAv1A8jw=
+
+Name: res/drawable-mdpi/icon_offer_refresh.png
+SHA1-Digest: c7IcyHGEMJWX1XP91CezXMkbf0Q=
+
+Name: res/layout/simple_progress.xml
+SHA1-Digest: GN8tYxIKNfSeSl+EiubCsIPNAtE=
+
+Name: assets/tex/shadow_radial_ramp.pvr
+SHA1-Digest: Z0bGyy04p5Hknr8TQ0yQkBa9wL4=
+
+Name: assets/tex/coastline__a.pvr
+SHA1-Digest: thcDJnSOt8p37saRQRDuUlNUq88=
+
+Name: res/layout/offer_about.xml
+SHA1-Digest: B99+nYErFk+pYvXlaKr7+g85ve0=
+
+Name: assets/tex/yellowlight.pvr
+SHA1-Digest: xcv84iylWk2NckaTXq2ZC8COYrE=
+
+Name: res/drawable-ldpi/arrow.png
+SHA1-Digest: gkVlInoH0WLsjviS4zhmaeSZBRA=
+
+Name: res/drawable-mdpi/notify_whatsnew.png
+SHA1-Digest: 92+2F0VFBkhMozl/wjFtRTtlTi0=
+
+Name: assets/tex/firework_b.pvr
+SHA1-Digest: gquulWQxjVYRnBNmK4PWEPjTyYU=
+
+Name: assets/tex/cargoship__a.pvr
+SHA1-Digest: VsYjdv/jx3Y0+5nt0BuD2nCDAOQ=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: ixVqrT7bZ8l+yOUexs7at18+ZhU=
+
+Name: res/drawable-mdpi/fb.png
+SHA1-Digest: HQOm+kRlCdF1pRILIjNjXKWdIHs=
+
+Name: res/drawable-xhdpi/icon_googleplay_alt.png
+SHA1-Digest: ppy4UbSIdnVK8m0A++P6PzwqRH8=
+
+Name: res/layout/offer_details.xml
+SHA1-Digest: dVWB8BS60+Uqz64AgUCwOU9AHmU=
+
+Name: assets/tex/sign_text_coming_soon.pvr
+SHA1-Digest: UqvXNsD0c3zaUIT3ArF9dIdXvkw=
+
+Name: res/drawable/selector_gplus.xml
+SHA1-Digest: jtL7OOShfOV6LANjB5ewF/dYZSw=
+
+Name: res/xml/dream.xml
+SHA1-Digest: vavgvciCu2rRsLKLdUSMhR3PqdY=
+
+Name: assets/tex/wood.pvr
+SHA1-Digest: NieLNy16k4tEv9z0NAQpSXWuzMI=
+
+Name: res/drawable-hdpi/fb_pressed.png
+SHA1-Digest: nosEsltYpV9Tr34TadqD7ZuaYyg=
+
+Name: assets/tex/stars_evening__hq.pvr
+SHA1-Digest: kdhe21N0JzBMogOu4HiBfBs248o=
+
+Name: res/drawable-mdpi/icon_googleplay.png
+SHA1-Digest: c6itk2e/sxG9QCvaeTFkwxyo/rY=
+
+Name: res/layout/pref_moreapps.xml
+SHA1-Digest: 5TSZalhVoDDG6deF0i2aF5JhqEE=
+
+Name: res/layout/offer_details_main_compact.xml
+SHA1-Digest: 0JEJTC3UXtEMfiHIwR8EprDo8X4=
+
+Name: assets/tex/beach_towel_red.pvr
+SHA1-Digest: /71wPC/P7LTKmCAExMAdowTknKc=
+
+Name: res/drawable-ldpi/iab_scene.png
+SHA1-Digest: EGWnHnesiwpZupGva0UPuhZOI/4=
+
+Name: res/drawable/selector_fb.xml
+SHA1-Digest: kEvj3JS337HQ0JycMSj6ThkR8Fw=
+
+Name: res/drawable-xhdpi/wn_orange.png
+SHA1-Digest: Hxk05fpo8QbbS3dZCFy3W98pF+Q=
+
+Name: res/drawable-hdpi/ytube.png
+SHA1-Digest: hiDa5wsjQgFkVNVXEhavQQDd0bo=
+
+Name: assets/tex/umbrella_orange.pvr
+SHA1-Digest: sW+sR2zT7MXIFSi1COqrQwC7saI=
+
+Name: assets/tex/fireworks.pvr
+SHA1-Digest: qqdZshBhPONASzhu2a14pgJxFj8=
+
+Name: res/drawable-hdpi/more.png
+SHA1-Digest: NtTFHVX28TKJ0UvmCROhDPnKNq8=
+
+Name: assets/tex/ball.pvr
+SHA1-Digest: Qrh2rUj8waNT5KEfT0JK06JyhaQ=
+
+Name: res/drawable-ldpi/icon_googleplay_alt.png
+SHA1-Digest: s3dpm/nhFv2p2eJQdAVgjArwLrQ=
+
+Name: res/drawable-mdpi/picker.png
+SHA1-Digest: Onqtdb0UPMHIoHP46zJoSDpZdiI=
+
+Name: res/drawable-mdpi/iab_customize.png
+SHA1-Digest: vHIE9hFXppSRg89heM2cYhru4Do=
+
+Name: res/drawable-xhdpi/gplus_pressed.png
+SHA1-Digest: cP9SsBvlja9edB1hACxDdmKurVQ=
+
+Name: assets/tex/sunset_sun.pvr
+SHA1-Digest: Gz9JXgzGl+JnbT1fK1HAibCdZWo=
+
+Name: res/drawable-mdpi/twitter.png
+SHA1-Digest: xRo1dazHI0DjYyiIe4/hWV5LbZ4=
+
+Name: assets/tex/stars_midnight__hq.pvr
+SHA1-Digest: HQ+fhzpxCXkWEgNKWoQXN0pnfyE=
+
+Name: assets/tex/clouds_morning.pvr
+SHA1-Digest: l3/Hk/YQHNAlniU7VwY8oWr1Hpw=
+
+Name: assets/tex/sky_painted__hq.pvr
+SHA1-Digest: pTvXbFMrrhGYQnPfzNBDHV2STNk=
+
+Name: lib/armeabi/libdbgengine.so
+SHA1-Digest: BjovDkrP8oCnU6T+QPx6UKzAN0I=
+
+Name: assets/tex/billboard_text_b.pvr
+SHA1-Digest: nPI2CzfYKbmFPzuTB/05YZh5t/4=
+
+Name: assets/tex/clouds_dusk.pvr
+SHA1-Digest: K1+OKNqMeVt/TTsJemZFCbq/8bs=
+
+Name: res/drawable-mdpi/fb_pressed.png
+SHA1-Digest: NdM08tHOth6zznXRZWY6UgoO9ws=
+
+Name: assets/tex/bucket_blue.pvr
+SHA1-Digest: t/vW2+P5+GTv9PFz2IUOhRFCG4Y=
+
+Name: res/layout/pref_iab_customize.xml
+SHA1-Digest: NNE/UHpJ0IP4Kgnc3aIwQvwmRI4=
+
+Name: res/drawable-xhdpi/fb_pressed.png
+SHA1-Digest: T6aCJXEq81nXAzX3Fm1bwA6dKBM=
+
+Name: res/drawable-xhdpi/gplus.png
+SHA1-Digest: J5vjJ6wX7/sKUcsdnTT01uc7oPk=
+
+Name: res/drawable-hdpi/thumb_header.png
+SHA1-Digest: jMOCpR1q74Rc2EwI1mdTLAFBzKY=
+
+Name: assets/tex/suds.pvr
+SHA1-Digest: v4JD/B8uKFr+gLKROG3kKYwlZvw=
+
+Name: res/drawable-mdpi/clock_face.png
+SHA1-Digest: 08kUGmSfbep6YFX/ie120c2pfFw=
+
+Name: resources.arsc
+SHA1-Digest: K5BtSo54AyhqeFvZzFKo0rbk8YU=
+
+Name: res/layout/intro_content.xml
+SHA1-Digest: g4K7aTrJYaE3XzhU9vTTI+N9v7k=
+
+Name: res/drawable/selector_twitter.xml
+SHA1-Digest: eja8GECE+pCbZAkLyUXUtUqbDL0=
+
+Name: assets/tex/sand_grain.pvr
+SHA1-Digest: m+qwkY7odA7RDDzjkOORleViKAY=
+
+Name: res/drawable-ldpi/ytube.png
+SHA1-Digest: VhJhQNrfKIcL9qpAj3Xjhyp2n1M=
+
+Name: assets/tex/cooler_drink_c.pvr
+SHA1-Digest: ufI2n63FLxrpwcePFxGq5V6w58U=
+
+Name: res/drawable-ldpi/fb.png
+SHA1-Digest: CfjC5TFokLf7g9btMRbzyBa44o0=
+
+Name: res/drawable-mdpi/arrow.png
+SHA1-Digest: 84uwxrtarZEj6+RIcLZb9YBTo84=
+
+Name: assets/tex/stars_night__hq.pvr
+SHA1-Digest: F1T/33RsOx4+WjCzalzqnebV2Ok=
+
+Name: assets/tex/light_glow_yellow.pvr
+SHA1-Digest: KhNXsxk0MoC5v2RYThcZwyntsAo=
+
+Name: res/layout/offer_details_content.xml
+SHA1-Digest: TOXwjpzTHFrSHkmsTJiNFqnRsvM=
+
+Name: res/drawable-xhdpi/icon_offer_refresh.png
+SHA1-Digest: KonbP6m2ARSybGFvhY6LroNs4yU=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 343AZ8djD3BoLdJL/UoPC+DjBvw=
+
+Name: res/drawable-xxhdpi/icon.png
+SHA1-Digest: Jxeg9DFwjcb0d+XGnZj8uLNpapE=
+
+Name: res/drawable-xhdpi/wn_fireworksatnight.png
+SHA1-Digest: IOdeIlvCUAwp9jSKCog/yQjskoI=
+
+Name: res/drawable-xhdpi/wn_cruiseship.png
+SHA1-Digest: hwihcjYp/F6/t85df7Tzd8fvS5E=
+
+Name: assets/tex/white.pvr
+SHA1-Digest: x0kIyLA/mPorc37agd53JDZdVr4=
+
+Name: res/drawable-hdpi/icon_googleplay.png
+SHA1-Digest: sFmebKX7M1Rq8NXZP7uCT9JQocI=
+
+Name: res/drawable-hdpi/iab_customize.png
+SHA1-Digest: 72b6AGiTOJJtx9XGGfQ8qdI1s/4=
+
+Name: assets/tex/umbrella_blue.pvr
+SHA1-Digest: JYCAhbdLhmNDuvUPQszuo2B0+vQ=
+
+Name: res/drawable-xhdpi/arrow.png
+SHA1-Digest: mKK1cT5TSB9SpHcCnDF+qxEKpFI=
+
+Name: assets/tex/ball_volley.pvr
+SHA1-Digest: bd6AGMZ+7KR+3uN0U7X2KJEUT3Q=
+
+Name: res/drawable-mdpi/clock_hour.png
+SHA1-Digest: Q14whDlADT5bEURsiknK56kBgz4=
+
+Name: res/layout/pref_social_dialog.xml
+SHA1-Digest: YM1FFihlGDpm27h2p46EW8aTnnE=
+
+Name: classes.dex
+SHA1-Digest: d1rJeof8dJYM9dmQdoZdR37tjDY=
+
+Name: assets/tex/greenlight.pvr
+SHA1-Digest: nnS6A1/JIhGwPPTDN4nW2CEcVHU=
+
+Name: assets/tex/blank_texture_night.pvr
+SHA1-Digest: yGFRUUzPmlVxRHrnHo+LCfdmQc4=
+
+Name: assets/tex/twinkler.pvr
+SHA1-Digest: p61SHpN2khD+kXoMNx9JKeVj0oQ=
+
+Name: res/drawable-ldpi/icon_googlewallet.png
+SHA1-Digest: PHtLA+FGm0ctKQFGl5dkagKULaw=
+
+Name: assets/tex/highlight.pvr
+SHA1-Digest: SzrD2q74cMFIsJEKlHaVum3rRJQ=
+
+Name: res/drawable-ldpi/twitter.png
+SHA1-Digest: 4V5nKOgSDfblbgKgdZFQXR9X4fc=
+
+Name: res/layout/whatsnew_independence.xml
+SHA1-Digest: sGoZDWL+9gHF1YLBT+EOP9Urkoo=
+
+Name: assets/tex/sign_text_dog.pvr
+SHA1-Digest: tAfJkYJ/Iab7iDtPq2w5VwyIXXg=
+
+Name: res/layout/pref_social.xml
+SHA1-Digest: LhdAiAudECYHFJMPgRUdzM8Msts=
+
+Name: assets/tex/ao_shadow_ramp.pvr
+SHA1-Digest: JPjiKwVAZNoUfGx6813PescVDpU=
+
+Name: assets/tex/beach_towel_blue.pvr
+SHA1-Digest: SAquX+/yDQDuQHUR+h9kJ0LNgAQ=
+
+Name: res/layout/offer_list.xml
+SHA1-Digest: rCtkvWiJAcsUvsBZXG8AHwB4rAU=
+
+Name: res/drawable/icon_offer_default.xml
+SHA1-Digest: SO768IoPIZyXO5uHQo2mAG9hT8I=
+
+Name: res/layout/pref_upsell.xml
+SHA1-Digest: 0HpAfFkAX1GZO4N0VahcYuIzwR0=
+
+Name: res/layout-large/offer_details.xml
+SHA1-Digest: S9XkMm9b3GEy+rrJX2D5iMW+oFs=
+
+Name: assets/beach-settings.txt
+SHA1-Digest: 4nMmKwO1v01kTn+BhIN03Ue/Fzc=
+
+Name: assets/beach.stg-scene
+SHA1-Digest: sPmnIc7gMoF6ZMHmp13yUwhiPQ0=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: twKD6ZRYIF3LpFuM04ah+211nV8=
+
+Name: res/drawable-ldpi/ytube_pressed.png
+SHA1-Digest: ipXXVuF0sUBZ9qvV9ks0mrr5PGA=
+
+Name: res/drawable-mdpi/gplus_pressed.png
+SHA1-Digest: tK/npzMN93BftvixMdZzU7WMeeQ=
+
+Name: res/layout/offer_merge_thumb.xml
+SHA1-Digest: NoZjlY/+Ti0oq+YMnO7ZLi6MHaY=
+
+Name: assets/tex/beach_towel_teal.pvr
+SHA1-Digest: rwFLlkSQVqha7mgFxufJuY1f0W0=
+
+Name: assets/tex/carnival.pvr
+SHA1-Digest: Re5V6oyYtMoN+w6RUzreyVHBdIs=
+
+Name: assets/tex/seagrass__a.pvr
+SHA1-Digest: tODf/SDc6g+Z3OHxt6mNjvsrWI8=
+
+Name: res/drawable-mdpi/logo.png
+SHA1-Digest: +d5MOmgnmJJX3XrmKB5APsch0IA=
+
+Name: assets/tex/stars__hq.pvr
+SHA1-Digest: ZiZQeHuWc8KXHTp7JyagqMwuQBM=
+
+Name: res/drawable-xhdpi/wn_seagull.png
+SHA1-Digest: mjryiEBknj+2rcj64TtNJKjweTA=
+
+Name: assets/tex/lh_light.pvr
+SHA1-Digest: dz3WEQMnrRv1FuUQ+bkbuUSPC6c=
+
+Name: res/drawable-xhdpi/ytube.png
+SHA1-Digest: 3RpEgOkqW39ZOIAHJycfSEdNA9A=
+
+Name: res/drawable-hdpi/arrow.png
+SHA1-Digest: ZV7cMWoyWtuNJEKansl730YJPyQ=
+
+Name: assets/tex/light_glow_green.pvr
+SHA1-Digest: bvyA7+p0rlTFC7vv7WdT0XMXHys=
+
+Name: assets/tex/water.pvr
+SHA1-Digest: bR0W7F0JC0WaT2eUYvrP9ATI3Zc=
+
+Name: res/drawable-ldpi/gplus.png
+SHA1-Digest: bdvCm79YhxaBWlkCFRuovkjO1gw=
+
+Name: res/drawable/selector_moreapps.xml
+SHA1-Digest: I4DwiP/zUCYeyrK9ZDIBEe3FEKk=
+
+Name: assets/tex/billboard_text_c.pvr
+SHA1-Digest: nPI2CzfYKbmFPzuTB/05YZh5t/4=
+
+Name: assets/tex/clouds.pvr
+SHA1-Digest: nuJG4u4jvCeBI6JuFNmGLWCc4b4=
+
+Name: res/drawable-xhdpi/notify_whatsnew.png
+SHA1-Digest: eUw66XSSlxodIkkV9VbNQIFsALo=
+
+Name: res/drawable/gradient.xml
+SHA1-Digest: IBcnWb+l2Pf5z2kc1yZT5dU6bvo=
+
+Name: res/drawable-hdpi/icon_googlewallet.png
+SHA1-Digest: FOhOP5AWlfRRvQ2s0klSnDtZhfA=
+
+Name: res/layout-v16/intro_content.xml
+SHA1-Digest: qs89UrwMD/rVt0ZaoDHoH274ZF8=
+
+Name: assets/tex/umbrella_pink.pvr
+SHA1-Digest: 9jPhsKVEXV1YvxckVwtIOUhVUdg=
+
+Name: res/drawable-mdpi/icon_googlewallet.png
+SHA1-Digest: LT3xxl8ak2ZKmqEITIstGSDzf4Y=
+
+Name: assets/tex/sign_text_beach_party.pvr
+SHA1-Digest: tNEUOKxPbEKmx7TjtTdDpwHfGKo=
+
+Name: assets/tex/sky__hq.pvr
+SHA1-Digest: pW2Vgr8spkbUftvnrKHIG1QNL78=
+
+Name: res/drawable-mdpi/ytube_pressed.png
+SHA1-Digest: 1sNaDObBQoWFbpS0gi47QBx5P1o=
+
+Name: res/drawable-mdpi/twitter_pressed.png
+SHA1-Digest: 8H//8E4gaeBiNGY8KISNSmdfNUc=
+
+Name: res/layout/offer_theme.xml
+SHA1-Digest: dhs2obHkMRZoGX4Q330FGvZn0kc=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: +/uoM7fNvCQ7N02Lik7WUNAriyU=
+
+Name: res/drawable-xhdpi/ytube_pressed.png
+SHA1-Digest: EWW9If2K73S4SvaqlVwxG7p23jU=
+
+Name: res/drawable-ldpi/more.png
+SHA1-Digest: MSHqU3F6soDQLVvKjyv6BzwqVHw=
+
+Name: assets/tex/sand.pvr
+SHA1-Digest: x24wYPfc+BLs4EB/K4y5em3bQw8=
+
+Name: assets/tex/umbrella_red.pvr
+SHA1-Digest: /ZS/lzLkWbwXpWM3bIX11ckN6hY=
+
+Name: res/layout/shared_moreapps.xml
+SHA1-Digest: YIRmSd7stM+AAmlFNjbqdVgzUig=
+
+Name: res/drawable-xhdpi/wn_independence.png
+SHA1-Digest: FFDjyJgUf/M3kyPX9G0uoPtOKzc=
+
+Name: assets/tex/fireworks_b.pvr
+SHA1-Digest: YteXBwNGJlMNUXYWg5wscwKi/6o=
+
+Name: res/drawable-xhdpi/more.png
+SHA1-Digest: Y3n0co3g7p7ICmfY6kslJIaqnQ4=
+
+Name: res/drawable-mdpi-v11/notify_whatsnew.png
+SHA1-Digest: RgNUuW+pvoWZEazsCUnWcSl2nRs=
+
+Name: assets/tex/light_glow_red.pvr
+SHA1-Digest: NH+WYw+j76oaZj654Q7bOKHXx88=
+

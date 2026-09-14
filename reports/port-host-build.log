@@ -1,0 +1,106 @@
+[0/1] Re-running CMake...
+Install prefix    /usr/local
+binary directory  /usr/local/bin
+library directory /usr/local/lib
+libexec directory /usr/local/libexec
+include directory /usr/local/include
+config directory  /usr/local/etc
+local state directory   /usr/local/var
+ELF interp prefix /usr/gnemul/qemu-%M
+Build directory   <workspace>/build/port-host
+Source path       <workspace>/tools/unicorn/qemu
+GIT binary        git
+GIT submodules    
+C compiler        /usr/bin/cc
+Host C compiler   cc
+C++ compiler      c++
+Objective-C compiler clang
+ARFLAGS           rv
+CFLAGS            -g 
+QEMU_CFLAGS       -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -DUNICORN_HAS_ARM -fPIC -Wexpansion-to-defined -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong
+QEMU_LDFLAGS      -Wl,--warn-common -Wl,-z,relro -Wl,-z,now -pie -m64  -DUNICORN_HAS_ARM -fPIC -fstack-protector-strong
+make              make
+install           install
+host CPU          x86_64
+host big endian   no
+target list       arm-softmmu   
+strip binaries    yes
+static build      no
+mingw32 support   no
+PIE               yes
+TCG support       yes
+malloc trim support yes
+membarrier        no
+madvise           yes
+posix_madvise     yes
+posix_memalign    yes
+debug stack usage no
+tcmalloc support  no
+jemalloc support  no
+avx2 optimization yes
+avx512f optimization no
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: <workspace>/build/port-host
+[1/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/osdep.c.o
+[2/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/getauxval.c.o
+[3/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/crc32c.c.o
+[4/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/host-utils.c.o
+[5/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/guest-random.c.o
+[6/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/bitops.c.o
+[7/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/qemu-timer-common.c.o
+[8/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/range.c.o
+[9/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/qemu-timer.c.o
+[10/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/pagesize.c.o
+[11/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/cacheinfo.c.o
+[12/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/oslib-posix.c.o
+[13/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/bitmap.c.o
+[14/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/exec-vary.c.o
+[15/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/softmmu/cpus.c.o
+[16/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/qdist.c.o
+[17/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/util/qht.c.o
+[18/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/softmmu/ioport.c.o
+[19/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/softmmu/memory_mapping.c.o
+[20/63] Building C object unicorn/CMakeFiles/unicorn-common.dir/qemu/crypto/aes.c.o
+[21/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/softmmu/memory.c.o
+[22/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op-vec.c.o
+[23/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cpu-exec.c.o
+[24/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cpu-exec-common.c.o
+[25/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-all.c.o
+[26/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/exec.c.o
+[27/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-runtime.c.o
+[28/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/tcg/optimize.c.o
+[29/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/translator.c.o
+[30/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/translate-all.c.o
+[31/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/softmmu/unicorn_vtlb.c.o
+[32/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/crypto_helper.c.o
+[33/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/cpu.c.o
+[34/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/debug_helper.c.o
+[35/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg.c.o
+[36/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op.c.o
+[37/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/tcg/tcg-op-gvec.c.o
+[38/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/cputlb.c.o
+[39/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/psci.c.o
+[40/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/m_helper.c.o
+[41/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/op_helper.c.o
+[42/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/tlb_helper.c.o
+[43/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/iwmmxt_helper.c.o
+[44/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/neon_helper.c.o
+[45/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/vfp_helper.c.o
+[46/63] Linking C static library unicorn/libunicorn-common.a
+[47/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/unicorn_arm.c.o
+[48/63] Building C object unicorn/CMakeFiles/unicorn.dir/qemu/softmmu/vl.c.o
+[49/63] Building C object unicorn/CMakeFiles/unicorn.dir/qemu/hw/core/cpu.c.o
+[50/63] Building C object unicorn/CMakeFiles/unicorn.dir/uc.c.o
+[51/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/vec_helper.c.o
+[52/63] Building CXX object CMakeFiles/beach-runtime.dir/graphics.cpp.o
+[53/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/accel/tcg/tcg-runtime-gvec.c.o
+[54/63] Building CXX object CMakeFiles/beach-smoke.dir/smoke.cpp.o
+[55/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/helper.c.o
+[56/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/fpu/softfloat.c.o
+[57/63] Building CXX object CMakeFiles/beach-runtime.dir/runtime.cpp.o
+[58/63] Building C object unicorn/CMakeFiles/arm-softmmu.dir/qemu/target/arm/translate.c.o
+[59/63] Linking C static library unicorn/libarm-softmmu.a
+[60/63] Linking C static library unicorn/libunicorn.a
+[61/63] Linking CXX static library libbeach-runtime.a
+[62/63] Linking CXX executable beach-smoke

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DualBoot.Theme" parent="@android:style/Theme.DeviceDefault">
+        <item name="clickableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="DualBoot.Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="clickableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="DualBoot.Theme.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="clickableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+</resources>

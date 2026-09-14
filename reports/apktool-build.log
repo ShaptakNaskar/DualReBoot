@@ -1,0 +1,16 @@
+I: Using Apktool 3.0.3-dirty on 00237-My-Beach-HD-v2-2.apk with 8 threads
+I: Smaling smali folder into classes.dex...
+I: Building resources with aapt2...
+W: decoded/res/values/styles.xml:48: error: invalid resource type 'attr' for parent of style.
+W: decoded/res/values/styles.xml: error: file failed to compile.
+Exception in thread "main" brut.androlib.exceptions.AndrolibException: brut.common.BrutException: Execution failed (exit code = 1): [/tmp/aapt2_90917575007076017161619706919244389330.tmp, compile, --dir, decoded/res, --legacy, -o, decoded/build/resources.zip]
+	at brut.androlib.res.AaptInvoker.invoke(AaptInvoker.java:91)
+	at brut.androlib.ApkBuilder.buildResourcesFully(ApkBuilder.java:357)
+	at brut.androlib.ApkBuilder.buildResources(ApkBuilder.java:230)
+	at brut.androlib.ApkBuilder.build(ApkBuilder.java:92)
+	at brut.apktool.Main.cmdBuild(Main.java:605)
+	at brut.apktool.Main.main(Main.java:324)
+Caused by: brut.common.BrutException: Execution failed (exit code = 1): [/tmp/aapt2_90917575007076017161619706919244389330.tmp, compile, --dir, decoded/res, --legacy, -o, decoded/build/resources.zip]
+	at brut.util.OS.exec(OS.java:147)
+	at brut.androlib.res.AaptInvoker.invoke(AaptInvoker.java:88)
+	... 5 more

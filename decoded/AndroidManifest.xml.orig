@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.dualboot.apps.beach">
+    <uses-feature android:name="android.software.live_wallpaper" android:required="true"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/DualBoot.Theme">
+        <service android:label="@string/service_name" android:name=".BeachService" android:permission="android.permission.BIND_WALLPAPER" android:process=":wpsvc">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <activity android:label="@string/activity_name" android:name=".Main$Activity" android:theme="@style/DualBoot.Theme.DialogWhenLarge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/settings_name" android:launchMode="singleTask" android:name=".Main$Settings">
+            <intent-filter>
+                <action android:name="com.dualboot.intent.action.SETTINGS"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.PREFERENCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/UpsellTitle" android:name=".Main$License" android:theme="@style/DualBoot.Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.dualboot.intent.action.LICENSE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:icon="@drawable/icon" android:label="@string/activity_name" android:name=".Main$Dream">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.service.dream" android:resource="@xml/dream"/>
+        </service>
+        <activity android:label="@string/offer_detail_title" android:name="com.dualboot.activity.offer.OfferList" android:theme="@style/DualBoot.Theme.DialogWhenLarge"/>
+        <activity android:label="@string/offer_detail_title" android:name="com.dualboot.activity.offer.OfferDetail" android:theme="@style/DualBoot.Theme.DialogWhenLarge"/>
+        <activity android:label="@string/activity_name" android:name="com.dualboot.activity.misc.WhatsNew" android:theme="@style/DualBoot.Theme.DialogWhenLarge"/>
+        <activity android:label="@string/settings_name" android:name="com.dualboot.util.DreamSettings">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

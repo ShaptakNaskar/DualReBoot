@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/offer_details_scrollview" android:layout_marginTop="@dimen/spacing.small" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/DualBoot.Style.Layout.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/DualBoot.Style.Layout.Vertical">
+        <include layout="@layout/offer_details_content" />
+        <RelativeLayout android:id="@id/offer_details_footer" android:layout_marginTop="@dimen/spacing.small" style="@style/DualBoot.Style.Layout">
+            <include layout="@layout/offer_details_footer" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

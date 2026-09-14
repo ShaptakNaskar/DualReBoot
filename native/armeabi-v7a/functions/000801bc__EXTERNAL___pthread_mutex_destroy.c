@@ -1,0 +1,12 @@
+/* 000801bc | <EXTERNAL>::pthread_mutex_destroy */
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+
+int pthread_mutex_destroy(pthread_mutex_t *__mutex)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

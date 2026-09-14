@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|top" style="@style/DualBoot.Style.Layout.Vertical">
+        <TextView android:text="@string/Intro_PickerDirections_JellyBean" style="@style/DualBoot.Style.Text" />
+        <TextView android:text="@string/Intro_SettingsDirections" style="@style/DualBoot.Style.Text" />
+    </LinearLayout>
+</merge>

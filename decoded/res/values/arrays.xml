@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dream_clock_position_list">
+        <item>Top</item>
+        <item>Center</item>
+        <item>Bottom</item>
+    </string-array>
+    <string-array name="dream_clock_position_values">
+        <item>top</item>
+        <item>center</item>
+        <item>bottom</item>
+    </string-array>
+    <string-array name="dream_clock_size_list">
+        <item>Large</item>
+        <item>Normal</item>
+        <item>Small</item>
+    </string-array>
+    <string-array name="dream_clock_size_values">
+        <item>large</item>
+        <item>medium</item>
+        <item>small</item>
+    </string-array>
+    <string-array name="whatsnew_title_array">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <array name="whatsnew_content_array">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@layout/whatsnew_independence</item>
+    </array>
+</resources>

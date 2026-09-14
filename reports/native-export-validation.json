@@ -1,0 +1,17 @@
+{
+  "armeabi-v7a": {
+    "exported_function_entries": 1478,
+    "jni_function_entries": 19,
+    "failed": []
+  },
+  "armeabi": {
+    "exported_function_entries": 1501,
+    "jni_function_entries": 19,
+    "failed": []
+  },
+  "x86": {
+    "exported_function_entries": 1527,
+    "jni_function_entries": 19,
+    "failed": []
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/tv_na"
+        android:layout_marginBottom="@dimen/spacing.small"
+        android:text="@string/ItemNotAvailableMulti"
+        style="@style/DualBoot.Style.Text.Primary"/>
+    <ListView
+        android:scrollbarStyle="outsideInset"
+        android:id="@+id/lv_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing.small"
+        android:layout_marginRight="@dimen/spacing.small"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+</LinearLayout>

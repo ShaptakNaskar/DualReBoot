@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DualBoot" />
+    <style name="DualBoot.Style" parent="@style/DualBoot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DualBoot.Style.Text" parent="@style/DualBoot.Style">
+        <item name="android:padding">@dimen/value_margin_half</item>
+    </style>
+    <style name="DualBoot.Style.Text.Small" parent="@style/DualBoot.Style.Text">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+    <style name="DualBoot.Style.Text.Header_Base" parent="@style/DualBoot.Style.Text">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="DualBoot.Style.Text.Header" parent="@style/DualBoot.Style.Text.Header_Base" />
+    <style name="DualBoot.Style.Text.Primary" parent="@style/DualBoot.Style.Text">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="DualBoot.Style.Text.Header.Img" parent="@style/DualBoot.Style.Text.Header">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100.0dp</item>
+        <item name="img_bitmap_crop">@dimen/spacing</item>
+        <item name="img_corner_radius">@dimen/spacing</item>
+        <item name="img_gradient_color">@android:color/secondary_text_light</item>
+    </style>
+    <style name="DualBoot.Style.Text.Small.Img" parent="@style/DualBoot.Style.Text.Small">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:paddingLeft">@dimen/spacing</item>
+        <item name="android:paddingTop">@dimen/spacing.large</item>
+        <item name="android:paddingRight">@dimen/spacing</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="img_bitmap_round_bottom">true</item>
+        <item name="img_corner_radius">@dimen/spacing</item>
+        <item name="img_gradient_color">#ff000000</item>
+        <item name="img_gradient_color_end">#4c000000</item>
+        <item name="img_state_toggle_default">false</item>
+        <item name="img_state_toggle_click">true</item>
+    </style>
+    <style name="DualBoot.Style.Button" parent="@android:attr/buttonStyleSmall">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DualBoot.Style.Divider" parent="@style/DualBoot.Style">
+        <item name="android:background">?android:listDivider</item>
+        <item name="android:paddingTop">@dimen/value_margin_half</item>
+        <item name="android:paddingBottom">@dimen/value_margin_half</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.0dp</item>
+    </style>
+    <style name="DualBoot.Style.Layout" parent="@style/DualBoot.Style" />
+    <style name="DualBoot.Style.Layout.Vertical" parent="@style/DualBoot.Style.Layout">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="DualBoot.Style.Layout.Horizontal" parent="@style/DualBoot.Style.Layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="DualBoot.Style.Layout.ScrollView_Base" parent="@style/DualBoot.Style.Layout">
+        <item name="android:fadingEdgeLength">32.0dp</item>
+    </style>
+    <style name="DualBoot.Style.Layout.ScrollView" parent="@style/DualBoot.Style.Layout.ScrollView_Base" />
+    <style name="DualBoot.Style.Layout.Horizontal.Linear_Row" parent="@style/DualBoot.Style.Layout.Horizontal">
+        <item name="android:paddingBottom">@dimen/value_margin</item>
+        <item name="android:weightSum">1.0</item>
+    </style>
+    <style name="DualBoot.Style.Layout.Linear_Item_Text" parent="@style/DualBoot.Style.Layout">
+        <item name="android:maxWidth">@dimen/value_dims_list_text_width_max</item>
+        <item name="android:maxHeight">@dimen/value_dims_list_text_height_max</item>
+        <item name="android:layout_weight">0.67</item>
+    </style>
+    <style name="DualBoot.Style.Layout.Linear_Item_Text.Left" parent="@style/DualBoot.Style.Layout.Linear_Item_Text">
+        <item name="android:paddingRight">@dimen/value_margin</item>
+    </style>
+    <style name="DualBoot.Style.Layout.Linear_Item_Text.Right" parent="@style/DualBoot.Style.Layout.Linear_Item_Text">
+        <item name="android:paddingLeft">@dimen/value_margin</item>
+    </style>
+    <style name="DualBoot.Style.Layout.Linear_Item_Image" parent="@style/DualBoot.Style.Layout">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">@dimen/value_dims_list_image_width_max</item>
+        <item name="android:maxHeight">@dimen/value_dims_list_image_height_max</item>
+        <item name="android:layout_weight">0.33</item>
+    </style>
+    <style name="UpsellText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6.0dp</item>
+    </style>
+    <style name="UpsellTextSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?android:textColorTertiary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2.0dp</item>
+    </style>
+    <style name="UpsellTextTiny" parent="@style/UpsellTextSmall">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:paddingBottom">0.0dp</item>
+    </style>
+    <style name="UpsellTable">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:stretchColumns">*</item>
+    </style>
+    <style name="UpsellTextItem" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingRight">5.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2.0dp</item>
+    </style>
+    <style name="UpsellBullet">
+        <item name="android:layout_gravity">right|center</item>
+        <item name="android:padding">4.0dp</item>
+        <item name="android:layout_width">12.0dp</item>
+        <item name="android:layout_height">12.0dp</item>
+        <item name="android:src">@drawable/bullet</item>
+    </style>
+    <style name="UpsellDivider">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.0dp</item>
+        <item name="android:layout_margin">4.0dp</item>
+        <item name="android:src">@drawable/bullet</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="UpsellImage">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">5.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0.0dp</item>
+    </style>
+    <style name="UpsellScrollStyle">
+        <item name="android:scrollbarStyle">outsideInset</item>
+        <item name="android:padding">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:scrollbarFadeDuration">1000</item>
+    </style>
+    <style name="DualBoot.Theme" parent="@android:style/Theme">
+        <item name="clickableItemBackground">@android:drawable/list_selector_background</item>
+    </style>
+    <style name="DualBoot.Theme.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="clickableItemBackground">@android:drawable/list_selector_background</item>
+    </style>
+    <style name="DualBoot.Theme.DialogWhenLarge" parent="@style/DualBoot.Theme" />
+    <style name="DualBoot.Theme.Invisible" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="clickableItemBackground">@android:drawable/list_selector_background</item>
+    </style>
+</resources>

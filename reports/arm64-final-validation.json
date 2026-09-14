@@ -1,0 +1,20 @@
+{
+  "apk_sha256": "5ac05925155edc6747b4164bee72fb2d11fff49bce5f8daf615a5d229b650add",
+  "apk_bytes": 7252460,
+  "installed_native_abis": [
+    "arm64-v8a"
+  ],
+  "elf_machine": "AArch64",
+  "elf_class": 64,
+  "load_segment_alignments": [
+    16384,
+    16384,
+    16384
+  ],
+  "original_assets_verified": 102,
+  "tested_platform": "Android 16 x86_64 emulator with ARM64 native bridge",
+  "physical_phone_tested": false,
+  "device_abi32": "",
+  "page_size_tested": "4096",
+  "selected_abi": "arm64-v8a"
+}

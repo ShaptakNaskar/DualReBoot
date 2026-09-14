@@ -1,0 +1,103 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          446840 (bytes into file)
+  Flags:                             0x5000000, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         7
+  Size of section headers:           40 (bytes)
+  Number of section headers:         23
+  Section header string table index: 22
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .dynsym           DYNSYM          00000114 000114 0070e0 10   A  2   1  4
+  [ 2] .dynstr           STRTAB          000071f4 0071f4 01125e 00   A  0   0  1
+  [ 3] .hash             HASH            00018454 018454 002c5c 04   A  1   0  4
+  [ 4] .rel.dyn          REL             0001b0b0 01b0b0 002dd0 08   A  1   0  4
+  [ 5] .rel.plt          REL             0001de80 01de80 0003e8 08   A  1   6  4
+  [ 6] .plt              PROGBITS        0001e268 01e268 0005f0 00  AX  0   0  4
+  [ 7] .text             PROGBITS        0001e858 01e858 047dd0 00  AX  0   0  8
+  [ 8] .ARM.extab        PROGBITS        00066628 066628 0007ac 00   A  0   0  4
+  [ 9] .ARM.exidx        ARM_EXIDX       00066dd4 066dd4 002080 08  AL  7   0  4
+  [10] .rodata           PROGBITS        00068e58 068e58 001d28 00   A  0   0  8
+  [11] .data.rel.ro.local PROGBITS        0006c2a0 06b2a0 00004c 00  WA  0   0  4
+  [12] .fini_array       FINI_ARRAY      0006c2ec 06b2ec 000008 00  WA  0   0  4
+  [13] .data.rel.ro      PROGBITS        0006c2f8 06b2f8 0017fc 00  WA  0   0  8
+  [14] .init_array       INIT_ARRAY      0006daf4 06caf4 00001c 00  WA  0   0  4
+  [15] .dynamic          DYNAMIC         0006db10 06cb10 000110 08  WA  2   0  4
+  [16] .got              PROGBITS        0006dc24 06cc24 0003dc 00  WA  0   0  4
+  [17] .data             PROGBITS        0006e000 06d000 000014 00  WA  0   0  4
+  [18] .bss              NOBITS          0006e018 06d014 001884 00  WA  0   0  8
+  [19] .comment          PROGBITS        00000000 06d014 000035 01  MS  0   0  1
+  [20] .note.gnu.gold-version NOTE            00000000 06d04c 00001c 00      0   0  4
+  [21] .ARM.attributes   ARM_ATTRIBUTES  00000000 06d068 000036 00      0   0  1
+  [22] .shstrtab         STRTAB          00000000 06d09e 0000d8 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  PHDR           0x000034 0x00000034 0x00000034 0x000e0 0x000e0 R   0x4
+  LOAD           0x000000 0x00000000 0x00000000 0x6ab80 0x6ab80 R E 0x1000
+  LOAD           0x06b2a0 0x0006c2a0 0x0006c2a0 0x01d74 0x035fc RW  0x1000
+  DYNAMIC        0x06cb10 0x0006db10 0x0006db10 0x00110 0x00110 RW  0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0
+  ARM_EXIDX      0x066dd4 0x00066dd4 0x00066dd4 0x02080 0x02080 R   0x4
+  GNU_RELRO      0x06b2a0 0x0006c2a0 0x0006c2a0 0x01d60 0x01d60 RW  0x8
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .dynsym .dynstr .hash .rel.dyn .rel.plt .plt .text .ARM.extab .ARM.exidx .rodata 
+   02     .data.rel.ro.local .fini_array .data.rel.ro .init_array .dynamic .got .data .bss 
+   03     .dynamic 
+   04     
+   05     .ARM.exidx 
+   06     .data.rel.ro.local .fini_array .data.rel.ro .init_array .dynamic .got 
+
+Dynamic section at offset 0x6cb10 contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x6de00
+ 0x00000002 (PLTRELSZ)                   1000 (bytes)
+ 0x00000017 (JMPREL)                     0x1de80
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x1b0b0
+ 0x00000012 (RELSZ)                      11728 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   1455
+ 0x00000006 (SYMTAB)                     0x114
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x71f4
+ 0x0000000a (STRSZ)                      70238 (bytes)
+ 0x00000004 (HASH)                       0x18454
+ 0x00000001 (NEEDED)                     Shared library: [libGLESv1_CM.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libandroid.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x0000000e (SONAME)                     Library soname: [libdbgengine.so]
+ 0x0000001a (FINI_ARRAY)                 0x6c2ec
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x00000019 (INIT_ARRAY)                 0x6daf4
+ 0x0000001b (INIT_ARRAYSZ)               28 (bytes)
+ 0x00000010 (SYMBOLIC)                   0x0
+ 0x0000001e (FLAGS)                      SYMBOLIC BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x00000000 (NULL)                       0x0

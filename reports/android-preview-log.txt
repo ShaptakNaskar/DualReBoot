@@ -1,0 +1,502 @@
+--------- beginning of main
+09-14 03:47:40.421   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:40.421   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:40.421   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:40.421   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:40.421   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:40.421   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:40.422   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:40.422   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:40.422   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:40.422   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:41.980  4260  4284 I BeachArm64: Frame 989100: 6.0 ms, guest heap 1043840
+09-14 03:47:42.418   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:47:42.418   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:47:42.418   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:47:42.418   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:47:43.424   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:43.424   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:43.424   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:43.462   473   523 I netd    : tetherGetStats() -> {[]} <0.33ms>
+09-14 03:47:44.699  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-14 03:47:44.705  1559  1967 I bbax    : (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+[redacted device/network identity log line]
+09-14 03:47:46.426   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:46.426   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:46.426   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:46.979  4260  4284 I BeachArm64: Frame 989400: 4.9 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:47:49.430   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:49.430   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:49.430   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:50.354   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:47:50.354   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:47:50.354   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:47:50.354   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+09-14 03:47:51.979  4260  4284 I BeachArm64: Frame 989700: 5.1 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:47:52.434   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:52.434   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:52.434   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:54.699  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+[redacted device/network identity log line]
+09-14 03:47:55.438   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:55.438   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:55.438   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:56.979  4260  4284 I BeachArm64: Frame 990000: 5.3 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:47:58.441   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:47:58.441   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:47:58.441   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:47:58.550   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:47:58.550   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:47:58.550   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:47:58.550   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:48:01.445   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:01.445   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:01.445   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:01.445   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:01.445   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:01.445   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:01.446   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:01.446   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:01.446   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:01.446   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:01.980  4260  4284 I BeachArm64: Frame 990300: 5.6 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:04.449   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:04.449   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:04.449   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:04.450   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:04.450   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:04.699  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-14 03:48:06.482   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:06.482   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:06.482   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:06.482   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+09-14 03:48:06.980  4260  4284 I BeachArm64: Frame 990600: 6.0 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:07.450   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:07.450   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:07.450   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:10.454   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:10.454   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:10.454   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:12.212  4260  4284 I BeachArm64: Frame 990900: 4.7 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:13.457   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:13.457   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:13.457   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:14.418   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:14.418   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:14.418   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:14.418   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+09-14 03:48:14.699  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+[redacted device/network identity log line]
+09-14 03:48:16.458   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:16.458   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:16.458   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:17.211  4260  4284 I BeachArm64: Frame 991200: 4.4 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:19.459   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:19.459   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:19.459   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:22.212  4260  4284 I BeachArm64: Frame 991500: 5.3 ms, guest heap 1043840
+09-14 03:48:22.354   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:22.354   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:22.354   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:22.354   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:48:22.462   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:22.462   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:22.462   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:24.700  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+[redacted device/network identity log line]
+09-14 03:48:25.466   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:25.466   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:25.466   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:27.213  4260  4284 I BeachArm64: Frame 991800: 4.6 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:28.470   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:28.470   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:28.470   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:30.550   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:30.550   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:30.550   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:30.550   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:48:31.474   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:31.474   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:31.474   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:32.212  4260  4284 I BeachArm64: Frame 992100: 4.5 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:34.478   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:34.478   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:34.478   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:34.700  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+--------- beginning of kernel
+09-14 03:48:35.954     0     0 W healthd : battery l=100 v=5000 t=25.0 h=2 st=2 c=900000 fc=3000000 cc=10 chg=a
+09-14 03:48:37.212  4260  4284 I BeachArm64: Frame 992400: 4.8 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:37.482   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:37.482   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:37.482   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:38.482   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:38.482   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:38.482   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:38.482   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:48:40.486   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:40.486   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:40.486   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:42.212  4260  4284 I BeachArm64: Frame 992700: 4.9 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:43.490   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:43.490   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:43.490   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:44.700  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-14 03:48:44.704  1559  1967 I bbax    : (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+09-14 03:48:46.418   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:46.418   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:46.418   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:46.418   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+[redacted device/network identity log line]
+09-14 03:48:46.494   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:46.494   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:46.495   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:47.212  4260  4284 I BeachArm64: Frame 993000: 4.9 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:49.498   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:49.498   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:49.498   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:52.212  4260  4284 I BeachArm64: Frame 993300: 4.5 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:52.502   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:52.502   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:52.502   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:54.354   942   942 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+09-14 03:48:54.354   942   942 D wpa_supplicant: nl80211: Beacon loss event
+09-14 03:48:54.354   942   942 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+09-14 03:48:54.354   942   942 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+09-14 03:48:54.700  1086  1366 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+[redacted device/network identity log line]
+09-14 03:48:55.506   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:55.506   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:55.506   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+09-14 03:48:57.212  4260  4284 I BeachArm64: Frame 993600: 4.5 ms, guest heap 1043840
+[redacted device/network identity log line]
+09-14 03:48:58.507   694   854 D WifiDataStall: tx tput in kbps: 11000
+09-14 03:48:58.507   694   854 D WifiDataStall: rx tput in kbps: 11000
+[redacted device/network identity log line]
+09-14 03:48:58.507   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:58.507   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:58.507   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:58.507   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:58.508   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:58.508   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+09-14 03:48:58.508   694   854 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+09-14 03:48:58.508   694   854 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]
+[redacted device/network identity log line]

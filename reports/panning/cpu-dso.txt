@@ -1,0 +1,39 @@
+Cmdline: /system/bin/simpleperf record --app com.dualboot.apps.beach --add-meta-info app_type=debuggable --in-app --tracepoint-events /data/local/tmp/tracepoint_events --out-fd 3 --stop-signal-fd 4 -p 10208 -e cpu-clock:u -f 500 --call-graph fp --duration 12
+Arch: arm64
+Event: cpu-clock:u (type 1, config 0)
+Samples: 4693
+Event count: 9386000000
+
+Overhead  Shared Object
+54.76%    /data/app/~~mi6Kg0cckwuyfGnYO0q7qg==/com.dualboot.apps.beach-F7hstb4SMTRRQFe30lfOUg==/lib/arm64/libdbgengine.so
+15.21%    /apex/com.android.runtime/bin/linker64
+10.74%    unknown
+8.57%     /system/lib64/libc.so
+6.18%     /vendor/lib64/egl/libGLESv2_adreno.so
+0.68%     /system/lib64/libgui.so
+0.62%     /vendor/lib64/egl/libEGL_adreno.so
+0.43%     /system/lib64/libEGL.so
+0.38%     /system/lib64/libbinder.so
+0.38%     /system/lib64/libz.so
+0.32%     /apex/com.android.art/lib64/libart.so
+0.26%     [vdso]
+0.19%     /system/lib64/libutils.so
+0.17%     /system/lib64/libGLESv2.so
+0.17%     [JIT app cache]
+0.15%     /vendor/lib64/libgrallocutils.so
+0.13%     /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so
+0.11%     /vendor/lib64/egl/eglSubDriverAndroid.so
+0.09%     /system/lib64/libc++.so
+0.09%     /vendor/lib64/libgsl.so
+0.06%     /apex/com.android.runtime/lib64/bionic/libdl.so
+0.06%     /vendor/lib64/libadreno_utils.so
+0.04%     /apex/com.android.vndk.v32/lib64/libcutils.so
+0.04%     /vendor/lib64/libqdMetaData.so
+0.02%     /apex/com.android.art/lib64/libsigchain.so
+0.02%     /apex/com.android.vndk.v32/lib64/libc++.so
+0.02%     /apex/com.android.vndk.v32/lib64/libgralloctypes.so
+0.02%     /system/lib64/android.hardware.graphics.mapper@4.0.so
+0.02%     /system/lib64/libcutils.so
+0.02%     /system/lib64/libhidlbase.so
+0.02%     /system/lib64/libui.so
+0.02%     /vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so

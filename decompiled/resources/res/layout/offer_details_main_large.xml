@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/DualBoot.Style.Layout.Vertical">
+    <RelativeLayout
+        android:id="@+id/offer_details_footer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/DualBoot.Style.Layout">
+        <include layout="@layout/offer_details_footer"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/offer_details_scrollview"
+        android:layout_marginTop="@dimen/spacing.small"
+        android:layout_above="@+id/offer_details_footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        style="@style/DualBoot.Style.Layout">
+        <include layout="@layout/offer_details_content"/>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+/* 00045848 | STG::GETimeOfDayAuto::SolarData::~SolarData */
+
+/* STG::GETimeOfDayAuto::SolarData::~SolarData() */
+
+SolarData * __thiscall STG::GETimeOfDayAuto::SolarData::~SolarData(SolarData *this)
+
+{
+  return this;
+}
+

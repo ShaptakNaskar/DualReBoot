@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/DualBoot.Style.Layout">
+        <ImageView
+            android:id="@+id/shared_moreapps_img"
+            android:clickable="true"
+            android:src="@drawable/selector_moreapps"
+            android:onClick="onMoreApps"
+            style="@style/DualBoot.Style"/>
+        <TextView
+            android:gravity="top|center_horizontal"
+            android:id="@+id/shared_moreapps_text"
+            android:layout_marginLeft="@dimen/spacing.large"
+            android:layout_marginRight="@dimen/spacing.large"
+            android:layout_marginBottom="@dimen/spacing.large"
+            android:text="@string/MoreApps"
+            android:layout_below="@+id/shared_moreapps_img"
+            android:layout_alignLeft="@+id/shared_moreapps_img"
+            android:layout_alignRight="@+id/shared_moreapps_img"
+            android:alpha="0.75"
+            style="@style/DualBoot.Style.Text.Small"/>
+    </RelativeLayout>
+</merge>

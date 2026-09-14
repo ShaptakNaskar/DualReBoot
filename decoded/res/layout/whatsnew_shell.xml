@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/DualBoot.Style.Layout.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/whatsnew_footer" android:paddingLeft="@dimen/value_margin_half" android:paddingRight="@dimen/value_margin_half" android:paddingBottom="@dimen/value_margin_half" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/DualBoot.Style.Layout">
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/whatsnew_shownexttime" android:checked="true" android:text="@string/WhatsNew_ShowNextTime" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/DualBoot.Style.Layout" />
+        <Button android:id="@id/whatsnew_btn_continue" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_below="@id/whatsnew_shownexttime" android:layout_alignLeft="@id/whatsnew_shownexttime" android:layout_alignRight="@id/whatsnew_shownexttime" android:onClick="onClick_Continue" style="@style/DualBoot.Style.Button" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/whatsnew_scrollview" android:layout_above="@id/whatsnew_footer" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/DualBoot.Style.Layout.ScrollView">
+        <FrameLayout android:layout_gravity="center|top" android:id="@id/whatsnew_content" style="@style/DualBoot.Style.Layout" />
+    </ScrollView>
+</RelativeLayout>

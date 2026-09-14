@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/DualBoot.Style.Layout.Vertical">
+        <TextView
+            android:id="@+id/intro_picker_directions"
+            android:text="@string/Intro_PickerDirections"
+            style="@style/DualBoot.Style.Text"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/picker"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:onClick="onChooseWallpaper"
+            style="@style/DualBoot.Style"/>
+        <TextView
+            android:text="@string/Intro_SettingsDirections"
+            style="@style/DualBoot.Style.Text"/>
+    </LinearLayout>
+</merge>

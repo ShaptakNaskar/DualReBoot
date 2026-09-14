@@ -1,0 +1,195 @@
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:55 (include)
+  /usr/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <workspace>/build/port-arm64/CMakeFiles/4.4.3/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The C compiler identification is Clang 18.0.2
+-- The CXX compiler identification is Clang 18.0.2
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/flags.cmake:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/Platform/Android-Clang.cmake:23 (include)
+  /usr/share/cmake/Modules/Platform/Android-Clang-C.cmake:1 (include)
+  /usr/share/cmake/Modules/CMakeCInformation.cmake:48 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Detecting C compiler ABI info
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <workspace>/build/port-arm64/CMakeFiles/4.4.3/CMakeSystem.cmake:6 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-to8qU7/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:55 (include)
+  <workspace>/build/port-arm64/CMakeFiles/4.4.3/CMakeSystem.cmake:6 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-to8qU7/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/flags.cmake:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/Platform/Android-Clang.cmake:23 (include)
+  /usr/share/cmake/Modules/Platform/Android-Clang-C.cmake:1 (include)
+  /usr/share/cmake/Modules/CMakeCInformation.cmake:48 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-to8qU7/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: <android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <workspace>/build/port-arm64/CMakeFiles/4.4.3/CMakeSystem.cmake:6 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-2FbIru/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  <android-sdk>/ndk/27.1.12297006/build/cmake/android.toolchain.cmake:55 (include)
+  <workspace>/build/port-arm64/CMakeFiles/4.4.3/CMakeSystem.cmake:6 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-2FbIru/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at <android-sdk>/ndk/27.1.12297006/build/cmake/flags.cmake:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/Platform/Android-Clang.cmake:23 (include)
+  /usr/share/cmake/Modules/Platform/Android-Clang-CXX.cmake:1 (include)
+  /usr/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)
+  <workspace>/build/port-arm64/CMakeFiles/CMakeScratch/TryCompile-2FbIru/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: <android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Install prefix    /usr/local
+binary directory  /usr/local/bin
+library directory /usr/local/lib
+libexec directory /usr/local/libexec
+include directory /usr/local/include
+config directory  /usr/local/etc
+local state directory   /usr/local/var
+ELF interp prefix /usr/gnemul/qemu-%M
+Build directory   <workspace>/build/port-arm64
+Source path       <workspace>/tools/unicorn/qemu
+GIT binary        git
+GIT submodules    
+C compiler        <android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+Host C compiler   cc
+C++ compiler      <android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+Objective-C compiler clang
+ARFLAGS           rv
+CFLAGS            -g 
+QEMU_CFLAGS       -fPIE -DPIE  -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -DUNICORN_HAS_ARM -fPIC --target=aarch64-none-linux-android24 --sysroot=<android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Wno-string-plus-int -Wno-typedef-redefinition -Wno-initializer-overrides -Wexpansion-to-defined -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-definition -Wtype-limits -fstack-protector-strong
+QEMU_LDFLAGS      -Wl,--warn-common -Wl,-z,relro -Wl,-z,now -pie  -DUNICORN_HAS_ARM -fPIC --target=aarch64-none-linux-android24 --sysroot=<android-sdk>/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fstack-protector-strong
+make              make
+install           install
+host CPU          aarch64
+host big endian   no
+target list       arm-softmmu   
+strip binaries    yes
+static build      no
+mingw32 support   no
+PIE               yes
+TCG support       yes
+malloc trim support no
+membarrier        no
+madvise           yes
+posix_madvise     yes
+posix_memalign    yes
+debug stack usage no
+tcmalloc support  no
+jemalloc support  no
+avx2 optimization 
+avx512f optimization no
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: <workspace>/build/port-arm64

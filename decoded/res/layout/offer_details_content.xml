@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/DualBoot.Style.Layout">
+        <FrameLayout android:id="@id/thumb_frame" android:layout_height="100.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/DualBoot.Style.Layout">
+            <include layout="@layout/offer_merge_thumb" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/offer_details" android:paddingTop="@dimen/spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing.small" android:layout_marginTop="@dimen/spacing" android:layout_marginRight="@dimen/spacing.small" android:layout_below="@id/thumb_frame" android:layout_alignLeft="@id/thumb_frame" android:layout_alignRight="@id/thumb_frame">
+            <TextView android:textSize="16.0sp" android:id="@id/tv_offer_desc" android:layout_marginBottom="@dimen/spacing.small" android:text="@string/OfferDesc" style="@style/DualBoot.Style.Text.Primary" />
+            <TextView android:gravity="center" android:id="@id/tv_offer_price" android:visibility="gone" android:text="@string/OfferPrice" style="@style/DualBoot.Style.Text" />
+            <TextView android:id="@id/tv_na" android:paddingBottom="@dimen/spacing" android:text="@string/ItemNotAvailable" style="@style/DualBoot.Style.Text.Small" />
+            <LinearLayout android:orientation="vertical" android:id="@id/help_intent_frame" android:visibility="gone" android:animateLayoutChanges="true" android:alpha="0.75" style="@style/DualBoot.Style.Layout">
+                <com.dualboot.widget.TextViewLink android:id="@id/help_intent_more_resources" android:paddingBottom="@dimen/spacing" android:layout_width="match_parent" android:text="@string/offer_error_intents" style="@style/DualBoot.Style.Text.Small" />
+                <LinearLayout android:orientation="vertical" android:id="@id/help_intent_buttons" android:visibility="gone" android:animateLayoutChanges="true" style="@style/DualBoot.Style.Layout">
+                    <Button android:id="@id/intent_settings_network" android:visibility="visible" android:layout_width="match_parent" android:layout_marginLeft="@dimen/spacing.large" android:text="@string/offer_help_txt_network_settings" style="@style/DualBoot.Style.Button" />
+                    <Button android:id="@id/intent_play_services" android:layout_width="match_parent" android:layout_marginLeft="@dimen/spacing.large" android:text="@string/offer_help_txt_google_play_services" style="@style/DualBoot.Style.Button" />
+                    <Button android:id="@id/intent_help_url" android:layout_width="match_parent" android:layout_marginLeft="@dimen/spacing.large" android:text="@string/offer_help_txt_dualboot_support" style="@style/DualBoot.Style.Button" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

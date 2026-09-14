@@ -1,0 +1,15 @@
+name: Source and build-tool checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source-checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Reject binary payloads and signing material
+        run: python3 scripts/check_source_only.py
+      - name: Test input validation and compatibility patches
+        run: python3 -m unittest discover -s tests -v
+      - name: Check Python syntax
+        run: python3 -m py_compile scripts/*.py tests/*.py port/embed.py

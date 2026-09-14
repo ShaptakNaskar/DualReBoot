@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DualBoot.Style.Text.Header" parent="@style/DualBoot.Style.Text.Header_Base">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="DualBoot.Style.Layout.ScrollView" parent="@style/DualBoot.Style.Layout.ScrollView_Base">
+        <item name="android:requiresFadingEdge">0x2000</item>
+    </style>
+</resources>

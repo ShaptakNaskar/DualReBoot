@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.smali linguist-generated=true
+/decompiled/** linguist-generated=true
+/native/armeabi/** linguist-generated=true
+/native/armeabi-v7a/** linguist-generated=true
+/native/x86/** linguist-generated=true
+/decoded/** linguist-generated=true
+/reports/** linguist-documentation=true
+/research/** linguist-documentation=true

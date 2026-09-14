@@ -1,0 +1,1809 @@
+
+Symbol table '.dynsym' contains 1806 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit
+     3: 0001e87c    64 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::BlendVector4f_HW(float*, float const*, float const*, float, unsigned long)
+     4: 00062c40     8 FUNC    GLOBAL DEFAULT    7 __aeabi_unwind_cpp_pr0
+     5: 0001e8bc   376 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::Skin3Vector4f_HW(float*, float const*, float const*, float const*, float const*, float const*, unsigned long)
+     6: 00062c38     8 FUNC    WEAK   DEFAULT    7 __aeabi_unwind_cpp_pr1
+     7: 0001ea34    92 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::~UStringBase()
+     8: 0005f7cd     8 FUNC    WEAK   DEFAULT    7 operator delete(void*)
+     9: 0006109d     4 FUNC    GLOBAL DEFAULT    7 std::__node_alloc::_M_deallocate(void*, unsigned int)
+    10: 0006c2f8    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::UStringBase<char, int>
+    11: 0001ea90   172 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Print(char const*, ...)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND vsnprintf
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail
+    14: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard
+    15: 0001eb3c   108 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::~UStringBase()
+    16: 0001eba8   112 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::~FFileBase()
+    17: 0006c318    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileBase
+    18: 0001ec18    28 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::~FFileBase()
+    19: 0001eba8   112 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::~FFileBase()
+    20: 0001ec34    92 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::FFileBase()
+    21: 0001ec90    68 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Open(char const*, STG::FFileBase::EAccess)
+    22: 0001ecd4    56 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Open(unsigned char const*, unsigned long)
+    23: 0001ed0c    20 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Close()
+    24: 0001ed20    80 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::GetFileSize() const
+    25: 0001ed70   120 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Read(unsigned char*, unsigned long) const
+    26: 0001ede8   124 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::ReadAll(unsigned char*&, unsigned long&) const
+    27: 00060035    20 FUNC    WEAK   DEFAULT    7 operator new[](unsigned int)
+    28: 0005f7d5     4 FUNC    WEAK   DEFAULT    7 operator delete[](void*)
+    29: 0001ee64    92 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Peek(unsigned char*, unsigned long) const
+    30: 0001eec0    56 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::ReadDirect(unsigned char const*&, unsigned long) const
+    31: 0001eef8   176 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::ReadSkip(unsigned long) const
+    32: 0001efa8   108 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Write(unsigned char const*, unsigned long)
+    33: 0001f014     8 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::GetNumBytesRead() const
+    34: 0001f01c     8 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::GetNumBytesWritten() const
+    35: 0001f024    20 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::Flush()
+    36: 00068e70    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileBase
+    37: 0006c310     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileBase
+    38: 0006c308     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UStringBase<char, int>
+    39: 0001ea34    92 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::~UStringBase()
+    40: 00068e58    24 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UStringBase<char, int>
+    41: 0001ec34    92 FUNC    GLOBAL DEFAULT    7 STG::FFileBase::FFileBase()
+    42: 0001f038     8 FUNC    WEAK   DEFAULT    7 STG::FFileDisk::GetMediaType() const
+    43: 0001f040     8 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FOpenMemory(unsigned char const*, unsigned long)
+    44: 0001f048    16 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FGetIsOpen() const
+    45: 0001f058     8 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FReadDirect(unsigned char const*&, unsigned long) const
+    46: 0001f060     8 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FFlush()
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND fflush
+    48: 0001f068     8 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FPrintf(char const*, char const*)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf
+    50: 0001f070    24 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FWrite(unsigned char const*, unsigned long, unsigned long)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite
+    52: 0001f088    24 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FRead(unsigned char*, unsigned long, unsigned long) const
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND fread
+    54: 0001f0a0     8 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FTell() const
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND ftell
+    56: 0001f0a8    24 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FSeek(long, int) const
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND fseek
+    58: 0001f0c0    40 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FClose()
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND fclose
+    60: 0001f0e8    36 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::_FOpenFile(char const*, char const*)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND fopen
+    62: 0001f10c    80 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::~FFileDisk()
+    63: 0006c370    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileDisk
+    64: 0001f15c    28 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::~FFileDisk()
+    65: 0001f10c    80 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::~FFileDisk()
+    66: 0001f178    48 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::FFileDisk()
+    67: 0001f1a8    72 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::FFileDisk(char const*, STG::FFileBase::EAccess)
+    68: 0006961c    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileDisk
+    69: 0006c360    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileDisk
+    70: 0001f178    48 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::FFileDisk()
+    71: 0001f1a8    72 FUNC    GLOBAL DEFAULT    7 STG::FFileDisk::FFileDisk(char const*, STG::FFileBase::EAccess)
+    72: 0001f1f0     8 FUNC    WEAK   DEFAULT    7 STG::FFileMemory::GetMediaType() const
+    73: 0001f1f8     8 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FOpenFile(char const*, char const*)
+    74: 0001f200    44 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FOpenMemory(unsigned char const*, unsigned long)
+    75: 0001f22c    28 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FClose()
+    76: 0001f248    36 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FGetIsOpen() const
+    77: 0001f26c   100 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FSeek(long, int) const
+    78: 0001f2d0     8 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FTell() const
+    79: 0001f2d8    44 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FReadDirect(unsigned char const*&, unsigned long) const
+    80: 0001f304     8 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FWrite(unsigned char const*, unsigned long, unsigned long)
+    81: 0001f30c     4 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FPrintf(char const*, char const*)
+    82: 0001f310     4 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FFlush()
+    83: 0001f314    64 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::_FRead(unsigned char*, unsigned long, unsigned long) const
+    84: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy
+    85: 0001f354    80 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::~FFileMemory()
+    86: 0006c3c8    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileMemory
+    87: 0001f3a4    28 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::~FFileMemory()
+    88: 0001f354    80 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::~FFileMemory()
+    89: 0001f3c0    56 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::FFileMemory()
+    90: 0001f3f8    80 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::FFileMemory(unsigned char const*, unsigned long)
+    91: 00069630    20 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileMemory
+    92: 0006c3b8    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileMemory
+    93: 0001f3c0    56 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::FFileMemory()
+    94: 0001f3f8    80 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory::FFileMemory(unsigned char const*, unsigned long)
+    95: 0001f448    48 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::CloseFile(STG::FFileBase*&) const
+    96: 0001f478     8 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::CreateDir(STG::UStringBase<char, int> const&) const
+    97: 0001f480     8 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::CreateTemporaryFile(STG::UStringBase<char, int> const&) const
+    98: 0001f488   292 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::CopyFileAbsolute(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&) const
+    99: 0001f5ac   172 FUNC    WEAK   DEFAULT    7 STG::FFileManager::~FFileManager()
+   100: 0006c418    40 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileManager
+   101: 0001f658   188 FUNC    WEAK   DEFAULT    7 STG::FFileManager::~FFileManager()
+   102: 0001f714    44 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::HasValidBasePath() const
+   103: 0001f740    60 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::ClearBasePath()
+   104: 0001f77c   468 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetPathFlags(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&) const
+   105: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen
+   106: 0001f950    20 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetIsPathAbsolute(unsigned long) const
+   107: 0001f964    16 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetIsPathRelative(unsigned long) const
+   108: 0001f974   844 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::Trim()
+   109: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmove
+   110: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ctype_
+   111: 0001fcc0   932 FUNC    WEAK   DEFAULT    7 std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, char const*)
+   112: 0005ffc9    72 FUNC    WEAK   DEFAULT    7 operator new(unsigned int)
+   113: 00060c51    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_length_error(char const*)
+   114: 00061099     4 FUNC    GLOBAL DEFAULT    7 std::__node_alloc::_M_allocate(unsigned int&)
+   115: 00020064   524 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetBasePath() const
+   116: 00020270   216 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::OpenFile(STG::FFileHash const&, STG::FFileBase::EAccess) const
+   117: 00020348  1432 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::Find_FromEnd(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&) const
+   118: 00060bf1    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_out_of_range(char const*)
+   119: 000208e0   796 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::NormalizePath(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&) const
+   120: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _tolower_tab_
+   121: 00021140  2464 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetPathComponents(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&) const
+   122: 00021ae0   492 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetPathFlags(STG::UStringBase<char, int> const&) const
+   123: 00021ccc    28 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetIsPathRelative(STG::UStringBase<char, int> const&) const
+   124: 00021ce8    28 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetIsPathAbsolute(STG::UStringBase<char, int> const&) const
+   125: 00021d04  1732 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetPathComponents(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&) const
+   126: 000223c8  1452 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::GetPathComponents(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&, STG::UStringBase<char, int>&) const
+   127: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp
+   128: 00022fa4    76 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::BuildPath(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&) const
+   129: 00022ff0   252 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::OpenFilePath(STG::UStringBase<char, int> const&, STG::FFileBase::EAccess) const
+   130: 000230ec   916 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::AddBasePath(STG::UStringBase<char, int> const&)
+   131: 00023480  3264 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::MakeUniquePath(STG::UStringBase<char, int> const&, STG::UStringBase<char, int>&) const
+   132: 00000000     0 FUNC    GLOBAL DEFAULT  UND atol
+   133: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf
+   134: 00024140   840 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::BuildFileHash(STG::UStringBase<char, int> const&, STG::FFileHash&) const
+   135: 0004d908   264 FUNC    GLOBAL DEFAULT    7 STG::UStringBaseHash_Internal(unsigned char const*, unsigned int)
+   136: 00024488   244 FUNC    GLOBAL DEFAULT    7 STG::FFileManager::BuildFileHash(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::FFileHash&)
+   137: 00069644    21 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileManager
+   138: 0006c410     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileManager
+   139: 0001f5ac   172 FUNC    WEAK   DEFAULT    7 STG::FFileManager::~FFileManager()
+   140: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_write
+   141: 00024658   144 FUNC    GLOBAL DEFAULT    7 STG::FLog::Print(char const*, ...)
+   142: 000246e8    56 FUNC    GLOBAL DEFAULT    7 STG::FLog::~FLog()
+   143: 0006c450    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FLog
+   144: 00024720    28 FUNC    GLOBAL DEFAULT    7 STG::FLog::~FLog()
+   145: 000246e8    56 FUNC    GLOBAL DEFAULT    7 STG::FLog::~FLog()
+   146: 0002473c    60 FUNC    GLOBAL DEFAULT    7 STG::FLog::FLog(char const*)
+   147: 0006965c    12 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FLog
+   148: 0006c440    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FLog
+   149: 0002473c    60 FUNC    GLOBAL DEFAULT    7 STG::FLog::FLog(char const*)
+   150: 00024778   144 FUNC    GLOBAL DEFAULT    7 STG::FFileManager_Android::OpenFilePath(STG::UStringBase<char, int> const&, STG::FFileBase::EAccess) const
+   151: 00000000     0 FUNC    GLOBAL DEFAULT  UND AAssetManager_open
+   152: 00025038   112 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory_Android::FFileMemory_Android(AAsset*)
+   153: 00024808    56 FUNC    GLOBAL DEFAULT    7 STG::FFileManager_Android::CreateDir(STG::UStringBase<char, int> const&) const
+   154: 00000000     0 FUNC    GLOBAL DEFAULT  UND mkdir
+   155: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno
+   156: 00024840   172 FUNC    WEAK   DEFAULT    7 STG::FFileManager_Android::~FFileManager_Android()
+   157: 000248ec   188 FUNC    WEAK   DEFAULT    7 STG::FFileManager_Android::~FFileManager_Android()
+   158: 000249a8    36 FUNC    GLOBAL DEFAULT    7 STG::FFileManager_Android::HasAssetManager() const
+   159: 000249cc    88 FUNC    GLOBAL DEFAULT    7 STG::FFileManager_Android::SetAssetManager(_JNIEnv*, _jobject*)
+   160: 00000000     0 FUNC    GLOBAL DEFAULT  UND AAssetManager_fromJava
+   161: 00024a24    60 FUNC    GLOBAL DEFAULT    7 STG::FFileManager_Android::ClearAssetManager(_JNIEnv*)
+   162: 00024a60   468 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::FFileManagerScoped(_JNIEnv*, _jobject*)
+   163: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_atexit
+   164: 0006e018     4 OBJECT  WEAK   DEFAULT   18 guard variable for STG::FFileManager::Get<STG::FFileManager_Android>()::s_Instance
+   165: 0006e01c    68 OBJECT  WEAK   DEFAULT   18 STG::FFileManager::Get<STG::FFileManager_Android>()::s_Instance
+   166: 0006c4a8    40 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileManager_Android
+   167: 00024840   172 FUNC    WEAK   DEFAULT    7 STG::FFileManager_Android::~FFileManager_Android()
+   168: 00024c34   236 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::~FFileManagerScoped()
+   169: 00024d20   216 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::IsValid() const
+   170: 00024df8   236 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::Open(STG::UStringBase<char, int> const&)
+   171: 00024ee4   252 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::Close(STG::FFileBase*&)
+   172: 00069668    29 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileManager_Android
+   173: 0006c498    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileManager_Android
+   174: 00024a60   468 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::FFileManagerScoped(_JNIEnv*, _jobject*)
+   175: 00024c34   236 FUNC    GLOBAL DEFAULT    7 STG::FFileManagerScoped::~FFileManagerScoped()
+   176: 00024fe0    60 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory_Android::~FFileMemory_Android()
+   177: 00000000     0 FUNC    GLOBAL DEFAULT  UND AAsset_close
+   178: 0006c4e0    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::FFileMemory_Android
+   179: 0002501c    28 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory_Android::~FFileMemory_Android()
+   180: 00024fe0    60 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory_Android::~FFileMemory_Android()
+   181: 00025038   112 FUNC    GLOBAL DEFAULT    7 STG::FFileMemory_Android::FFileMemory_Android(AAsset*)
+   182: 00000000     0 FUNC    GLOBAL DEFAULT  UND AAsset_getLength
+   183: 00000000     0 FUNC    GLOBAL DEFAULT  UND AAsset_getBuffer
+   184: 00069688    28 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::FFileMemory_Android
+   185: 0006c4d0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::FFileMemory_Android
+   186: 000250a8   420 FUNC    GLOBAL DEFAULT    7 STG::GEAnimationTrack::Initialize(float, unsigned long, STG::UTimeValue<unsigned long long, 1ul> const&, STG::UTimeValue<unsigned long long, 1ul> const&, STG::GEAnimationTimeData::EDriver, STG::UTimeValue<unsigned long long, 1ul> const&)
+   187: 00062228     0 FUNC    GLOBAL DEFAULT    7 __aeabi_uldivmod
+   188: 0006219c   140 FUNC    GLOBAL DEFAULT    7 __aeabi_ul2f
+   189: 0002524c   456 FUNC    GLOBAL DEFAULT    7 STG::GEAnimationTrack::Evaluate(STG::GEAnimationTimeData::EDriver, STG::GEAnimationTimeData const&, bool, STG::UTimeValue<unsigned long long, 1ul> const&, unsigned long&, float&) const
+   190: 00025414   144 FUNC    GLOBAL DEFAULT    7 STG::GEAnimationTrack::Evaluate(STG::GEAnimationTimeData::EDriver, STG::GEAnimationTimeData const&, bool, STG::UTimeValue<unsigned long long, 1ul> const&) const
+   191: 000254a4    60 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::GEBufferObject(STG::GEBufferObject::EType, STG::GEBufferObject::EUsage)
+   192: 0006c530    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEBufferObject
+   193: 000254e0    88 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::Deallocate()
+   194: 0002bb04    32 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_DeleteBuffer(unsigned long&)
+   195: 00025538    40 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::~GEBufferObject()
+   196: 00025560    28 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::~GEBufferObject()
+   197: 00025538    40 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::~GEBufferObject()
+   198: 0002557c    16 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::Bind() const
+   199: 0002bb24    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_BindBuffer(STG::GEBufferObject::EType, unsigned long)
+   200: 0002558c     8 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::Unbind() const
+   201: 0002bb3c    28 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_UnbindBuffer(STG::GEBufferObject::EType)
+   202: 00025594    76 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::Allocate(unsigned long)
+   203: 0002baf8    12 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GenBuffer(unsigned long&)
+   204: 0002bb58    40 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_BufferData(STG::GEBufferObject::EType, STG::GEBufferObject::EUsage, unsigned long)
+   205: 000255e0    56 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::Update(unsigned char const*)
+   206: 0002bb80    32 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_BufferSubData(STG::GEBufferObject::EType, unsigned char const*, unsigned long)
+   207: 000696a4    23 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEBufferObject
+   208: 0006c528     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEBufferObject
+   209: 000254a4    60 FUNC    GLOBAL DEFAULT    7 STG::GEBufferObject::GEBufferObject(STG::GEBufferObject::EType, STG::GEBufferObject::EUsage)
+   210: 00025618    24 FUNC    GLOBAL DEFAULT    7 STG::GECamera::~GECamera()
+   211: 0006c548    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GECamera
+   212: 00025630    28 FUNC    GLOBAL DEFAULT    7 STG::GECamera::~GECamera()
+   213: 00025618    24 FUNC    GLOBAL DEFAULT    7 STG::GECamera::~GECamera()
+   214: 0002564c    84 FUNC    GLOBAL DEFAULT    7 STG::GECamera::SetLookAtParams(STG::MVector3 const&, STG::MVector3 const&, STG::MVector3 const&)
+   215: 000256a0   200 FUNC    GLOBAL DEFAULT    7 STG::GECamera::ApplyViewport(STG::GEViewport const&)
+   216: 00036664    52 FUNC    GLOBAL DEFAULT    7 STG::GEViewport::GetAspectRatioInterval(float) const
+   217: 000656d0   872 FUNC    GLOBAL DEFAULT    7 tanf
+   218: 00064b90   492 FUNC    GLOBAL DEFAULT    7 atanf
+   219: 00025768    24 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildCameraXfm()
+   220: 0003f18c   436 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeLookAtTransform(STG::MVector3 const&, STG::MVector3 const&, STG::MVector3 const&)
+   221: 00025780    20 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildScaleXfm()
+   222: 0003f730   112 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeScaleOffset(STG::MVector3 const&, STG::MVector3 const&)
+   223: 00025794   168 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildProjectionXfm()
+   224: 0003f340   112 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeOrthographicTransform(float, float, float, float)
+   225: 0003e520   556 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::Transform(STG::MMatrix const&, STG::MMatrix&) const
+   226: 0003f568   144 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeScreenTransform(STG::URectangle<unsigned long> const&)
+   227: 0003f420   164 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakePerspectiveTransform(float, float, float, float)
+   228: 0002583c    44 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildWorldToClipXfm()
+   229: 0003ef30   264 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::ComputeInverse(STG::MMatrix&) const
+   230: 00025868   896 FUNC    GLOBAL DEFAULT    7 STG::GECamera::Lerp(STG::GECamera const&, STG::GECamera const&, float)
+   231: 0003e464   140 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::operator=(STG::MMatrix const&)
+   232: 00025be8   416 FUNC    GLOBAL DEFAULT    7 STG::GECamera::IsVisible(STG::MMatrix const&, STG::MVector3 const&, float) const
+   233: 00025d88   120 FUNC    GLOBAL DEFAULT    7 STG::GECamera::ConvertScreenToClip(STG::URectangle<unsigned long> const&, STG::MVector2 const&, STG::MVector2&) const
+   234: 00025e00    20 FUNC    GLOBAL DEFAULT    7 STG::GECamera::ConvertScreenToClip(STG::MVector2 const&, STG::MVector2&) const
+   235: 00025e14   292 FUNC    GLOBAL DEFAULT    7 STG::GECamera::ConvertClipToWorld(float, float, STG::MVector3&, STG::MVector3&) const
+   236: 00025f38  1880 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildFrustumPlanes()
+   237: 00026690    48 FUNC    GLOBAL DEFAULT    7 STG::GECamera::BuildTransforms()
+   238: 000266c0   188 FUNC    GLOBAL DEFAULT    7 STG::GECamera::GECamera()
+   239: 0002677c   280 FUNC    GLOBAL DEFAULT    7 STG::GECamera::ComputeCursorData(STG::GEViewport const&, STG::MVector2 const&, STG::UTimeValue<unsigned long long, 1ul> const&, STG::GECursorData&) const
+   240: 000696bc    16 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GECamera
+   241: 0006c540     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GECamera
+   242: 000266c0   188 FUNC    GLOBAL DEFAULT    7 STG::GECamera::GECamera()
+   243: 00026894    88 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::GECameraSet()
+   244: 000268ec   204 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::~GECameraSet()
+   245: 000269b8   552 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::ComputeCamera(STG::GEViewport const&, STG::GECamera&) const
+   246: 00026be0   292 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::Initialize(STG::UStringBase<char, int> const&, unsigned long, unsigned long)
+   247: 00026894    88 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::GECameraSet()
+   248: 000268ec   204 FUNC    GLOBAL DEFAULT    7 STG::GECameraSet::~GECameraSet()
+   249: 00026d04    20 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironment::GEEnvironment()
+   250: 00026d18   112 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironment::~GEEnvironment()
+   251: 00026ea4    44 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentGroup::~GEEnvironmentGroup()
+   252: 00026d88   208 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironment::Initialize(unsigned long)
+   253: 00026e58    76 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentGroup::GEEnvironmentGroup()
+   254: 00026d04    20 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironment::GEEnvironment()
+   255: 00026d18   112 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironment::~GEEnvironment()
+   256: 00026e58    76 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentGroup::GEEnvironmentGroup()
+   257: 00026ed0    80 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentSettings::GEEnvironmentSettings()
+   258: 00026ea4    44 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentGroup::~GEEnvironmentGroup()
+   259: 00026f20     4 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentSettings::~GEEnvironmentSettings()
+   260: 00026ed0    80 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentSettings::GEEnvironmentSettings()
+   261: 00026f20     4 FUNC    GLOBAL DEFAULT    7 STG::GEEnvironmentSettings::~GEEnvironmentSettings()
+   262: 00026f24    24 FUNC    WEAK   DEFAULT    7 STG::URefCountBase::~URefCountBase()
+   263: 0006c558    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::URefCountBase
+   264: 00026f3c     8 FUNC    WEAK   DEFAULT    7 STG::GEFont::GetSubFileCount() const
+   265: 00026f44     8 FUNC    WEAK   DEFAULT    7 STG::GEFont::GetSubFile(unsigned long, STG::FFileHash&) const
+   266: 00026f4c     8 FUNC    WEAK   DEFAULT    7 STG::GEFont::GetChildResourceCount() const
+   267: 00026f54     8 FUNC    WEAK   DEFAULT    7 STG::GEFont::GetChildResource(unsigned long) const
+   268: 00026f5c     8 FUNC    WEAK   DEFAULT    7 STG::GEFont::LoadSubFile(unsigned long, STG::FFileHash const&)
+   269: 00026f64    40 FUNC    WEAK   DEFAULT    7 STG::URefCountBase::~URefCountBase()
+   270: 00026f8c    36 FUNC    GLOBAL DEFAULT    7 STG::GEFont::LoadSelf(STG::FFileBase const*)
+   271: 00047f1c  1012 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEFont&)
+   272: 00026fb0     4 FUNC    WEAK   DEFAULT    7 STG::GEFont::LoadSelf(STG::FFileHash const&)
+   273: 0004e828   664 FUNC    GLOBAL DEFAULT    7 STG::UResource::LoadSelf(STG::FFileHash const&)
+   274: 00026fb4   344 FUNC    GLOBAL DEFAULT    7 STG::GEFont::~GEFont()
+   275: 0006c580    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEFont
+   276: 0006cb38    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UResource
+   277: 0002710c    28 FUNC    GLOBAL DEFAULT    7 STG::GEFont::~GEFont()
+   278: 00026fb4   344 FUNC    GLOBAL DEFAULT    7 STG::GEFont::~GEFont()
+   279: 00027128    80 FUNC    GLOBAL DEFAULT    7 STG::GEFontChar::GEFontChar()
+   280: 00027178   216 FUNC    GLOBAL DEFAULT    7 STG::GEFont::GEFont()
+   281: 00027250   124 FUNC    GLOBAL DEFAULT    7 STG::GEFont::Allocate(unsigned short, float, unsigned long, bool)
+   282: 00027128    80 FUNC    GLOBAL DEFAULT    7 STG::GEFontChar::GEFontChar()
+   283: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset
+   284: 000272cc    20 FUNC    GLOBAL DEFAULT    7 STG::GEFont::GetBitmapData(unsigned char const*&, unsigned long&) const
+   285: 000272e0   196 FUNC    GLOBAL DEFAULT    7 STG::GEFont::SetCharData(unsigned short, unsigned short, STG::URectangle<float> const&, long, long, long, long, float)
+   286: 000273a4    56 FUNC    GLOBAL DEFAULT    7 STG::GEFont::CopyBitmapData(unsigned short, unsigned char const*, unsigned long)
+   287: 000273dc   108 FUNC    GLOBAL DEFAULT    7 STG::GEFont::Finalize()
+   288: 00027448    32 FUNC    GLOBAL DEFAULT    7 STG::GEFont::GetCharacter(unsigned short) const
+   289: 000696e4    14 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEFont
+   290: 0006c570    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEFont
+   291: 0006c568     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::URefCountBase
+   292: 00026f24    24 FUNC    WEAK   DEFAULT    7 STG::URefCountBase::~URefCountBase()
+   293: 000696cc    22 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::URefCountBase
+   294: 00027178   216 FUNC    GLOBAL DEFAULT    7 STG::GEFont::GEFont()
+   295: 0006cb28    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UResource
+   296: 0004e378   120 FUNC    GLOBAL DEFAULT    7 STG::UResource::LoadAllResources()
+   297: 0004e45c   380 FUNC    GLOBAL DEFAULT    7 STG::UResource::GetSubFileCountRecurse() const
+   298: 0004e3f0   108 FUNC    GLOBAL DEFAULT    7 STG::UResource::GetChildResourceCountRecurse() const
+   299: 0004ee74  1572 FUNC    GLOBAL DEFAULT    7 STG::UResource::GetAllSubFiles(STG::UArrayFixed<STG::FFileHash, unsigned long>&) const
+   300: 0004eac0   948 FUNC    GLOBAL DEFAULT    7 STG::UResource::GetAllUniqueSubFiles(STG::UArrayFixed<STG::FFileHash, unsigned long>&) const
+   301: 0004e5d8   328 FUNC    GLOBAL DEFAULT    7 STG::UResource::LoadResources()
+   302: 00027468    48 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::GEIndexBuffer()
+   303: 0006c5d0    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEIndexBuffer
+   304: 00027498    76 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::Allocate(unsigned long)
+   305: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc
+   306: 000274e4    92 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::Deallocate()
+   307: 00000000     0 FUNC    GLOBAL DEFAULT  UND free
+   308: 00027540    40 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::~GEIndexBuffer()
+   309: 00027568    28 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::~GEIndexBuffer()
+   310: 00027540    40 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::~GEIndexBuffer()
+   311: 00027584   224 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::Clone(STG::GEIndexBuffer&) const
+   312: 00027664    56 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::AllocateBufferObject()
+   313: 0002769c    16 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::UpdateBufferObject()
+   314: 000696f4    22 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEIndexBuffer
+   315: 0006c5c8     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEIndexBuffer
+   316: 00027468    48 FUNC    GLOBAL DEFAULT    7 STG::GEIndexBuffer::GEIndexBuffer()
+   317: 000276ac    24 FUNC    WEAK   DEFAULT    7 STG::GETextureList::~GETextureList()
+   318: 0006c5e0    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::USingleton<STG::GETextureList>
+   319: 000276c4     8 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetSubFileCount() const
+   320: 000276cc     8 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetChildResourceCount() const
+   321: 000276d4    12 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetChildResource(unsigned long) const
+   322: 000276e0    24 FUNC    WEAK   DEFAULT    7 STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>::~UResourceList()
+   323: 000276f8    24 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::GETextureList>::~USingleton()
+   324: 00027710    40 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::GETextureList>::~USingleton()
+   325: 00027738    40 FUNC    WEAK   DEFAULT    7 STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>::~UResourceList()
+   326: 00027760    36 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::LoadSelf(STG::FFileBase const*)
+   327: 0004a290  1864 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEMaterial&)
+   328: 00027784     4 FUNC    WEAK   DEFAULT    7 STG::GEMaterial::LoadSelf(STG::FFileHash const&)
+   329: 00027788   684 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::LoadSubFile(unsigned long, STG::FFileHash const&)
+   330: 0006e060     4 OBJECT  WEAK   DEFAULT   18 guard variable for STG::USingleton<STG::GETextureList>::Instance()::s_Instance
+   331: 0006e064    12 OBJECT  WEAK   DEFAULT   18 STG::USingleton<STG::GETextureList>::Instance()::s_Instance
+   332: 0006c828    20 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GETextureList
+   333: 000276ac    24 FUNC    WEAK   DEFAULT    7 STG::GETextureList::~GETextureList()
+   334: 00027a34    40 FUNC    WEAK   DEFAULT    7 STG::GETextureList::~GETextureList()
+   335: 00027a5c     8 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetIsEqual(STG::GEMaterial const*) const
+   336: 00027a64    56 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetIsSuitableForMultiPassTransparency() const
+   337: 00027a9c   244 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GetSubFile(unsigned long, STG::FFileHash&) const
+   338: 00027b90   660 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::SetDefault()
+   339: 0003ebbc    76 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeIdentity()
+   340: 00027e24   172 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GEMaterial()
+   341: 0006c630    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEMaterial
+   342: 00027ed0   304 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::~GEMaterial()
+   343: 00028000    28 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::~GEMaterial()
+   344: 00027ed0   304 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::~GEMaterial()
+   345: 0002801c   656 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::Clone(STG::GEMaterial&) const
+   346: 000282ac    80 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::ConvertToMultiPassTransparency(STG::GEMaterial&, STG::GEMaterial&) const
+   347: 000282fc   608 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::SetTexture(unsigned long, STG::GETexture*, STG::GERendererAPI::ESamplerState const&, STG::GERendererAPI::ETextureStageState const&, STG::GERendererAPI::EAnisotropyState const&, STG::GEColor const*, STG::MMatrix const*)
+   348: 0002855c   452 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::SetTextureFile(unsigned long, STG::FFileHash const&, unsigned long, unsigned long, bool)
+   349: 000368f8   200 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GETexture()
+   350: 00069790    19 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEMaterial
+   351: 0006c620    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEMaterial
+   352: 0006c614     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::USingleton<STG::GETextureList>
+   353: 000276f8    24 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::GETextureList>::~USingleton()
+   354: 0006c5f0    20 OBJECT  WEAK   DEFAULT   13 vtable for STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>
+   355: 0006c608    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>
+   356: 000276e0    24 FUNC    WEAK   DEFAULT    7 STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>::~UResourceList()
+   357: 0006970c    89 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UResourceList<STG::GETexture, STG::GETextureList, STG::GETextureList_CreateParams>
+   358: 00069768    40 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::USingleton<STG::GETextureList>
+   359: 00027e24   172 FUNC    GLOBAL DEFAULT    7 STG::GEMaterial::GEMaterial()
+   360: 00028720     8 FUNC    GLOBAL DEFAULT    7 STG::GEModel::LoadSubFile(unsigned long, STG::FFileHash const&)
+   361: 00028728     8 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GetSubFileCount() const
+   362: 00028730     8 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GetSubFile(unsigned long, STG::FFileHash&) const
+   363: 00028738     8 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GetChildResourceCount() const
+   364: 00028740    12 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GetChildResource(unsigned long) const
+   365: 0002874c   188 FUNC    GLOBAL DEFAULT    7 STG::GEModel::LoadResources()
+   366: 00036520    60 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::AllocateBufferObject()
+   367: 0003655c    16 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::UpdateBufferObject()
+   368: 00028808    36 FUNC    GLOBAL DEFAULT    7 STG::GEModel::LoadSelf(STG::FFileBase const*)
+   369: 0004a9d8   716 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEModel&)
+   370: 0002882c     4 FUNC    WEAK   DEFAULT    7 STG::GEModel::LoadSelf(STG::FFileHash const&)
+   371: 00028830   572 FUNC    GLOBAL DEFAULT    7 STG::GEModel::~GEModel()
+   372: 0006c688    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEModel
+   373: 00028a6c    28 FUNC    GLOBAL DEFAULT    7 STG::GEModel::~GEModel()
+   374: 00028830   572 FUNC    GLOBAL DEFAULT    7 STG::GEModel::~GEModel()
+   375: 00028a88   288 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GEModel()
+   376: 00028ba8   212 FUNC    GLOBAL DEFAULT    7 STG::GEModel::Initialize(unsigned long, unsigned long, unsigned long)
+   377: 00035f84   196 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::GEVertexBuffer()
+   378: 00028c7c   172 FUNC    GLOBAL DEFAULT    7 STG::GEModel::IsAllocated() const
+   379: 00028d28   304 FUNC    GLOBAL DEFAULT    7 STG::GEModel::CalcRenderTransform(STG::GECamera const&, STG::MMatrix const&, STG::MMatrix&) const
+   380: 0003fa24    36 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetPosition(STG::MVector3 const&)
+   381: 0003ea60   348 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::Transform3x3_Transpose(STG::MMatrix const&, STG::MMatrix&) const
+   382: 00028e58  1020 FUNC    GLOBAL DEFAULT    7 STG::GEModel::CalcBoundingData(STG::MMatrix const&, STG::UArrayFixed<STG::MVector3, unsigned long> const&)
+   383: 00029254   260 FUNC    GLOBAL DEFAULT    7 STG::GEModel::CalcBoundingData(STG::MMatrix const&)
+   384: 00036200    36 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::HasComponent(STG::GEVertexBuffer::EUsage) const
+   385: 00029358    88 FUNC    GLOBAL DEFAULT    7 STG::GEModel::SetBoundingData(STG::MVector3 const&, STG::MVector3 const&, STG::MVector3 const&, float)
+   386: 000293b0   796 FUNC    GLOBAL DEFAULT    7 STG::GEModel::ConvertToMultiPassTransparency(STG::UArrayFixed<unsigned long, unsigned long>&)
+   387: 000697a4    15 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEModel
+   388: 0006c678    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEModel
+   389: 00028a88   288 FUNC    GLOBAL DEFAULT    7 STG::GEModel::GEModel()
+   390: 000296cc    44 FUNC    GLOBAL DEFAULT    7 STG::GEPixelData::SetFormat(STG::GEPixelFormat::EFormat)
+   391: 0002bc20    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureBitPerPixel(STG::GEPixelFormat::EFormat)
+   392: 0002bc38    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureNumChannels(STG::GEPixelFormat::EFormat)
+   393: 000296f8    12 FUNC    GLOBAL DEFAULT    7 STG::GEPixelData::SetDimensions(unsigned long, unsigned long)
+   394: 00029704   124 FUNC    GLOBAL DEFAULT    7 STG::GEPixelData::Allocate()
+   395: 00029780    60 FUNC    GLOBAL DEFAULT    7 STG::GEPixelData::Deallocate()
+   396: 000297bc    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::EndViewport()
+   397: 000297c8    68 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SaveImageData(STG::UStringBase<char, int> const&, STG::GEPixelData const&) const
+   398: 0002980c    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::EndFrame()
+   399: 0002b750     4 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_Flush()
+   400: 00029834    32 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::EndCamera()
+   401: 0002b76c    16 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_ResetMatrixMode(unsigned int)
+   402: 00029854   540 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::BeginCamera(STG::GECamera const&)
+   403: 0002b754    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_LoadMatrixMode(unsigned int, STG::MMatrix const&)
+   404: 00029a70   160 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::BeginViewport(STG::GEViewport const&)
+   405: 0002bbe8    56 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_Viewport(STG::URectangle<unsigned long> const&)
+   406: 00029b10    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::~GERenderer()
+   407: 0006c6d8    64 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GERenderer
+   408: 00029b38    28 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::~GERenderer()
+   409: 00029b10    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::~GERenderer()
+   410: 00029b54     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderState<STG::GEColor>::SetState(STG::GEColor const&)
+   411: 0002b568    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetColor(STG::GEColor const&)
+   412: 00029b5c     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderState<STG::MMatrix>::SetState(STG::MMatrix const&)
+   413: 00029b64     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderState<STG::MMatrix>::RestoreState()
+   414: 00029b6c   400 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GERenderer()
+   415: 0003656c   160 FUNC    GLOBAL DEFAULT    7 STG::GEViewport::GEViewport(STG::URectangle<unsigned long> const&)
+   416: 00029cfc     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::AllocateFrameBufferTexture()
+   417: 00029d04   100 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::DeallocateFrameBufferTexture()
+   418: 00029d68   100 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::UpdateFrameBufferTexture()
+   419: 0002b7d4    12 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_BindTexture(unsigned long)
+   420: 0002bac0    56 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_CopyTexImage2D(unsigned long, unsigned long)
+   421: 0002b7e0    12 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_UnbindTexture()
+   422: 00029dcc    20 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetFrameBufferTexture() const
+   423: 00029de0    20 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetFrameBufferTexture()
+   424: 00029df4   104 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::VertexBufferInstall(STG::GEVertexBuffer const&)
+   425: 0002b654   124 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_VertexDataEnable(STG::GEVertexBuffer::EUsage, STG::GEVertexBuffer::EType, unsigned long, unsigned long, void const*)
+   426: 00029e5c    60 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::VertexBufferUninstall(STG::GEVertexBuffer const&)
+   427: 0002b610    68 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_VertexDataDisable(STG::GEVertexBuffer::EUsage)
+   428: 00029e98    44 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::DrawElements(STG::GEIndexBuffer const&, unsigned long)
+   429: 0002b6d0    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_DrawElements(unsigned long, unsigned short const*)
+   430: 00029ec4     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::DrawElements(STG::GEIndexBuffer const&)
+   431: 00029ecc    48 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::GEVertexBuffer const&, STG::GEIndexBuffer const&)
+   432: 00029efc   620 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::UStringBase<unsigned short, unsigned short> const&, STG::GEFont const&, STG::MVector2&, STG::GEColor const&)
+   433: 0002a168  1172 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::AllocateResources()
+   434: 00036048    96 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::AddComponent(STG::GEVertexBuffer::EUsage, STG::GEVertexBuffer::EType, unsigned long)
+   435: 000360a8    92 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::Allocate(STG::GEBufferObject::EUsage, unsigned long)
+   436: 0002a5fc   440 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::DeallocateResources()
+   437: 0002a7b4    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Uninitialize()
+   438: 0002a7dc    20 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetFocus()
+   439: 0002a7f0    96 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetScreenDims(unsigned long, unsigned long)
+   440: 0002a850     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetFogEnabled() const
+   441: 0002a858     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetFogEnabled(bool)
+   442: 0002a860     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetFogState(STG::GEColor const&, float, float)
+   443: 0002a864     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::ApplyFog(STG::GERendererAPI::EBlendState const&)
+   444: 0002a868   244 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetMaterial(STG::GEMaterial const*, STG::GEColor const&)
+   445: 0002b520    72 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetDepthState(STG::GERendererAPI::EDepthState)
+   446: 0002b450   128 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetBlendState(STG::GERendererAPI::EBlendState)
+   447: 0002b4d0    80 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetCullState(STG::GERendererAPI::ECullState)
+   448: 0002b780    40 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetMaterialColor(STG::GEColor const&)
+   449: 0002b7ec   616 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetTexture(unsigned long, STG::GERendererAPI::ESamplerState, STG::GERendererAPI::ETextureStageState, STG::GERendererAPI::EAnisotropyState, STG::GETexture const*, STG::GEColor const&, STG::MMatrix const&)
+   450: 0002a95c   400 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::GEModel const&, STG::MMatrix const&)
+   451: 0002bbdc    12 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_DepthRange(float, float)
+   452: 0002aaec    48 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::GEModel const&)
+   453: 0002ab1c   320 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::MVector2 const&, STG::GEMaterial const*)
+   454: 00065238   168 FUNC    GLOBAL DEFAULT    7 floorf
+   455: 0002ac5c   176 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::DrawVignette()
+   456: 0003f720    16 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetScale(float, float, float)
+   457: 0002ad0c   128 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::GEScene const&)
+   458: 0002ad8c   360 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::URectangle<float> const&, STG::GEMaterial const*, STG::GEColor const&, bool)
+   459: 0002aef4   100 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Draw(STG::URectangle<unsigned long> const&, STG::GEMaterial const*, STG::GEColor const&, bool)
+   460: 0002af58     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetMultiSampleEnabled() const
+   461: 0002af60    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::SetMultiSampleEnabled(bool)
+   462: 0002b5e8    40 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetMultiSample(STG::GERendererAPI::EMultiSampleState)
+   463: 0002af6c   320 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Initialize()
+   464: 0004dbcc   132 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetCurrentTime_US() const
+   465: 00000000     0 FUNC    GLOBAL DEFAULT  UND srand48
+   466: 0002b3a0     4 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_RegisterExtensions()
+   467: 0002c53c    28 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_QueryCapabilities(STG::GERendererAPI::Capabilities&)
+   468: 0004dae8    96 FUNC    GLOBAL DEFAULT    7 STG::UTime::UTime()
+   469: 0006e0c0     4 OBJECT  WEAK   DEFAULT   18 guard variable for STG::USingleton<STG::UTime>::Instance()::s_Instance
+   470: 0006e0c4    20 OBJECT  WEAK   DEFAULT   18 STG::USingleton<STG::UTime>::Instance()::s_Instance
+   471: 0004da10    24 FUNC    GLOBAL DEFAULT    7 STG::UTime::~UTime()
+   472: 00061f64   116 FUNC    GLOBAL DEFAULT    7 __aeabi_ul2d
+   473: 0002b0b0    64 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetFPS() const
+   474: 0002b0f0     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GetCamera() const
+   475: 0002b0f8    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::CaptureScreenShot(STG::URectangle<unsigned long> const&, STG::GEPixelData&)
+   476: 0002bc98   184 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_ReadPixels(STG::URectangle<unsigned long> const&, STG::GEPixelData&)
+   477: 0002b104    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::CaptureScreenShot(STG::GEPixelData&)
+   478: 0002b110   192 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::CaptureScreenShot(STG::URectangle<unsigned long> const&, STG::UStringBase<char, int> const&)
+   479: 0002b1d0    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::CaptureScreenShot(STG::UStringBase<char, int> const&)
+   480: 0002b1dc    12 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Internal_Clear(STG::GEColor const&, unsigned long)
+   481: 0002b6e8   100 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_Clear(STG::GEColor const&, unsigned long)
+   482: 0002b1e8     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Internal_SetColorMask(STG::GERendererAPI::EColorMask)
+   483: 0002b580    40 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetColorMask(STG::GERendererAPI::EColorMask)
+   484: 0002b1f0   304 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::BeginFrame(STG::GEColor const&)
+   485: 0002b320     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::Internal_SetLogicOp(STG::GERendererAPI::ELogicOp)
+   486: 0002b5a8    64 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetLogicOp(STG::GERendererAPI::ELogicOp)
+   487: 000697b4    19 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GERenderer
+   488: 0006c6d0     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GERenderer
+   489: 00029b6c   400 FUNC    GLOBAL DEFAULT    7 STG::GERenderer::GERenderer()
+   490: 00000000     0 FUNC    GLOBAL DEFAULT  UND glNormalPointer
+   491: 0002b3a4    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetAddressMode(STG::GERendererAPI::ESamplerState const&)
+   492: 0002b3bc    28 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetFilterMode(STG::GERendererAPI::ESamplerState const&)
+   493: 0002b3d8   120 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetSamplerState(STG::GERendererAPI::ETextureFilter const&, STG::GERendererAPI::ETextureAddress const&)
+   494: 00000000     0 FUNC    GLOBAL DEFAULT  UND glBlendFunc
+   495: 00000000     0 FUNC    GLOBAL DEFAULT  UND glAlphaFunc
+   496: 00000000     0 FUNC    GLOBAL DEFAULT  UND glEnable
+   497: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDisable
+   498: 00000000     0 FUNC    GLOBAL DEFAULT  UND glCullFace
+   499: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFrontFace
+   500: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDepthFunc
+   501: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDepthMask
+   502: 00000000     0 FUNC    GLOBAL DEFAULT  UND glColor4f
+   503: 00000000     0 FUNC    GLOBAL DEFAULT  UND glColorMask
+   504: 00000000     0 FUNC    GLOBAL DEFAULT  UND glLogicOp
+   505: 00000000     0 FUNC    GLOBAL DEFAULT  UND glClientActiveTexture
+   506: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDisableClientState
+   507: 00000000     0 FUNC    GLOBAL DEFAULT  UND glEnableClientState
+   508: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDrawElements
+   509: 00000000     0 FUNC    GLOBAL DEFAULT  UND glClearColor
+   510: 00000000     0 FUNC    GLOBAL DEFAULT  UND glClear
+   511: 0002b74c     4 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_Finish()
+   512: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFinish
+   513: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFlush
+   514: 00000000     0 FUNC    GLOBAL DEFAULT  UND glMatrixMode
+   515: 00000000     0 FUNC    GLOBAL DEFAULT  UND glLoadMatrixf
+   516: 00000000     0 FUNC    GLOBAL DEFAULT  UND glLoadIdentity
+   517: 0002b77c     4 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetAmbientLight(STG::GEColor const&)
+   518: 0002b7a8    12 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GenTexture(unsigned long&)
+   519: 00000000     0 FUNC    GLOBAL DEFAULT  UND glGenTextures
+   520: 0002b7b4    32 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_DeleteTexture(unsigned long&)
+   521: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDeleteTextures
+   522: 00000000     0 FUNC    GLOBAL DEFAULT  UND glBindTexture
+   523: 00000000     0 FUNC    GLOBAL DEFAULT  UND glActiveTexture
+   524: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexParameteri
+   525: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexEnvi
+   526: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexEnvf
+   527: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexParameterf
+   528: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexEnvfv
+   529: 0002ba54   108 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_SetFogState(bool, STG::GEColor const&, float, float)
+   530: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFogf
+   531: 00000000     0 FUNC    GLOBAL DEFAULT  UND glFogfv
+   532: 00000000     0 FUNC    GLOBAL DEFAULT  UND glCopyTexImage2D
+   533: 00000000     0 FUNC    GLOBAL DEFAULT  UND glGenBuffers
+   534: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDeleteBuffers
+   535: 00000000     0 FUNC    GLOBAL DEFAULT  UND glBindBuffer
+   536: 00000000     0 FUNC    GLOBAL DEFAULT  UND glBufferData
+   537: 00000000     0 FUNC    GLOBAL DEFAULT  UND glBufferSubData
+   538: 0002bba0    28 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetError(unsigned int&)
+   539: 00000000     0 FUNC    GLOBAL DEFAULT  UND glGetError
+   540: 0002bbbc    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetError()
+   541: 0002bbd4     8 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_Validate(char const*)
+   542: 00000000     0 FUNC    GLOBAL DEFAULT  UND glDepthRangef
+   543: 00000000     0 FUNC    GLOBAL DEFAULT  UND glViewport
+   544: 0002bc50    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureEnum(STG::GEPixelFormat::EFormat)
+   545: 0002bc68    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureIsCompressed(STG::GEPixelFormat::EFormat)
+   546: 0002bc80    24 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureDataType(STG::GEPixelFormat::EFormat)
+   547: 00000000     0 FUNC    GLOBAL DEFAULT  UND glReadPixels
+   548: 00061b58     0 FUNC    GLOBAL DEFAULT    7 __aeabi_uidiv
+   549: 0002bd50   124 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureDataSize(unsigned long, unsigned long, STG::GEPixelFormat::EFormat)
+   550: 0002bdcc   404 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_LoadTexImage2D(STG::GEPixelFormat::EFormat, STG::GEPixelFormat::EFormat, unsigned long, unsigned long, unsigned long, unsigned char const*)
+   551: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexImage2D
+   552: 00000000     0 FUNC    GLOBAL DEFAULT  UND glCompressedTexImage2D
+   553: 0002bf60  1332 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetIsExtensionSupported(char const*)
+   554: 00000000     0 FUNC    GLOBAL DEFAULT  UND glGetString
+   555: 0002c494   168 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_QueryAnisotropySupport()
+   556: 00000000     0 FUNC    GLOBAL DEFAULT  UND glGetFloatv
+   557: 0002c558   124 FUNC    GLOBAL DEFAULT    7 STG::GERendererAPI::GL_GetTextureIsSupported(STG::GEPixelFormat::EFormat)
+   558: 00000000     0 FUNC    GLOBAL DEFAULT  UND glVertexPointer
+   559: 00000000     0 FUNC    GLOBAL DEFAULT  UND glColorPointer
+   560: 00000000     0 FUNC    GLOBAL DEFAULT  UND glTexCoordPointer
+   561: 0002c5d4     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::LoadSubFile(unsigned long, STG::FFileHash const&)
+   562: 0002c5dc     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetSubFileCount() const
+   563: 0002c5e4     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetSubFile(unsigned long, STG::FFileHash&) const
+   564: 0002c5ec     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetChildResourceCount() const
+   565: 0002c5f4    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetChildResource(unsigned long) const
+   566: 0002c608     4 FUNC    WEAK   DEFAULT    7 STG::GEScene::LoadSelf(STG::FFileHash const&)
+   567: 0002c60c   496 FUNC    GLOBAL DEFAULT    7 STG::GEScene::LoadSelf(STG::FFileBase const*)
+   568: 0004dd80   152 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetTime_UTC() const
+   569: 0004dce8   152 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetTime_Local() const
+   570: 000359a0   572 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::Update(STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0> const&, STG::UTime::TimeStruct<(STG::UTime::ETimeValue)1> const&)
+   571: 00035704    20 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::operator=(STG::GETimeOfDay const&)
+   572: 0004bb8c  6944 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEScene&)
+   573: 0002c7fc  4128 FUNC    GLOBAL DEFAULT    7 STG::GEScene::~GEScene()
+   574: 0003fdb4     4 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::~MSIMD()
+   575: 0003c870   116 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Deallocate(STG::UArrayFixed<STG::LLogicScene*, unsigned long>&)
+   576: 0003584c    24 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::~GETimeOfDayAuto()
+   577: 00039d24   296 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::~GETextureModifier()
+   578: 000542e0  1664 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::~UPreference_Scene()
+   579: 00035d30   244 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::~GEVertexBlender()
+   580: 00034a5c   308 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::~Mesh()
+   581: 0006c748    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEScene
+   582: 0002d81c    28 FUNC    GLOBAL DEFAULT    7 STG::GEScene::~GEScene()
+   583: 0002c7fc  4128 FUNC    GLOBAL DEFAULT    7 STG::GEScene::~GEScene()
+   584: 0002d838   992 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Initialize(unsigned long, unsigned long)
+   585: 0003fd9c    24 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::MSIMD()
+   586: 0003fdb8   124 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::Initialize()
+   587: 0002dc18   100 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeCameraSets(unsigned long)
+   588: 0002dc7c  8264 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeAnimations(STG::UTimeValue<unsigned long long, 1ul> const&, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long)
+   589: 0002fcc4   264 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeLogicObjects(unsigned long)
+   590: 0002fdcc    32 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetLogicObject(unsigned long, STG::LLogicScene::EType)
+   591: 0003c7bc   136 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Allocate(STG::LLogicScene::EType)
+   592: 0002fdec   344 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeIntersectables(unsigned long)
+   593: 0002ff44    12 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetIntersectRemap(unsigned long, unsigned long)
+   594: 0002ff50   444 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeVertexAnimation(unsigned long)
+   595: 00035cfc    52 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::GEVertexBlender()
+   596: 0003010c    12 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetVertexAnimationRemap(unsigned long, unsigned long)
+   597: 00030118   440 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeSkeleton(unsigned long)
+   598: 00034a28    52 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::Mesh()
+   599: 000302d0    12 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetSkeletonRemap(unsigned long, unsigned long)
+   600: 000302dc   340 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeInherit_Visibility(unsigned long)
+   601: 00030430    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetInherit_Visibility(unsigned long, unsigned long, unsigned long)
+   602: 00030444   340 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeInherit_Intersection(unsigned long)
+   603: 00030598    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetInherit_Intersection(unsigned long, unsigned long, unsigned long)
+   604: 000305ac   340 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeModelVisMask_TimeOfDay(unsigned long)
+   605: 00030700    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetModelVisMask_TimeOfDay(unsigned long, unsigned long, unsigned long)
+   606: 00030714   344 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeModelVisMask_WeekDay(unsigned long)
+   607: 0003086c    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetModelVisMask_WeekDay(unsigned long, unsigned long, unsigned char)
+   608: 00030880   356 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeModelVisMask_Date(unsigned long)
+   609: 000309e4    40 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetModelVisMask_Date(unsigned long, unsigned long, unsigned long, unsigned long)
+   610: 00030a0c   304 FUNC    GLOBAL DEFAULT    7 STG::GEScene::InitializeModelVisMask_Environment(unsigned long)
+   611: 00030b3c    20 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetModelVisMask_Environment(unsigned long, unsigned long, unsigned long)
+   612: 00030b50     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ToolsOnly_SetNumRootXfms(unsigned long)
+   613: 00030b58    60 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ToolsOnly_SetUpdateOrder(unsigned long, unsigned long, unsigned long)
+   614: 00030b94     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetEnvironmentIndex() const
+   615: 00030b9c     8 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetEnvironmentIndex(unsigned long)
+   616: 00030ba4    12 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetTimeOfDay() const
+   617: 00030bb0    48 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetEnvironmentSettings() const
+   618: 00030be0   108 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Model_Pos() const
+   619: 00030c4c   108 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Model_Rot() const
+   620: 00030cb8   108 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Camera_Pos() const
+   621: 00030d24   108 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_CameraTarget_Pos() const
+   622: 00030d90   120 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Texture() const
+   623: 00030e08   120 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Interact() const
+   624: 00030e80    76 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_Visibility() const
+   625: 00030ecc    76 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetValidAnimCount_LocalTimeOffset() const
+   626: 00030f18   860 FUNC    GLOBAL DEFAULT    7 STG::GEScene::FindMetaData(STG::UStringBase<char, int> const&, unsigned long&) const
+   627: 00031274    12 FUNC    GLOBAL DEFAULT    7 STG::GEScene::SetLocation(STG::MLocation const&)
+   628: 000357b0    20 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SetLocation(STG::MLocation const&)
+   629: 00031280  1140 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GEScene(STG::MLocation const&)
+   630: 00054250   144 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::UPreference_Scene()
+   631: 00039ce4    64 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::GETextureModifier()
+   632: 000351c8    16 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GETimeOfDay()
+   633: 0003582c    28 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::GETimeOfDayAuto()
+   634: 000357c4    56 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::ResultData::ResultData()
+   635: 000316f4    88 FUNC    GLOBAL DEFAULT    7 STG::GEScene::IsAllocated() const
+   636: 0003174c   616 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ApplyPreferences()
+   637: 000556c8   240 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GetTimeOfDay(STG::GETimeOfDayAuto::ResultData const&, STG::GETimeOfDay&) const
+   638: 00053af0    44 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::GetModelIndices(unsigned long, unsigned long const*&, unsigned long&) const
+   639: 000319b4    60 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GetClearColor() const
+   640: 000319f0   444 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ApplyQualityLevel(STG::GEScene::EQualityLevel const&, STG::GERendererAPI::Capabilities const&)
+   641: 00031bac   900 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ApplyTint(STG::GEColor const&)
+   642: 000361a8    88 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::HasComponent(STG::GEVertexBuffer::EUsage, STG::GEVertexBuffer::EType&, unsigned long&, unsigned long&) const
+   643: 00031f30  1012 FUNC    GLOBAL DEFAULT    7 STG::GEScene::LoadAllResources()
+   644: 00032858   520 FUNC    GLOBAL DEFAULT    7 STG::GEScene::ComputeShownModelsList(STG::UArrayFixed<bool, unsigned long>&) const
+   645: 00039e4c   176 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::Activate(STG::GETimeOfDay const&, STG::UPreference_Scene const&)
+   646: 0003b910    24 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::LLogicSceneWrapper(STG::GEScene*)
+   647: 0003b928    84 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::~LLogicSceneWrapper()
+   648: 00039efc    28 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::Deactivate()
+   649: 00069d30    15 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEScene
+   650: 0006c738    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEScene
+   651: 00031280  1140 FUNC    GLOBAL DEFAULT    7 STG::GEScene::GEScene(STG::MLocation const&)
+   652: 00032324   196 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateTimeOfDay()
+   653: 0006231c   108 FUNC    GLOBAL DEFAULT    7 __aeabi_d2ulz
+   654: 000323e8  1136 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateAnimationTime()
+   655: 000353a4    28 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetNormalizedSec() const
+   656: 000353c0   232 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetNormalizedSec_Daytime() const
+   657: 000354a8   408 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetNormalizedSec_Nighttime() const
+   658: 00032a60   104 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateShownModels()
+   659: 00032ac8   380 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateIntersectables()
+   660: 0003fa48   136 FUNC    GLOBAL DEFAULT    7 STG::MRay3::Intersect_Test_Sphere(STG::MVector3 const&, float) const
+   661: 000622ac   112 FUNC    GLOBAL DEFAULT    7 __aeabi_f2ulz
+   662: 00032c44   248 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateLocalTimeOffsets()
+   663: 00032d3c   288 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateVertexAnims_Visible()
+   664: 00035f38    16 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::SetUpdateData(unsigned long, unsigned long, float)
+   665: 00035f48    60 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::Update(float*, void (*)(float*, float const*, float const*, float, unsigned long))
+   666: 00032e5c   228 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_UpdateSkeletons_Visible()
+   667: 00034f30   316 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::Update(float*, void (*)(float*, float const*, float const*, float const*, float const*, float const*, unsigned long), STG::GEAnimationTimeData::EDriver, STG::GEAnimationTimeData const&, bool, STG::UTimeValue<unsigned long long, 1ul> const&)
+   668: 00032f40   120 FUNC    GLOBAL DEFAULT    7 STG::GEScene::Internal_RunLogic(STG::LLogicBase::EStage)
+   669: 00032fb8   580 FUNC    GLOBAL DEFAULT    7 STG::GEScene::UpdateRendering(STG::UTimeValue<unsigned long long, 1ul> const&, STG::MVector2 const&, STG::GEViewport const&)
+   670: 0003e74c   448 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::Transform4x3(STG::MMatrix const&, STG::MMatrix&) const
+   671: 000331fc  2244 FUNC    GLOBAL DEFAULT    7 STG::GEScene::UpdateSimulation(STG::UTimeValue<unsigned long long, 1ul> const&, STG::UTimeValue<unsigned long long, 1ul> const&, double const*)
+   672: 0003f964   192 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetEulerXZY(float, float, float)
+   673: 00033ac0    36 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::BoneAnim::BoneAnim()
+   674: 00033ae4   520 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::BoneAnim::~BoneAnim()
+   675: 00033cec  1068 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::BoneAnim::Initialize(unsigned long, bool, bool)
+   676: 00034118   100 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::Animation()
+   677: 0003417c   368 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::~Animation()
+   678: 00033ae4   520 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::BoneAnim::~BoneAnim()
+   679: 000342ec   980 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::Initialize(STG::MMatrix const&, unsigned long, unsigned long, unsigned long)
+   680: 00033ac0    36 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::BoneAnim::BoneAnim()
+   681: 000346c0    20 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::SetUpdateOrder(unsigned long, unsigned long, unsigned long)
+   682: 000346d4   604 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::Update(STG::GEAnimationTimeData::EDriver, STG::GEAnimationTimeData const&, bool, STG::UTimeValue<unsigned long long, 1ul> const&)
+   683: 00034930    28 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::VertexGroup()
+   684: 0003494c    56 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::~VertexGroup()
+   685: 00034984   152 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::Initialize(unsigned long, unsigned long, unsigned long)
+   686: 00034a1c    12 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::SetBoneIndex(unsigned long, unsigned long)
+   687: 00034a28    52 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::Mesh()
+   688: 00034a5c   308 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::~Mesh()
+   689: 0003417c   368 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::~Animation()
+   690: 0003494c    56 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::~VertexGroup()
+   691: 00034b90   656 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::Initialize(unsigned long, unsigned long, unsigned long)
+   692: 00034118   100 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Animation::Animation()
+   693: 00034930    28 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::VertexGroup::VertexGroup()
+   694: 00034e20   176 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::SetVertex(unsigned long, STG::MVector3 const&, float const (&) [3])
+   695: 00034ed0    96 FUNC    GLOBAL DEFAULT    7 STG::GESkeleton::Mesh::GetVertex(unsigned long, STG::MVector3&, float (&) [3]) const
+   696: 0003506c     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetDefaultSunrise()
+   697: 00035074    12 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetDefaultSunset()
+   698: 00035080    20 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetName(STG::GETimeOfDay::EPhase)
+   699: 00035094     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetName(STG::GETimeOfDay const&)
+   700: 0003509c   300 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetTimeOfDay(char const*, STG::GETimeOfDay::EPhase&)
+   701: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcasecmp
+   702: 000351c8    16 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GETimeOfDay()
+   703: 000351d8     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GETimeOfDay(STG::GETimeOfDay::EPhase, unsigned long)
+   704: 000351e0   404 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::ComputeTime(STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>)
+   705: 000351d8     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GETimeOfDay(STG::GETimeOfDay::EPhase, unsigned long)
+   706: 00035374     4 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetName() const
+   707: 00035378     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::SetPhase(STG::GETimeOfDay::EPhase)
+   708: 00035380     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::SetFraction(unsigned long)
+   709: 00035388     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::SetFractionMin()
+   710: 00035390    12 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::SetFractionMax()
+   711: 0003539c     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::SetFractionDefault()
+   712: 00035640    96 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetDistance(STG::GETimeOfDay const&, STG::GETimeOfDay const&)
+   713: 000356a0    24 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::operator==(STG::GETimeOfDay const&) const
+   714: 000356b8    20 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::operator!=(STG::GETimeOfDay const&) const
+   715: 000356cc    56 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::operator<(STG::GETimeOfDay const&) const
+   716: 00035718    96 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDay::GetTimeOfDay(char const*, STG::GETimeOfDay&)
+   717: 0003e3cc    92 FUNC    GLOBAL DEFAULT    7 STG::MLocation::IsValid() const
+   718: 000357c4    56 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::ResultData::ResultData()
+   719: 0003e3a0    24 FUNC    GLOBAL DEFAULT    7 STG::MLocation::MLocation()
+   720: 000357fc    48 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::SolarData()
+   721: 0003582c    28 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::GETimeOfDayAuto()
+   722: 000357fc    48 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::SolarData()
+   723: 00035848     4 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::~SolarData()
+   724: 0003584c    24 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::~GETimeOfDayAuto()
+   725: 00035848     4 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::~SolarData()
+   726: 00035864     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::GetSunrise() const
+   727: 0003586c     8 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::GetSunset() const
+   728: 00035874   300 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::SolarData::Update(STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0> const&, STG::MLocation const&)
+   729: 0004e318     8 FUNC    GLOBAL DEFAULT    7 STG::UTime::ComputeSolarEvents(STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0> const&, STG::MLocation const&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&) const
+   730: 0004de18    64 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetUTCOffset(STG::UTime::TimeStruct<(STG::UTime::ETimeValue)1> const&, STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0> const&) const
+   731: 00035bdc   288 FUNC    GLOBAL DEFAULT    7 STG::GETimeOfDayAuto::Update()
+   732: 00035cfc    52 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::GEVertexBlender()
+   733: 00035d30   244 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::~GEVertexBlender()
+   734: 00035e24   228 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::Initialize(unsigned long, unsigned long)
+   735: 00035f08    48 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBlender::SetFrameVertex(unsigned long, unsigned long, STG::MVector3 const&)
+   736: 00035f84   196 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::GEVertexBuffer()
+   737: 0006c798    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GEVertexBuffer
+   738: 00036104    96 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::Deallocate()
+   739: 00036164    40 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::~GEVertexBuffer()
+   740: 0003618c    28 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::~GEVertexBuffer()
+   741: 00036164    40 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::~GEVertexBuffer()
+   742: 00036224   128 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::GetComponent(STG::GEVertexBuffer::EUsage, unsigned char*&, unsigned long, unsigned long) const
+   743: 000362a4    44 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::GetComponent(STG::GEVertexBuffer::EUsage, float*&, unsigned long, unsigned long) const
+   744: 000362d0    84 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::SharesAnyComponents(STG::GEVertexBuffer const&) const
+   745: 00036324   368 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::Sort(STG::GEIndexBuffer**, unsigned long, unsigned long*&)
+   746: 00036494   140 FUNC    GLOBAL DEFAULT    7 STG::GEVertexBuffer::Sort(unsigned long const*)
+   747: 00069d48    23 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GEVertexBuffer
+   748: 0006c790     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GEVertexBuffer
+   749: 0003656c   160 FUNC    GLOBAL DEFAULT    7 STG::GEViewport::GEViewport(STG::URectangle<unsigned long> const&)
+   750: 0003660c    88 FUNC    GLOBAL DEFAULT    7 STG::GEViewport::SetScale(STG::MVector2 const&, STG::MVector2 const&)
+   751: 00036698     8 FUNC    GLOBAL DEFAULT    7 STG::GETexture::LoadSubFile(unsigned long, STG::FFileHash const&)
+   752: 000366a0     8 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetSubFileCount() const
+   753: 000366a8     8 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetSubFile(unsigned long, STG::FFileHash&) const
+   754: 000366b0     8 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetChildResourceCount() const
+   755: 000366b8     8 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetChildResource(unsigned long) const
+   756: 000366c0    96 FUNC    WEAK   DEFAULT    7 STG::UStringBase<unsigned short, unsigned short>::~UStringBase()
+   757: 0006c7a8    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::UStringBase<unsigned short, unsigned short>
+   758: 00036720     4 FUNC    WEAK   DEFAULT    7 STG::GETexture::LoadSelf(STG::FFileHash const&)
+   759: 00036724   112 FUNC    WEAK   DEFAULT    7 STG::UStringBase<unsigned short, unsigned short>::~UStringBase()
+   760: 00036794   328 FUNC    GLOBAL DEFAULT    7 STG::GETexture::~GETexture()
+   761: 0006c7d0    68 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GETexture
+   762: 000368dc    28 FUNC    GLOBAL DEFAULT    7 STG::GETexture::~GETexture()
+   763: 00036794   328 FUNC    GLOBAL DEFAULT    7 STG::GETexture::~GETexture()
+   764: 000368f8   200 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GETexture()
+   765: 000369c0    40 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetHasValidFontCompositeData() const
+   766: 000369e8    56 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetHasValidUserImageData() const
+   767: 00036a20    76 FUNC    GLOBAL DEFAULT    7 STG::GETexture::ClearCompositeData()
+   768: 00036a6c   140 FUNC    GLOBAL DEFAULT    7 STG::GETexture::Create(unsigned long, unsigned long, STG::GEPixelFormat::EFormat)
+   769: 00036af8   672 FUNC    GLOBAL DEFAULT    7 STG::GETexture::CreateDebugTexture(unsigned long, unsigned long, STG::GEPixelFormat::EFormat&, unsigned long&, unsigned long&, unsigned long&, unsigned char*&)
+   770: 00036d98   228 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GetPixel(STG::GEPixelFormat::EFormat const&, unsigned char const*, unsigned char&, unsigned char&, unsigned char&, unsigned char&)
+   771: 00036e7c   180 FUNC    GLOBAL DEFAULT    7 STG::GETexture::SetPixel(STG::GEPixelFormat::EFormat const&, unsigned char*, unsigned char, unsigned char, unsigned char, unsigned char)
+   772: 00036f30  1008 FUNC    GLOBAL DEFAULT    7 STG::GETexture::GenerateMipChain(STG::GEPixelFormat::EFormat const&, unsigned long, unsigned long, unsigned long, unsigned char*, unsigned long)
+   773: 00037320   892 FUNC    GLOBAL DEFAULT    7 STG::GETexture::CompositeUserImage(STG::UStringBase<char, int> const&, STG::GEPixelFormat::EFormat const&, unsigned long, unsigned long, STG::GETextureShading::EEffect, unsigned char*&)
+   774: 0003b7bc   132 FUNC    GLOBAL DEFAULT    7 STG::GETexture::Platform_AcquireUserImage(STG::UStringBase<char, int> const&, unsigned long, unsigned long, STG::GEPixelFormat::EFormat&, unsigned char*&, unsigned long&, unsigned long&)
+   775: 0003b840     4 FUNC    GLOBAL DEFAULT    7 STG::GETexture::Platform_ReleaseUserImage(unsigned char*&)
+   776: 0003ad2c    64 FUNC    GLOBAL DEFAULT    7 STG::GETextureShading::ShadePixel(STG::GETextureShading::EEffect, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char&, unsigned char&, unsigned char&, unsigned char&)
+   777: 0003769c  2348 FUNC    GLOBAL DEFAULT    7 STG::GETexture::CompositeText(STG::GEFont const*, STG::UStringBase<unsigned short, unsigned short> const&, STG::GEPixelFormat::EFormat const&, unsigned long, unsigned long, unsigned char const*, unsigned char*&)
+   778: 00037fc8  1116 FUNC    GLOBAL DEFAULT    7 STG::GETexture::Load(unsigned char const*, unsigned char*&)
+   779: 00038424    80 FUNC    GLOBAL DEFAULT    7 STG::GETexture::LoadDirect(unsigned char const*)
+   780: 00038474   224 FUNC    GLOBAL DEFAULT    7 STG::GETexture::LoadSelf(STG::FFileBase const*)
+   781: 00038554   240 FUNC    GLOBAL DEFAULT    7 STG::GETexture::SetUserImage(STG::UStringBase<char, int> const&, unsigned long, unsigned long, STG::GETextureShading::EEffect)
+   782: 00038644   976 FUNC    WEAK   DEFAULT    7 std::basic_string<unsigned short, std::char_traits<unsigned short>, std::allocator<unsigned short> >::_M_append(unsigned short const*, unsigned short const*)
+   783: 00038a14   268 FUNC    GLOBAL DEFAULT    7 STG::GETexture::SetFontAndMessage(STG::GEFont const*, STG::UStringBase<unsigned short, unsigned short> const&)
+   784: 00069dc0    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GETexture
+   785: 0006c7c0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GETexture
+   786: 0006c7b8     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UStringBase<unsigned short, unsigned short>
+   787: 000366c0    96 FUNC    WEAK   DEFAULT    7 STG::UStringBase<unsigned short, unsigned short>::~UStringBase()
+   788: 00069d60    24 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UStringBase<unsigned short, unsigned short>
+   789: 00038b20    80 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::GETextureFont()
+   790: 00038b70   184 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::~GETextureFont()
+   791: 00038c28    80 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::SetCountdown(unsigned char, unsigned char)
+   792: 00038c78    24 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::GETextureFontContainer()
+   793: 00038c90   228 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::~GETextureFontContainer()
+   794: 00038b70   184 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::~GETextureFont()
+   795: 00038d74   212 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::Initialize(unsigned long, unsigned long)
+   796: 00038b20    80 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::GETextureFont()
+   797: 00038e48   136 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::FindByFileHash(STG::FFileHash const&, unsigned long&) const
+   798: 00038ed0  1132 FUNC    WEAK   DEFAULT    7 std::basic_string<unsigned short, std::char_traits<unsigned short>, std::allocator<unsigned short> >::_M_assign(unsigned short const*, unsigned short const*)
+   799: 0003933c    40 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::SetMessage(unsigned long, STG::UStringBase<unsigned short, unsigned short> const&)
+   800: 00061c00    32 FUNC    GLOBAL DEFAULT    7 __aeabi_uidivmod
+   801: 00039368  1508 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::GetMessageToUse(STG::UStringBase<unsigned short, unsigned short> const&, STG::UStringBase<unsigned short, unsigned short>&) const
+   802: 00000000     0 FUNC    GLOBAL DEFAULT  UND lrand48
+   803: 00000000     0 FUNC    GLOBAL DEFAULT  UND mktime
+   804: 00000000     0 FUNC    GLOBAL DEFAULT  UND difftime
+   805: 00064d7c   152 FUNC    GLOBAL DEFAULT    7 ceilf
+   806: 00039950   116 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::FindByIndex(unsigned long, STG::UStringBase<unsigned short, unsigned short> const&, STG::GEFont const*&, STG::UStringBase<unsigned short, unsigned short>&) const
+   807: 000399c4   348 FUNC    GLOBAL DEFAULT    7 STG::GETextureFont::Initialize(STG::FFileHash const&, unsigned long, bool)
+   808: 00038c78    24 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::GETextureFontContainer()
+   809: 00038c90   228 FUNC    GLOBAL DEFAULT    7 STG::GETextureFontContainer::~GETextureFontContainer()
+   810: 00039b20   452 FUNC    GLOBAL DEFAULT    7 STG::GETextureList::CreateItem(STG::FFileHash const&, STG::GETextureList_CreateParams const*)
+   811: 0003a65c  1744 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::ModifyTexture(STG::FFileHash const&, STG::FFileHash&, STG::GETexture&) const
+   812: 0006f31c     4 OBJECT  GLOBAL DEFAULT   18 STG::GETextureModifier::s_pActiveModifier
+   813: 00069dd4    22 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GETextureList
+   814: 0006c818    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GETextureList
+   815: 00039ce4    64 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::GETextureModifier()
+   816: 0003b074    36 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::GETextureSwapContainer()
+   817: 00039d24   296 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::~GETextureModifier()
+   818: 0003af3c   108 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::~GETextureSwapContainer()
+   819: 00039f18   460 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::STextureInfo::Initialize()
+   820: 0003a0e4   564 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::Initialize(unsigned long)
+   821: 0003a318   836 FUNC    GLOBAL DEFAULT    7 STG::GETextureModifier::InitializeTexture(unsigned long, STG::FFileHash const&, unsigned long)
+   822: 0003b0fc   204 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::FindByFileHash(STG::FFileHash const&, unsigned long&, unsigned long&, bool&, bool&, STG::GETimeOfDay&, unsigned long&) const
+   823: 0003b3e8   316 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::GetSwapFileHash(unsigned long) const
+   824: 0003ad6c    72 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::GETextureSwap()
+   825: 0003adb4   392 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::~GETextureSwap()
+   826: 0003af3c   108 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::~GETextureSwapContainer()
+   827: 0003adb4   392 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::~GETextureSwap()
+   828: 0006c848    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GETextureSwapContainer
+   829: 0003afa8    28 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::~GETextureSwapContainer()
+   830: 0003afc4   176 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::FindByFileHash(STG::FFileHash const&, unsigned long&, bool&, bool&, STG::GETimeOfDay&, unsigned long&) const
+   831: 0003b074    36 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::GETextureSwapContainer()
+   832: 0003b098   100 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::Initialize(unsigned long)
+   833: 0003ad6c    72 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::GETextureSwap()
+   834: 0003b1c8   544 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::Initialize(STG::UStringBase<char, int> const&, unsigned long, bool, bool)
+   835: 0003b524   472 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwap::SetVariant(unsigned long, STG::UStringBase<char, int> const&, STG::FFileHash const&, STG::GETimeOfDay const&, unsigned long)
+   836: 0003b6fc    40 FUNC    GLOBAL DEFAULT    7 STG::GETextureSwapContainer::SetSwapVariant(unsigned long, unsigned long, STG::UStringBase<char, int> const&, STG::FFileHash const&, STG::GETimeOfDay const&, unsigned long)
+   837: 00069dec    31 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GETextureSwapContainer
+   838: 0006c840     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GETextureSwapContainer
+   839: 0003b724     8 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::OnInitialize()
+   840: 0003b72c     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::OnUninitialize()
+   841: 0003b730     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::OnBeginFrame()
+   842: 0003b734     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::OnEndFrame()
+   843: 0003b738     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::OnSetFocus()
+   844: 0003b73c    16 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::SaveImageData(STG::UStringBase<char, int> const&, STG::GEPixelData const&) const
+   845: 0003b74c    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::~GERenderer_Android()
+   846: 0006c868    64 OBJECT  GLOBAL DEFAULT   13 vtable for STG::GERenderer_Android
+   847: 0003b774    28 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::~GERenderer_Android()
+   848: 0003b74c    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::~GERenderer_Android()
+   849: 0003b790    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::GERenderer_Android()
+   850: 0003b7b8     4 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::SetWindowData(unsigned long, unsigned long)
+   851: 00069e0c    27 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::GERenderer_Android
+   852: 0006c858    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::GERenderer_Android
+   853: 0003b790    40 FUNC    GLOBAL DEFAULT    7 STG::GERenderer_Android::GERenderer_Android()
+   854: 0005cb34   852 FUNC    GLOBAL DEFAULT    7 EngineInterface::FindBitmapData(STG::UStringBase<char, int> const&) const
+   855: 0006f7d8     4 OBJECT  GLOBAL DEFAULT   18 EngineInterface::s_pActiveInterface
+   856: 0003b844    24 FUNC    WEAK   DEFAULT    7 STG::LLogicBase::~LLogicBase()
+   857: 0006c8a8    24 OBJECT  WEAK   DEFAULT   13 vtable for STG::LLogicBase
+   858: 0003b85c     8 FUNC    WEAK   DEFAULT    7 STG::LLogicScene::Setup(STG::LLogicSceneWrapper const&)
+   859: 0003b864     4 FUNC    WEAK   DEFAULT    7 STG::LLogicScene::Run(STG::LLogicBase::EStage, STG::LLogicSceneWrapper&)
+   860: 0003b868    24 FUNC    WEAK   DEFAULT    7 STG::LLogicScene::~LLogicScene()
+   861: 0003b880    24 FUNC    WEAK   DEFAULT    7 STG::LLogicObjectBase<STG::LLogicSceneWrapper>::~LLogicObjectBase()
+   862: 0003b898    40 FUNC    WEAK   DEFAULT    7 STG::LLogicObjectBase<STG::LLogicSceneWrapper>::~LLogicObjectBase()
+   863: 0003b8c0    40 FUNC    WEAK   DEFAULT    7 STG::LLogicScene::~LLogicScene()
+   864: 0003b8e8    40 FUNC    WEAK   DEFAULT    7 STG::LLogicBase::~LLogicBase()
+   865: 0003b910    24 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::LLogicSceneWrapper(STG::GEScene*)
+   866: 0003b928    84 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::~LLogicSceneWrapper()
+   867: 0003b97c    92 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::ApplyLocalTimeOffset(unsigned long, STG::UTimeValue<unsigned long long, 1ul> const&)
+   868: 0003b9d8    12 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetAnimTimeData() const
+   869: 0003b9e4    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetModel(unsigned long) const
+   870: 0003b9f4    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetModel(unsigned long)
+   871: 0003ba04    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetRenderTransform(unsigned long) const
+   872: 0003ba14    52 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetBoundingData_Local(unsigned long, STG::MVector3&, float&) const
+   873: 0003ba48   184 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetBoundingData_World(unsigned long, STG::MVector3&, float&) const
+   874: 0003bb00   840 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::FindModel(STG::UStringBase<char, int> const&, unsigned long&) const
+   875: 0003be48    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetIsModelLoaded(unsigned long) const
+   876: 0003be58    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetIsModelShown(unsigned long) const
+   877: 0003be68    16 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetIsModelVisible(unsigned long) const
+   878: 0003be78   128 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::TransformToClip(STG::MMatrix const&, STG::MVector3 const&) const
+   879: 0003bef8    68 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModelCount(unsigned long) const
+   880: 0003bf3c   220 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModels(STG::UArrayFixed<unsigned long, unsigned long>&, unsigned long) const
+   881: 0003c018   124 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModelCount_Recurse(unsigned long) const
+   882: 0003c094   128 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModels_Recurse_Internal(unsigned long*&, unsigned long) const
+   883: 0003c114   184 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModels_Recurse(STG::UArrayFixed<unsigned long, unsigned long>&, unsigned long) const
+   884: 0003c1cc   268 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::GetChildModels_Recurse(STG::UArrayFixed<unsigned long, unsigned long>&, STG::UArrayFixed<unsigned long, unsigned long> const&) const
+   885: 0003c2d8   532 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::ComputeClipSpaceBounds(unsigned long, STG::MVector2&, STG::MVector2&, STG::MVector2&) const
+   886: 0003f038   140 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::ComputeTranspose(STG::MMatrix&) const
+   887: 0003c4ec   720 FUNC    GLOBAL DEFAULT    7 STG::LLogicSceneWrapper::ComputeModelsAffectedByPreference(STG::UArrayFixed<unsigned long, unsigned long>&, STG::UStringBase<char, int> const&) const
+   888: 000590bc  1020 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::FindPreference(STG::UStringBase<char, int> const&) const
+   889: 00059a94    20 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GetPreferenceType(STG::UPreferenceBase const*) const
+   890: 0006c930    32 OBJECT  GLOBAL DEFAULT   13 vtable for STG::LLogicScene_HidePrey
+   891: 0003c844    44 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Deallocate(STG::LLogicScene*&)
+   892: 0003c8e4    80 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Load(STG::FFileBase const&, STG::LLogicScene*&)
+   893: 0003c934    92 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Save(STG::FFileBase&, STG::LLogicScene const*)
+   894: 0003c990   216 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Load(STG::FFileBase const&, STG::UArrayFixed<STG::LLogicScene*, unsigned long>&)
+   895: 0003ca68   152 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene::Save(STG::FFileBase&, STG::UArrayFixed<STG::LLogicScene*, unsigned long> const&)
+   896: 0006c918     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::LLogicBase
+   897: 0003b844    24 FUNC    WEAK   DEFAULT    7 STG::LLogicBase::~LLogicBase()
+   898: 0006c8c0    32 OBJECT  WEAK   DEFAULT   13 vtable for STG::LLogicObjectBase<STG::LLogicSceneWrapper>
+   899: 0006c90c    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::LLogicObjectBase<STG::LLogicSceneWrapper>
+   900: 0003b880    24 FUNC    WEAK   DEFAULT    7 STG::LLogicObjectBase<STG::LLogicSceneWrapper>::~LLogicObjectBase()
+   901: 0006c8e0    32 OBJECT  WEAK   DEFAULT   13 vtable for STG::LLogicScene
+   902: 0006c900    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::LLogicScene
+   903: 0003b868    24 FUNC    WEAK   DEFAULT    7 STG::LLogicScene::~LLogicScene()
+   904: 00069e28    20 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::LLogicScene
+   905: 00069e3c    51 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::LLogicObjectBase<STG::LLogicSceneWrapper>
+   906: 00069e70    19 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::LLogicBase
+   907: 0003cb00   588 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::Run(STG::LLogicBase::EStage, STG::LLogicSceneWrapper&)
+   908: 0003cd4c   520 FUNC    WEAK   DEFAULT    7 STG::LLogicScene_HidePrey::~LLogicScene_HidePrey()
+   909: 0003cf54   508 FUNC    WEAK   DEFAULT    7 STG::LLogicScene_HidePrey::~LLogicScene_HidePrey()
+   910: 0003d150   492 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::SaveData(STG::FFileBase*) const
+   911: 0003d8e0   184 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::SetupIndices(STG::LLogicSceneWrapper const&, STG::UArrayFixed<STG::UStringBase<char, int>, unsigned long> const&, STG::UArrayFixed<unsigned long, unsigned long>&, unsigned long&)
+   912: 0003d998   528 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::Setup(STG::LLogicSceneWrapper const&)
+   913: 0003dba8  1456 FUNC    WEAK   DEFAULT    7 STG::UArrayFixed<STG::UStringBase<char, int>, unsigned long>::operator=(STG::UArrayFixed<STG::UStringBase<char, int>, unsigned long> const&)
+   914: 0003e158   272 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::Initialize(STG::UArrayFixed<STG::UStringBase<char, int>, unsigned long> const&, STG::UArrayFixed<STG::UStringBase<char, int>, unsigned long> const&)
+   915: 0003e268   312 FUNC    GLOBAL DEFAULT    7 STG::LLogicScene_HidePrey::LoadData(STG::FFileBase const*)
+   916: 00069e84    29 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::LLogicScene_HidePrey
+   917: 0006c920    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::LLogicScene_HidePrey
+   918: 0003cd4c   520 FUNC    WEAK   DEFAULT    7 STG::LLogicScene_HidePrey::~LLogicScene_HidePrey()
+   919: 0003e3a0    24 FUNC    GLOBAL DEFAULT    7 STG::MLocation::MLocation()
+   920: 0003e3b8    20 FUNC    GLOBAL DEFAULT    7 STG::MLocation::MLocation(STG::MFloatQuantized<(unsigned char)2> const&, STG::MFloatQuantized<(unsigned char)2> const&)
+   921: 0003e3b8    20 FUNC    GLOBAL DEFAULT    7 STG::MLocation::MLocation(STG::MFloatQuantized<(unsigned char)2> const&, STG::MFloatQuantized<(unsigned char)2> const&)
+   922: 0003e4f0    20 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MMatrix(STG::MMatrix const&)
+   923: 0003e504    28 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::CopyFromData(float const*)
+   924: 0003e90c   340 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::Transform3x3(STG::MMatrix const&, STG::MMatrix&) const
+   925: 0003ec08   188 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::GetDeterminant() const
+   926: 0003ecc4   620 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::ComputeAdjoint(STG::MMatrix&) const
+   927: 0003f0c4    64 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::ComputeInverseFast(STG::MMatrix&) const
+   928: 0003f104   136 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeFrustum(float, float, float, float, float, float)
+   929: 0003f3b0   112 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeOrthographicTransform_Landscape(float, float, float, float)
+   930: 0003f4c4   164 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakePerspectiveTransform_Landscape(float, float, float, float)
+   931: 0003f5f8   148 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MakeScreenTransform_Landscape(STG::URectangle<unsigned long> const&)
+   932: 0003f68c   148 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::Scale(float, float, float)
+   933: 0003f7a0    88 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetEulerX(float)
+   934: 00064e18  1056 FUNC    GLOBAL DEFAULT    7 cosf
+   935: 000652e0  1008 FUNC    GLOBAL DEFAULT    7 sinf
+   936: 0003f7f8    88 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetEulerY(float)
+   937: 0003f850    88 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetEulerZ(float)
+   938: 0003f8a8   188 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::SetEulerXYZ(float, float, float)
+   939: 0003e4f0    20 FUNC    GLOBAL DEFAULT    7 STG::MMatrix::MMatrix(STG::MMatrix const&)
+   940: 0003fad0   112 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::BlendVector4f_SW(float*, float const*, float const*, float, unsigned long)
+   941: 0003fb40   604 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::Skin3Vector4f_SW(float*, float const*, float const*, float const*, float const*, float const*, unsigned long)
+   942: 0003fd9c    24 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::MSIMD()
+   943: 0003fdb4     4 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::~MSIMD()
+   944: 0003fe34    64 FUNC    GLOBAL DEFAULT    7 STG::MSIMD::Platform_QueryHardwareSupported() const
+   945: 0005f11d    32 FUNC    GLOBAL DEFAULT    7 android_getCpuFamily
+   946: 0005f13d    32 FUNC    GLOBAL DEFAULT    7 android_getCpuFeatures
+   947: 0003fe74    32 FUNC    WEAK   DEFAULT    7 STG::UPreferenceBase::GetKeySuffix(STG::UStringBase<char, int>&) const
+   948: 0003fe94     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::GetNumValues() const
+   949: 0003fe9c     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::GetNumValues() const
+   950: 0003fea4     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::GetNumValues() const
+   951: 0003feac     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::GetNumValues() const
+   952: 0003feb4    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::GetNumSelectableValues() const
+   953: 0003fec8     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::GetSelectedValueIndex() const
+   954: 0003fed0    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::SetSelectedValueIndex(unsigned long)
+   955: 0003ff10    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+   956: 0003ff2c   108 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::SetSelectedValue(STG::GETimeOfDay::EPhase const&)
+   957: 0003ff98    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::GetNumSelectableValues() const
+   958: 0003ffac     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::GetSelectedValueIndex() const
+   959: 0003ffb4    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::SetSelectedValueIndex(unsigned long)
+   960: 0003fff4    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+   961: 00040010    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::GetNumSelectableValues() const
+   962: 00040024     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::GetSelectedValueIndex() const
+   963: 0004002c    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::SetSelectedValueIndex(unsigned long)
+   964: 0004006c    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+   965: 00040088    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::GetNumSelectableValues() const
+   966: 0004009c     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::GetSelectedValueIndex() const
+   967: 000400a4    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::SetSelectedValueIndex(unsigned long)
+   968: 000400e4    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+   969: 00040100   136 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::~UPreference()
+   970: 0004f918   292 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::~UPreferenceBase()
+   971: 0006c9a0    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<STG::UStringBase<char, int>, true>
+   972: 00040188    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::~UPreference()
+   973: 0006c950    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<STG::GETimeOfDay::EPhase, true>
+   974: 000401cc    48 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+   975: 000519fc   568 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+   976: 000401fc    76 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::~UPreference()
+   977: 00040248   144 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::~UPreference()
+   978: 000402d8   156 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::SetSelectedValue(STG::UStringBase<char, int> const&)
+   979: 00040374   268 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::SetSelectedValue(STG::UPreference_Theme_Entry const&)
+   980: 00040480   268 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::SetSelectedValue(STG::UPreference_IAB_Entry const&)
+   981: 0004058c    80 FUNC    GLOBAL DEFAULT    7 STG::USerialize::LoadLegacyTimeValue(STG::FFileBase const*, unsigned long, unsigned long)
+   982: 000405dc    68 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::MVector2&)
+   983: 00040620    72 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::MVector2 const&)
+   984: 00040668    92 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::MVector3&)
+   985: 000406c4    96 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::MVector3 const&)
+   986: 00040724    60 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::MMatrix&)
+   987: 00040760    60 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::MMatrix const&)
+   988: 0004079c    72 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEColor&)
+   989: 000407e4   120 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEColor const&)
+   990: 0004085c   216 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GECamera&)
+   991: 00040934   256 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GECamera const&)
+   992: 00040a34   116 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEEnvironmentSettings&)
+   993: 00040aa8   156 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEEnvironmentGroup&)
+   994: 00040b44   120 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEEnvironment&)
+   995: 00040bbc   148 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEEnvironmentSettings const&)
+   996: 00040c50   168 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEEnvironmentGroup const&)
+   997: 00040cf8   128 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEEnvironment const&)
+   998: 00040d78    84 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEIndexBuffer&)
+   999: 00040dcc    92 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEIndexBuffer const&)
+  1000: 00040e28   260 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GESkeleton::VertexGroup&)
+  1001: 00040f2c   204 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GESkeleton::VertexGroup const&)
+  1002: 00040ff8   448 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEAnimationCurve&)
+  1003: 000411b8   248 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEAnimationCurve const&)
+  1004: 000412b0   492 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEAnimationTrack&)
+  1005: 0004149c   232 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GESkeleton::BoneAnim&)
+  1006: 00041584  1064 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GESkeleton::Animation&)
+  1007: 000419ac   820 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GESkeleton::Mesh&)
+  1008: 00041ce0   372 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEAnimationTrack const&)
+  1009: 00041e54   232 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GESkeleton::BoneAnim const&)
+  1010: 00041f3c   532 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GESkeleton::Animation const&)
+  1011: 00042150   440 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GESkeleton::Mesh const&)
+  1012: 00042308    64 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETimeOfDay&)
+  1013: 00042348    72 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETimeOfDay const&)
+  1014: 00042390   892 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEVertexBlender&)
+  1015: 0004270c   156 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEVertexBlender const&)
+  1016: 000427a8   256 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GEVertexBuffer&)
+  1017: 000428a8   296 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEVertexBuffer const&)
+  1018: 000429d0    44 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::UStringBase()
+  1019: 000429fc   120 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1020: 000429d0    44 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::UStringBase()
+  1021: 00042a74   120 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1022: 00042aec   112 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1023: 00042b5c   160 FUNC    WEAK   DEFAULT    7 void STG::USerialize::Save<char, int>(STG::FFileBase*, STG::UStringBase<char, int> const&)
+  1024: 00042bfc   224 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_TimeOfDay const&)
+  1025: 00042cdc   520 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_Theme const&)
+  1026: 00042ee4   296 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_TextureGroup const&)
+  1027: 0004300c   244 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_TextureSwap const&)
+  1028: 00043100   172 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_TextureFont const&)
+  1029: 000431ac   252 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_IAB const&)
+  1030: 000432a8   172 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_FileChooser_Texture const&)
+  1031: 00043354   220 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_Environment const&)
+  1032: 00043430   232 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_ModelToggle const&)
+  1033: 00043518   340 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_ModelSwap const&)
+  1034: 0004366c   220 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_CameraSet const&)
+  1035: 00043748  1496 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::UPreference_Scene const&)
+  1036: 000556c0     8 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GetNumMultiPrefs() const
+  1037: 00043d20   252 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GECameraSet const&)
+  1038: 00043e1c    84 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::FFileHash const&)
+  1039: 00043e70   468 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEMaterial const&)
+  1040: 00044044   540 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEFont const&)
+  1041: 00044260   412 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETextureFont const&)
+  1042: 000443fc   200 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETextureFontContainer const&)
+  1043: 000444c4   252 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETextureSwap const&)
+  1044: 000445c0   128 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETextureSwapContainer const&)
+  1045: 00044640   596 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GETextureModifier const&)
+  1046: 00044894   612 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEModel const&)
+  1047: 00044af8  3236 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Save(STG::FFileBase*, STG::GEScene const&)
+  1048: 0004579c  1096 FUNC    WEAK   DEFAULT    7 void STG::USerialize::Load<unsigned short, unsigned short>(STG::FFileBase const*, STG::UStringBase<unsigned short, unsigned short>&)
+  1049: 00000000     0 FUNC    GLOBAL DEFAULT  UND puts
+  1050: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort
+  1051: 00045be4    48 FUNC    WEAK   DEFAULT    7 std::priv::_String_base<char, std::allocator<char> >::_M_deallocate_block()
+  1052: 00045c14   168 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::~UPreference()
+  1053: 0006ca40    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<STG::UPreference_IAB_Entry, true>
+  1054: 00045cbc   168 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::~UPreference()
+  1055: 0006c9f0    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<STG::UPreference_Theme_Entry, true>
+  1056: 00045d64   240 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1057: 00045e54   264 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1058: 00045f5c   240 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1059: 0004604c   264 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1060: 00046154   240 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1061: 00046244   264 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1062: 0004634c   240 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1063: 0004643c   264 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1064: 00046544   996 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::operator=(STG::UStringBase<char, int> const&)
+  1065: 00046928   940 FUNC    WEAK   DEFAULT    7 void STG::USerialize::Load<char, int>(STG::FFileBase const*, STG::UStringBase<char, int>&)
+  1066: 00046cd4   552 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_TimeOfDay&)
+  1067: 00046efc   412 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_Theme&)
+  1068: 00047098   480 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_TextureGroup&)
+  1069: 0005b1d0    12 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::SetChildID(unsigned long, unsigned long)
+  1070: 00047278   416 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_TextureSwap&)
+  1071: 00047418   360 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_TextureFont&)
+  1072: 00047580   360 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_FileChooser_Texture&)
+  1073: 000476e8   416 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_Environment&)
+  1074: 00047888   420 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_ModelToggle&)
+  1075: 00047a2c   516 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_ModelSwap&)
+  1076: 00053b1c    48 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::SetModelCount(unsigned long, unsigned long)
+  1077: 00053b4c    24 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::SetModelIndex(unsigned long, unsigned long, unsigned long)
+  1078: 00047c30   392 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_CameraSet&)
+  1079: 00047db8   292 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GECameraSet&)
+  1080: 00047edc    64 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::FFileHash&)
+  1081: 00048310   176 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::~UPreference()
+  1082: 000483c0   176 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::~UPreference()
+  1083: 00048470  1684 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETextureSwap&)
+  1084: 00048b04   120 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETextureSwapContainer&)
+  1085: 00048b7c  1592 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_IAB&)
+  1086: 000491b4  4220 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::UPreference_Scene&)
+  1087: 00054a84  2584 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::Initialize(STG::UPreference_Scene::InitData const&)
+  1088: 0005b1c4    12 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::SetChild(unsigned long, STG::UPreference_TextureSwap&)
+  1089: 00054960   292 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::InitializeAutoTimeOfDay()
+  1090: 0005549c   548 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::InitializeMultiPrefs(unsigned long)
+  1091: 0005a540   460 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::SetMultiPref(unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1092: 00053e1c    64 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::UPreference_ModelToggle()
+  1093: 0005076c   148 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::UPreferenceBase()
+  1094: 0005ab14    68 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::UPreference_TextureFont()
+  1095: 0005b13c    64 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::UPreference_TextureSwap()
+  1096: 0005b17c    72 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::UPreference_TextureGroup()
+  1097: 00052ef4    56 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::UPreference_FileChooser_Texture()
+  1098: 0006d0e0    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_CameraSet
+  1099: 0006d2e8    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_TimeOfDay
+  1100: 0006ce70    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_Environment
+  1101: 0006d280    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_Theme
+  1102: 0006cf90    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_IAB
+  1103: 00053aa0    80 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::UPreference_ModelSwap()
+  1104: 0004a230    96 FUNC    WEAK   DEFAULT    7 std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_compute_next_size(unsigned int)
+  1105: 0004aca4  1500 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETextureFont&)
+  1106: 0004b280   184 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETextureFontContainer&)
+  1107: 0004b338  2132 FUNC    GLOBAL DEFAULT    7 STG::USerialize::Load(STG::FFileBase const*, STG::GETextureModifier&)
+  1108: 0006cab4    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<STG::GETimeOfDay::EPhase, true>
+  1109: 0004f7f8   288 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::GetShouldReflect() const
+  1110: 00052944    56 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::SetShouldReflect(bool)
+  1111: 0004f498    24 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::SetListener(STG::UPreferenceBase::IListener*)
+  1112: 00040188    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::GETimeOfDay::EPhase, true>::~UPreference()
+  1113: 0006caa8    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<STG::UStringBase<char, int>, true>
+  1114: 00040100   136 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<char, int>, true>::~UPreference()
+  1115: 0006ca9c    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<STG::UPreference_Theme_Entry, true>
+  1116: 00045cbc   168 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_Theme_Entry, true>::~UPreference()
+  1117: 0006ca90    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<STG::UPreference_IAB_Entry, true>
+  1118: 00045c14   168 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UPreference_IAB_Entry, true>::~UPreference()
+  1119: 00069ea4    53 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<STG::UPreference_IAB_Entry, true>
+  1120: 0006cc98     8 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreferenceBase
+  1121: 00069edc    55 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<STG::UPreference_Theme_Entry, true>
+  1122: 00069f14    47 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<STG::UStringBase<char, int>, true>
+  1123: 00069f44    50 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<STG::GETimeOfDay::EPhase, true>
+  1124: 0004d788   104 FUNC    GLOBAL DEFAULT    7 STG::UCrypto::Transform(char*, unsigned int, void const*)
+  1125: 0004d7f0   280 FUNC    GLOBAL DEFAULT    7 STG::UCrypto::TransformAndPrint(char const*)
+  1126: 0004da10    24 FUNC    GLOBAL DEFAULT    7 STG::UTime::~UTime()
+  1127: 0006cac8    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::USingleton<STG::UTime>
+  1128: 0004da28    24 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::UTime>::~USingleton()
+  1129: 0004da40    40 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::UTime>::~USingleton()
+  1130: 0004da68    28 FUNC    GLOBAL DEFAULT    7 STG::UTime::~UTime()
+  1131: 0004da84    40 FUNC    GLOBAL DEFAULT    7 STG::UTime::InternalTime_Default::GetTime_UTC(tm*) const
+  1132: 00000000     0 FUNC    GLOBAL DEFAULT  UND time
+  1133: 00000000     0 FUNC    GLOBAL DEFAULT  UND gmtime_r
+  1134: 0004daac    40 FUNC    GLOBAL DEFAULT    7 STG::UTime::InternalTime_Default::GetTime_Local(tm*) const
+  1135: 00000000     0 FUNC    GLOBAL DEFAULT  UND localtime_r
+  1136: 0004dad4    20 FUNC    GLOBAL DEFAULT    7 STG::UTime::InstallTimer(STG::UTime::IInternalTime const*)
+  1137: 0004dae8    96 FUNC    GLOBAL DEFAULT    7 STG::UTime::UTime()
+  1138: 00000000     0 FUNC    GLOBAL DEFAULT  UND clock_gettime
+  1139: 0006cb18    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UTime
+  1140: 0006cb08    16 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UTime::InternalTime_Default
+  1141: 0004db48   132 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetCurrentTime_MS() const
+  1142: 0004dc50    76 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetStartTime_MS() const
+  1143: 0004dc9c    76 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetStartTime_US() const
+  1144: 0004de58    60 FUNC    GLOBAL DEFAULT    7 STG::UTime::GetUTCOffset() const
+  1145: 0004de94    12 FUNC    GLOBAL DEFAULT    7 STG::UTime::Sleep_MS(STG::UTimeValue<unsigned long long, 1000ul>) const
+  1146: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep
+  1147: 0004dea0  1144 FUNC    GLOBAL DEFAULT    7 STG::UTime::ComputeSolarEvents(long, STG::MLocation const&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&) const
+  1148: 00064748   308 FUNC    GLOBAL DEFAULT    7 asinf
+  1149: 00064548   508 FUNC    GLOBAL DEFAULT    7 acosf
+  1150: 0004e320    88 FUNC    GLOBAL DEFAULT    7 STG::UTime::ComputeSolarEvents(STG::MLocation const&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&, STG::MExplicitType<STG::UTime::TimeStruct<(STG::UTime::ETimeValue)0>, unsigned long>&, long&) const
+  1151: 00069fb4    35 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UTime::InternalTime_Default
+  1152: 0006caf0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UTime::InternalTime_Default
+  1153: 00069fd8    13 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UTime
+  1154: 0006cafc    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UTime
+  1155: 0006cac0     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::USingleton<STG::UTime>
+  1156: 00069f78    31 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::USingleton<STG::UTime>
+  1157: 0004da28    24 FUNC    WEAK   DEFAULT    7 STG::USingleton<STG::UTime>::~USingleton()
+  1158: 0006cad8    16 OBJECT  WEAK   DEFAULT   13 vtable for STG::UTime::IInternalTime
+  1159: 0006cae8     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UTime::IInternalTime
+  1160: 00069f98    28 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UTime::IInternalTime
+  1161: 0004e720   128 FUNC    WEAK   DEFAULT    7 STG::UResource::~UResource()
+  1162: 0004e7a0   136 FUNC    WEAK   DEFAULT    7 STG::UResource::~UResource()
+  1163: 00069fe8    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UResource
+  1164: 0004e720   128 FUNC    WEAK   DEFAULT    7 STG::UResource::~UResource()
+  1165: 0004f4b0     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::GetNumValues() const
+  1166: 0004f4b8    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::GetNumSelectableValues() const
+  1167: 0004f4cc     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::GetSelectedValueIndex() const
+  1168: 0004f4d4    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::SetSelectedValueIndex(unsigned long)
+  1169: 0004f514    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+  1170: 0004f530   240 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::SetSelectedValue(STG::UStringBase<unsigned short, unsigned short> const&)
+  1171: 0004f620     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::GetNumValues() const
+  1172: 0004f628    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::GetNumSelectableValues() const
+  1173: 0004f63c     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::GetSelectedValueIndex() const
+  1174: 0004f644    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::SetSelectedValueIndex(unsigned long)
+  1175: 0004f684    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+  1176: 0004f6a0   108 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::SetSelectedValue(unsigned long const&)
+  1177: 0004f70c     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::GetNumValues() const
+  1178: 0004f714    20 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::GetNumSelectableValues() const
+  1179: 0004f728     8 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::GetSelectedValueIndex() const
+  1180: 0004f730    64 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::SetSelectedValueIndex(unsigned long)
+  1181: 0004f770    28 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::GetSelectedValueByName(STG::UStringBase<char, int>&) const
+  1182: 0004f78c   108 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::SetSelectedValue(bool const&)
+  1183: 0006ccd0    72 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreferenceBase
+  1184: 0004fa3c    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::~UPreference()
+  1185: 0006cb90    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<bool, true>
+  1186: 0004fa80    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::~UPreference()
+  1187: 0006cbf8    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<unsigned long, true>
+  1188: 0004fac4   136 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::~UPreference()
+  1189: 0006cc48    80 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>
+  1190: 0004fb4c    28 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::~UPreferenceBase()
+  1191: 0004f918   292 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::~UPreferenceBase()
+  1192: 0004fb68    76 FUNC    WEAK   DEFAULT    7 STG::UPreference_Uint32::~UPreference_Uint32()
+  1193: 0004fbb4    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_Uint32::~UPreference_Uint32()
+  1194: 0004fbf8    76 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::~UPreference()
+  1195: 0004fc44    76 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::~UPreference()
+  1196: 0004fc90    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_Bool::~UPreference_Bool()
+  1197: 0004fcd4    76 FUNC    WEAK   DEFAULT    7 STG::UPreference_Bool::~UPreference_Bool()
+  1198: 0004fd20   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_WideString::~UPreference_WideString()
+  1199: 0004fda8   144 FUNC    WEAK   DEFAULT    7 STG::UPreference_WideString::~UPreference_WideString()
+  1200: 0004fe38   144 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::~UPreference()
+  1201: 0004fec8   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_String::~UPreference_String()
+  1202: 0004ff50   144 FUNC    WEAK   DEFAULT    7 STG::UPreference_String::~UPreference_String()
+  1203: 0004ffe0   336 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1204: 00050130   308 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1205: 00050264   336 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1206: 000503b4   308 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1207: 000504e8   336 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1208: 00050638   308 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::IsValueValid(STG::UStringBase<char, int> const&) const
+  1209: 00050800  1640 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::Replace(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1210: 00050e68   500 FUNC    GLOBAL DEFAULT    7 STG::UPreference_WideString::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1211: 0005105c   188 FUNC    GLOBAL DEFAULT    7 STG::UPreference_String::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1212: 00051118   500 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Uint32::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1213: 0005130c   536 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Bool::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1214: 00051524  1240 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::GenerateDefaultKey()
+  1215: 00051c34   144 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1216: 00051cc4    48 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1217: 00051cf4    44 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1218: 00051d20   144 FUNC    WEAK   DEFAULT    7 STG::UPreference_WideString::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1219: 00051db0   148 FUNC    WEAK   DEFAULT    7 STG::UPreference_String::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1220: 00051e44    64 FUNC    WEAK   DEFAULT    7 STG::UPreference_Bool::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, bool)
+  1221: 00051e84    48 FUNC    WEAK   DEFAULT    7 STG::UPreference_Uint32::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1222: 0006a064    24 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreferenceBase
+  1223: 0006a07c    25 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_Bool
+  1224: 0006cca0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_Bool
+  1225: 0006a098    27 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_Uint32
+  1226: 0006ccac    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_Uint32
+  1227: 0006a0b4    27 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_String
+  1228: 0006ccb8    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_String
+  1229: 0006a0d0    31 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_WideString
+  1230: 0006ccc4    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_WideString
+  1231: 0006cd18    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_Bool
+  1232: 0006cd70    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_Uint32
+  1233: 0006cdc0    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_String
+  1234: 0006ce10    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_WideString
+  1235: 0006cb80    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>
+  1236: 00069ffc    47 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>
+  1237: 0006cbe0    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<bool, true>
+  1238: 0004fa3c    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<bool, true>::~UPreference()
+  1239: 0006a02c    27 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<bool, true>
+  1240: 0006cbec    12 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreference<unsigned long, true>
+  1241: 0006a048    27 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreference<unsigned long, true>
+  1242: 0004fa80    68 FUNC    WEAK   DEFAULT    7 STG::UPreference<unsigned long, true>::~UPreference()
+  1243: 0004fac4   136 FUNC    WEAK   DEFAULT    7 STG::UPreference<STG::UStringBase<unsigned short, unsigned short>, true>::~UPreference()
+  1244: 0004fbb4    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_Uint32::~UPreference_Uint32()
+  1245: 0004fc90    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_Bool::~UPreference_Bool()
+  1246: 0004fd20   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_WideString::~UPreference_WideString()
+  1247: 0004fec8   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_String::~UPreference_String()
+  1248: 0005076c   148 FUNC    GLOBAL DEFAULT    7 STG::UPreferenceBase::UPreferenceBase()
+  1249: 000529f8   144 FUNC    WEAK   DEFAULT    7 STG::UPreference_Environment::~UPreference_Environment()
+  1250: 00052a88   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_Environment::~UPreference_Environment()
+  1251: 00052b10   148 FUNC    WEAK   DEFAULT    7 STG::UPreference_Environment::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1252: 00052ba4   380 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Environment::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1253: 0006a0f0    32 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_Environment
+  1254: 0006ce60    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_Environment
+  1255: 00052a88   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_Environment::~UPreference_Environment()
+  1256: 00052d20   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::~UPreference_FileChooser()
+  1257: 00052da8    40 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::~UPreference_FileChooser_Texture()
+  1258: 0006cf28    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_FileChooser_Texture
+  1259: 00052dd0    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::~UPreference_FileChooser_Texture()
+  1260: 00052da8    40 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::~UPreference_FileChooser_Texture()
+  1261: 00052dec    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::~UPreference_FileChooser()
+  1262: 00052d20   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::~UPreference_FileChooser()
+  1263: 00052e08   148 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1264: 00052e9c    32 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::Initialize(unsigned long, unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1265: 00052ebc    56 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::UPreference_FileChooser()
+  1266: 0006ced8    80 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_FileChooser
+  1267: 00052ef4    56 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::UPreference_FileChooser_Texture()
+  1268: 00052f2c   144 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::GetKeySuffix(STG::UStringBase<char, int>&) const
+  1269: 00052fbc   380 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1270: 00053138   372 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser_Texture::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1271: 0006a110    32 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_FileChooser
+  1272: 0006cec0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_FileChooser
+  1273: 0006a130    40 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_FileChooser_Texture
+  1274: 0006cecc    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_FileChooser_Texture
+  1275: 00052ebc    56 FUNC    GLOBAL DEFAULT    7 STG::UPreference_FileChooser::UPreference_FileChooser()
+  1276: 000532ac   276 FUNC    WEAK   DEFAULT    7 STG::UPreference_IAB::~UPreference_IAB()
+  1277: 000533c0   268 FUNC    WEAK   DEFAULT    7 STG::UPreference_IAB::~UPreference_IAB()
+  1278: 000534cc   252 FUNC    GLOBAL DEFAULT    7 STG::UPreference_IAB::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1279: 000535c8   132 FUNC    GLOBAL DEFAULT    7 STG::UPreference_IAB::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1280: 0005364c   328 FUNC    GLOBAL DEFAULT    7 STG::UPreference_IAB::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1281: 0006a158    24 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_IAB
+  1282: 0006cf80    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_IAB
+  1283: 000533c0   268 FUNC    WEAK   DEFAULT    7 STG::UPreference_IAB::~UPreference_IAB()
+  1284: 00053794   276 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::~UPreference_ModelSwap()
+  1285: 0006cff0    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_ModelSwap
+  1286: 000538a8    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::~UPreference_ModelSwap()
+  1287: 00053794   276 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::~UPreference_ModelSwap()
+  1288: 000538c4   476 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::Initialize(unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1289: 00053aa0    80 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::UPreference_ModelSwap()
+  1290: 00053b64   352 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelSwap::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1291: 0006a170    30 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_ModelSwap
+  1292: 0006cfe0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_ModelSwap
+  1293: 00053cc4   188 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::Initialize(unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, bool)
+  1294: 00053d80   128 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::~UPreference_ModelToggle()
+  1295: 0006d058    88 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_ModelToggle
+  1296: 00053e00    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::~UPreference_ModelToggle()
+  1297: 00053d80   128 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::~UPreference_ModelToggle()
+  1298: 00053e1c    64 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::UPreference_ModelToggle()
+  1299: 00053e5c   380 FUNC    GLOBAL DEFAULT    7 STG::UPreference_ModelToggle::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1300: 0006a190    32 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_ModelToggle
+  1301: 0006d048    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_ModelToggle
+  1302: 000540a4   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_CameraSet::~UPreference_CameraSet()
+  1303: 0005412c   144 FUNC    WEAK   DEFAULT    7 STG::UPreference_CameraSet::~UPreference_CameraSet()
+  1304: 000541bc   148 FUNC    WEAK   DEFAULT    7 STG::UPreference_CameraSet::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1305: 00054250   144 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::UPreference_Scene()
+  1306: 0006d130    12 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_Scene
+  1307: 000542e0  1664 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::~UPreference_Scene()
+  1308: 0005be3c    60 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::UPreference_TimeOfDay_Auto()
+  1309: 0005bb6c   468 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::GetClosestValue(STG::GETimeOfDay const&, STG::GETimeOfDay&) const
+  1310: 000557b8    88 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::SetTimeOfDay(STG::GETimeOfDay::EPhase)
+  1311: 00055810   500 FUNC    GLOBAL DEFAULT    7 bool STG::ReflectPreference<STG::UPreference_ModelToggle>(STG::FFileBase&, STG::UPreference_ModelToggle const&, bool)
+  1312: 00055a04   268 FUNC    GLOBAL DEFAULT    7 bool STG::ReflectPreference<STG::UPreference_TextureFont>(STG::FFileBase&, STG::UPreference_TextureFont const&, bool)
+  1313: 00055b10   268 FUNC    GLOBAL DEFAULT    7 bool STG::ReflectPreference<STG::UPreference_FileChooser_Texture>(STG::FFileBase&, STG::UPreference_FileChooser_Texture const&, bool)
+  1314: 00055c1c  9192 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::ReflectToFile(char const*) const
+  1315: 00058004  2352 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GatherPreferencesByType(STG::UPreference_Scene::EPreferenceType, STG::UArrayFixed<STG::UPreferenceBase const*, unsigned long>&) const
+  1316: 00058934   644 FUNC    WEAK   DEFAULT    7 STG::UStringBase<unsigned short, unsigned short>::Trim()
+  1317: 00000000     0 FUNC    GLOBAL DEFAULT  UND iswspace
+  1318: 00058bb8    88 FUNC    WEAK   DEFAULT    7 STG::UStringBase<char, int>::IsEqual(STG::UStringBase<char, int> const&) const
+  1319: 00058c10  1020 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::FindPreference(STG::UStringBase<char, int> const&)
+  1320: 0005900c   176 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::OnSelection(STG::UStringBase<char, int> const&, unsigned long)
+  1321: 00059aa8    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GetPreferenceType(STG::UStringBase<char, int> const&) const
+  1322: 00059ac4   848 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::GetIsValidMultiPref(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&) const
+  1323: 00059e14  1484 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::SetValueByKey(STG::UPreference_Scene::EPreferenceType, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1324: 0005a3e0   352 FUNC    GLOBAL DEFAULT    7 STG::UPreference_CameraSet::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1325: 0005a70c   492 FUNC    WEAK   DEFAULT    7 STG::UPreference_TextureFont::SetUserMessage(STG::UStringBase<unsigned short, unsigned short> const&)
+  1326: 0005a8f8   164 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Scene::SetValueByKey(STG::UPreference_Scene::EPreferenceType, STG::UStringBase<char, int> const&, STG::UStringBase<unsigned short, unsigned short> const&)
+  1327: 0006a1d4    30 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_CameraSet
+  1328: 0006d0c8    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_CameraSet
+  1329: 0006a1f4    26 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_Scene
+  1330: 0006d0d4    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_Scene
+  1331: 0006d0b0     8 OBJECT  WEAK   DEFAULT   13 typeinfo for STG::UPreferenceBase::IListener
+  1332: 0006a1b0    34 OBJECT  WEAK   DEFAULT   10 typeinfo name for STG::UPreferenceBase::IListener
+  1333: 0006d0b8    12 OBJECT  WEAK   DEFAULT   13 vtable for STG::UPreferenceBase::IListener
+  1334: 000540a4   136 FUNC    WEAK   DEFAULT    7 STG::UPreference_CameraSet::~UPreference_CameraSet()
+  1335: 0005a99c    24 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::GetShouldReflect() const
+  1336: 0005a9b4   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::~UPreference_TextureFont()
+  1337: 0005aa3c    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::~UPreference_TextureFont()
+  1338: 0005a9b4   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::~UPreference_TextureFont()
+  1339: 0005aa58   188 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::Initialize(unsigned long, bool, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&)
+  1340: 0005ab14    68 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::UPreference_TextureFont()
+  1341: 0006d150    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_TextureFont
+  1342: 0005ab58   380 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureFont::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1343: 0006a210    32 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_TextureFont
+  1344: 0006d140    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_TextureFont
+  1345: 0005acd4   128 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::SetSelectedValueIndex(unsigned long)
+  1346: 0005ad54   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::~UPreference_TextureSwap()
+  1347: 0005addc    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::~UPreference_TextureSwap()
+  1348: 0005ad54   136 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::~UPreference_TextureSwap()
+  1349: 0005adf8   236 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::~UPreference_TextureGroup()
+  1350: 0006d218    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_TextureGroup
+  1351: 0005aee4    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::~UPreference_TextureGroup()
+  1352: 0005adf8   236 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::~UPreference_TextureGroup()
+  1353: 0005af00   396 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::Initialize(unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1354: 0005b08c   176 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::Initialize(unsigned long, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1355: 0005b13c    64 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::UPreference_TextureSwap()
+  1356: 0006d1c0    84 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_TextureSwap
+  1357: 0005b17c    72 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::UPreference_TextureGroup()
+  1358: 0005b1dc   380 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureSwap::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1359: 0005b358   336 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TextureGroup::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1360: 0006a230    32 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_TextureSwap
+  1361: 0006d1a8    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_TextureSwap
+  1362: 0006a250    33 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_TextureGroup
+  1363: 0006d1b4    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_TextureGroup
+  1364: 0005b4a8     8 FUNC    WEAK   DEFAULT    7 STG::UPreference_Theme::GetNumSelectableValues() const
+  1365: 0005b4b0   276 FUNC    WEAK   DEFAULT    7 STG::UPreference_Theme::~UPreference_Theme()
+  1366: 0005b5c4   268 FUNC    WEAK   DEFAULT    7 STG::UPreference_Theme::~UPreference_Theme()
+  1367: 0005b6d0   240 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Theme::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1368: 0005b7c0   132 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Theme::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1369: 0005b844   340 FUNC    GLOBAL DEFAULT    7 STG::UPreference_Theme::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1370: 0006a274    26 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_Theme
+  1371: 0006d270    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_Theme
+  1372: 0005b5c4   268 FUNC    WEAK   DEFAULT    7 STG::UPreference_Theme::~UPreference_Theme()
+  1373: 0005b998    80 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::SetSelectedValueByName(STG::UStringBase<char, int> const&)
+  1374: 0005b9e8    48 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::GetShouldReflect() const
+  1375: 0005ba18    52 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::GetShouldReflect() const
+  1376: 0005ba4c    48 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::Initialize(STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, STG::UStringBase<char, int> const&, unsigned long)
+  1377: 0005ba7c    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_TimeOfDay::~UPreference_TimeOfDay()
+  1378: 0005bac0    76 FUNC    WEAK   DEFAULT    7 STG::UPreference_TimeOfDay::~UPreference_TimeOfDay()
+  1379: 0005bb0c    68 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::~UPreference_TimeOfDay_Auto()
+  1380: 0005bb50    28 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::~UPreference_TimeOfDay_Auto()
+  1381: 0005bb0c    68 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::~UPreference_TimeOfDay_Auto()
+  1382: 0005bd40   252 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::SetSelectedValue(STG::GETimeOfDay::EPhase const&)
+  1383: 0005be3c    60 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::UPreference_TimeOfDay_Auto()
+  1384: 0006d338    88 OBJECT  GLOBAL DEFAULT   13 vtable for STG::UPreference_TimeOfDay_Auto
+  1385: 0005be78   352 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1386: 0005bfd8   792 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::Initialize(STG::UPreference_TimeOfDay&)
+  1387: 0005c2f0   372 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay_Auto::GetKeyPrefix(STG::UStringBase<char, int>&) const
+  1388: 0005c464   448 FUNC    GLOBAL DEFAULT    7 STG::UPreference_TimeOfDay::PrintValue(unsigned long, STG::UStringBase<char, int>&) const
+  1389: 0006a290    30 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_TimeOfDay
+  1390: 0006d2d0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_TimeOfDay
+  1391: 0006a2b0    35 OBJECT  GLOBAL DEFAULT   10 typeinfo name for STG::UPreference_TimeOfDay_Auto
+  1392: 0006d2dc    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for STG::UPreference_TimeOfDay_Auto
+  1393: 0005ba7c    68 FUNC    WEAK   DEFAULT    7 STG::UPreference_TimeOfDay::~UPreference_TimeOfDay()
+  1394: 0005c624    52 FUNC    GLOBAL DEFAULT    7 StringHelperBase<STG::UStringBase<char, int>, char>::ReleaseString()
+  1395: 0005c658    52 FUNC    GLOBAL DEFAULT    7 StringHelperBase<STG::UStringBase<unsigned short, unsigned short>, unsigned short>::ReleaseString()
+  1396: 0005c68c   320 FUNC    GLOBAL DEFAULT    7 EngineBitmapData::EngineBitmapData(char const*, unsigned char*, unsigned long, unsigned short, unsigned short)
+  1397: 0005c7cc   116 FUNC    GLOBAL DEFAULT    7 EngineBitmapData::~EngineBitmapData()
+  1398: 0005c840    88 FUNC    GLOBAL DEFAULT    7 EngineBitmapData::GetIsValid() const
+  1399: 0005c898   144 FUNC    GLOBAL DEFAULT    7 EngineInterface::EngineInterface()
+  1400: 0005c928    52 FUNC    GLOBAL DEFAULT    7 EngineInterface::Allocate()
+  1401: 0005c898   144 FUNC    GLOBAL DEFAULT    7 EngineInterface::EngineInterface()
+  1402: 0006f7dc     4 OBJECT  GLOBAL DEFAULT   18 EngineInterface::s_nNumRefs
+  1403: 0005c95c   208 FUNC    GLOBAL DEFAULT    7 EngineInterface::ReserveBitmapData(unsigned long)
+  1404: 0005c7cc   116 FUNC    GLOBAL DEFAULT    7 EngineBitmapData::~EngineBitmapData()
+  1405: 0005ca2c   192 FUNC    GLOBAL DEFAULT    7 EngineInterface::~EngineInterface()
+  1406: 0005caec    72 FUNC    GLOBAL DEFAULT    7 EngineInterface::Deallocate(EngineInterface*&)
+  1407: 0005ca2c   192 FUNC    GLOBAL DEFAULT    7 EngineInterface::~EngineInterface()
+  1408: 0005ce88   180 FUNC    GLOBAL DEFAULT    7 EngineInterface::AddBitmapData(char const*, unsigned char*, unsigned long, unsigned short, unsigned short)
+  1409: 0005c68c   320 FUNC    GLOBAL DEFAULT    7 EngineBitmapData::EngineBitmapData(char const*, unsigned char*, unsigned long, unsigned short, unsigned short)
+  1410: 0005cf3c    28 FUNC    GLOBAL DEFAULT    7 EngineInterface::Activate()
+  1411: 0005cf58    32 FUNC    GLOBAL DEFAULT    7 EngineInterface::Deactivate()
+  1412: 0005cf78    12 FUNC    GLOBAL DEFAULT    7 JNI_OnLoad
+  1413: 0005cf84     4 FUNC    GLOBAL DEFAULT    7 JNI_OnUnload
+  1414: 0005cf88     4 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::Create(int) const
+  1415: 0005cf8c   124 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_Create
+  1416: 0005d008    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::Destroy(int) const
+  1417: 0005d034   124 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_Destroy
+  1418: 0005d0b0    28 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::Recreate(int) const
+  1419: 0005d0cc   124 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_Recreate
+  1420: 0005d148    96 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetStateLocation(int, float, float) const
+  1421: 0005d1a8   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetStateLocation
+  1422: 0005d230    20 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::GetNeedsReload(int) const
+  1423: 0005d244   124 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_GetNeedsReload
+  1424: 0005d2c0   148 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::LoadResources(int, _jobject*) const
+  1425: 0005d354   132 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_LoadResources
+  1426: 0005d3d8   948 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::Update(int, int, int, float, float, long long, double, float, unsigned char) const
+  1427: 0005d78c   172 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_Update
+  1428: 0005d838   364 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::Sleep(long long)
+  1429: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock
+  1430: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_timedwait_monotonic_np
+  1431: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock
+  1432: 00000000     0 FUNC    GLOBAL DEFAULT  UND sched_yield
+  1433: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init
+  1434: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_init
+  1435: 0005d9a4    12 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_Sleep
+  1436: 0005d9b0   492 FUNC    GLOBAL DEFAULT    7 StringHelperBase<STG::UStringBase<char, int>, char>::AcquireString(int)
+  1437: 0005db9c   340 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::AddBitmapData(int, _jstring*, _jobject*, int, int, int) const
+  1438: 0005dcf0   164 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_AddBitmapData
+  1439: 0005dd94   380 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::LoadFile(int, _jobject*, _jstring*) const
+  1440: 0005df10   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_LoadFile
+  1441: 0005df98   568 FUNC    GLOBAL DEFAULT    7 StringHelperBase<STG::UStringBase<unsigned short, unsigned short>, unsigned short>::AcquireString(int)
+  1442: 0005e1d0   508 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreference(STG::UPreference_Scene::EPreferenceType, int, _jstring*, _jstring*) const
+  1443: 0005e3cc    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceUserImage(int, _jstring*, _jstring*) const
+  1444: 0005e3f8   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceUserImage
+  1445: 0005e480    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceFontMessage(int, _jstring*, _jstring*) const
+  1446: 0005e4ac   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceFontMessage
+  1447: 0005e534    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceModelToggle(int, _jstring*, _jstring*) const
+  1448: 0005e560   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceModelToggle
+  1449: 0005e5e8    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceModelSwap(int, _jstring*, _jstring*) const
+  1450: 0005e614   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceModelSwap
+  1451: 0005e69c    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceTextureGroup(int, _jstring*, _jstring*) const
+  1452: 0005e6c8   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceTextureGroup
+  1453: 0005e750    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceCameraSet(int, _jstring*, _jstring*) const
+  1454: 0005e77c   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceCameraSet
+  1455: 0005e804    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceEnvironment(int, _jstring*, _jstring*) const
+  1456: 0005e830   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceEnvironment
+  1457: 0005e8b8    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceTimeOfDay(int, _jstring*, _jstring*) const
+  1458: 0005e8e4   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceTimeOfDay
+  1459: 0005e96c    44 FUNC    GLOBAL DEFAULT    7 EngineInterfaceImpl::SetPreferenceTimeOfDayAuto(int, _jstring*, _jstring*) const
+  1460: 0005e998   136 FUNC    GLOBAL DEFAULT    7 Java_com_dualboot_engine_EngineInterface_SetPreferenceTimeOfDayAuto
+  1461: 00000000     0 FUNC    GLOBAL DEFAULT  UND open
+  1462: 00000000     0 FUNC    GLOBAL DEFAULT  UND read
+  1463: 00000000     0 FUNC    GLOBAL DEFAULT  UND close
+  1464: 00000000     0 FUNC    GLOBAL DEFAULT  UND memchr
+  1465: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmem
+  1466: 00062274    56 FUNC    GLOBAL DEFAULT    7 __popcountsi2
+  1467: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtol
+  1468: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_once
+  1469: 0005f15d    32 FUNC    GLOBAL DEFAULT    7 android_getCpuCount
+  1470: 0005f17d    56 FUNC    GLOBAL DEFAULT    7 android_setCpu
+  1471: 0005f1b5    32 FUNC    GLOBAL DEFAULT    7 android_getCpuIdArm
+  1472: 0005f1d5    24 FUNC    GLOBAL DEFAULT    7 android_setCpuArm
+  1473: 00000000     0 FUNC    GLOBAL DEFAULT  UND munmap
+  1474: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy
+  1475: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_delete
+  1476: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_getspecific
+  1477: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_setspecific
+  1478: 00000000     0 FUNC    GLOBAL DEFAULT  UND mmap
+  1479: 000614b1     0 FUNC    GLOBAL DEFAULT    7 __cxa_end_cleanup
+  1480: 000615d9   260 FUNC    GLOBAL DEFAULT    7 __cxa_call_unexpected
+  1481: 000632c0    36 FUNC    GLOBAL DEFAULT    7 _Unwind_RaiseException
+  1482: 000630ec    32 FUNC    GLOBAL DEFAULT    7 _Unwind_DeleteException
+  1483: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_create
+  1484: 00000000     0 FUNC    GLOBAL DEFAULT  UND __assert2
+  1485: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlopen
+  1486: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlsym
+  1487: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlclose
+  1488: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __sF
+  1489: 000637cc    56 FUNC    GLOBAL DEFAULT    7 _Unwind_GetLanguageSpecificData
+  1490: 000627c4    68 FUNC    GLOBAL DEFAULT    7 _Unwind_VRS_Get
+  1491: 000637a0    44 FUNC    GLOBAL DEFAULT    7 _Unwind_GetRegionStart
+  1492: 00062830    68 FUNC    GLOBAL DEFAULT    7 _Unwind_VRS_Set
+  1493: 00063760    64 FUNC    GLOBAL DEFAULT    7 __gnu_unwind_frame
+  1494: 00061539    80 FUNC    GLOBAL DEFAULT    7 __cxa_begin_cleanup
+  1495: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_wait
+  1496: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_broadcast
+  1497: 0006da94     8 OBJECT  WEAK   DEFAULT   13 typeinfo for void
+  1498: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp
+  1499: 00060745     6 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::what() const
+  1500: 0006074d    44 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::~__Named_exception()
+  1501: 0006d5f0    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::__Named_exception
+  1502: 00060779    28 FUNC    GLOBAL DEFAULT    7 std::runtime_error::~runtime_error()
+  1503: 0006d530    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::runtime_error
+  1504: 00060795    28 FUNC    GLOBAL DEFAULT    7 std::underflow_error::~underflow_error()
+  1505: 0006d560    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::underflow_error
+  1506: 000607b1    18 FUNC    GLOBAL DEFAULT    7 std::underflow_error::~underflow_error()
+  1507: 00060795    28 FUNC    GLOBAL DEFAULT    7 std::underflow_error::~underflow_error()
+  1508: 000607c5    28 FUNC    GLOBAL DEFAULT    7 std::overflow_error::~overflow_error()
+  1509: 0006d548    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::overflow_error
+  1510: 000607e1    18 FUNC    GLOBAL DEFAULT    7 std::overflow_error::~overflow_error()
+  1511: 000607c5    28 FUNC    GLOBAL DEFAULT    7 std::overflow_error::~overflow_error()
+  1512: 000607f5    28 FUNC    GLOBAL DEFAULT    7 std::range_error::~range_error()
+  1513: 0006d670    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::range_error
+  1514: 00060811    18 FUNC    GLOBAL DEFAULT    7 std::range_error::~range_error()
+  1515: 000607f5    28 FUNC    GLOBAL DEFAULT    7 std::range_error::~range_error()
+  1516: 00060825    18 FUNC    GLOBAL DEFAULT    7 std::runtime_error::~runtime_error()
+  1517: 00060779    28 FUNC    GLOBAL DEFAULT    7 std::runtime_error::~runtime_error()
+  1518: 00060839    28 FUNC    GLOBAL DEFAULT    7 std::logic_error::~logic_error()
+  1519: 0006d618    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::logic_error
+  1520: 00060855    28 FUNC    GLOBAL DEFAULT    7 std::out_of_range::~out_of_range()
+  1521: 0006d630    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::out_of_range
+  1522: 00060871    18 FUNC    GLOBAL DEFAULT    7 std::out_of_range::~out_of_range()
+  1523: 00060855    28 FUNC    GLOBAL DEFAULT    7 std::out_of_range::~out_of_range()
+  1524: 00060885    28 FUNC    GLOBAL DEFAULT    7 std::length_error::~length_error()
+  1525: 0006d648    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::length_error
+  1526: 000608a1    18 FUNC    GLOBAL DEFAULT    7 std::length_error::~length_error()
+  1527: 00060885    28 FUNC    GLOBAL DEFAULT    7 std::length_error::~length_error()
+  1528: 000608b5    28 FUNC    GLOBAL DEFAULT    7 std::invalid_argument::~invalid_argument()
+  1529: 0006d5a8    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::invalid_argument
+  1530: 000608d1    18 FUNC    GLOBAL DEFAULT    7 std::invalid_argument::~invalid_argument()
+  1531: 000608b5    28 FUNC    GLOBAL DEFAULT    7 std::invalid_argument::~invalid_argument()
+  1532: 000608e5    28 FUNC    GLOBAL DEFAULT    7 std::domain_error::~domain_error()
+  1533: 0006d578    20 OBJECT  GLOBAL DEFAULT   13 vtable for std::domain_error
+  1534: 00060901    18 FUNC    GLOBAL DEFAULT    7 std::domain_error::~domain_error()
+  1535: 000608e5    28 FUNC    GLOBAL DEFAULT    7 std::domain_error::~domain_error()
+  1536: 00060915    18 FUNC    GLOBAL DEFAULT    7 std::logic_error::~logic_error()
+  1537: 00060839    28 FUNC    GLOBAL DEFAULT    7 std::logic_error::~logic_error()
+  1538: 00060929    18 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::~__Named_exception()
+  1539: 0006074d    44 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::~__Named_exception()
+  1540: 0006093d   116 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::__Named_exception(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  1541: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncpy
+  1542: 000609b1   104 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::__Named_exception(std::__Named_exception const&)
+  1543: 00060a19   120 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::operator=(std::__Named_exception const&)
+  1544: 00060b31    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_runtime_error(char const*)
+  1545: 0006d688    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::runtime_error
+  1546: 00060b91    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_range_error(char const*)
+  1547: 0006d5d8    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::range_error
+  1548: 0006d5cc    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::out_of_range
+  1549: 0006d608    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::length_error
+  1550: 00060cb1    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_invalid_argument(char const*)
+  1551: 0006d524    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::invalid_argument
+  1552: 00060d11    96 FUNC    GLOBAL DEFAULT    7 std::__stl_throw_overflow_error(char const*)
+  1553: 0006d590    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::overflow_error
+  1554: 0006a6cc    22 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::__Named_exception
+  1555: 0006d660    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::__Named_exception
+  1556: 0006a6bc    16 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::logic_error
+  1557: 0006d59c    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::logic_error
+  1558: 0006a67c    18 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::runtime_error
+  1559: 0006a708    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::domain_error
+  1560: 0006d5c0    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::domain_error
+  1561: 0006a690    21 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::invalid_argument
+  1562: 0006a71c    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::length_error
+  1563: 0006a6a8    17 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::out_of_range
+  1564: 0006a6e4    16 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::range_error
+  1565: 0006a6f4    19 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::overflow_error
+  1566: 0006a730    20 OBJECT  GLOBAL DEFAULT   10 typeinfo name for std::underflow_error
+  1567: 0006d5e4    12 OBJECT  GLOBAL DEFAULT   13 typeinfo for std::underflow_error
+  1568: 0006093d   116 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::__Named_exception(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  1569: 000609b1   104 FUNC    GLOBAL DEFAULT    7 std::__Named_exception::__Named_exception(std::__Named_exception const&)
+  1570: 00060da9   100 FUNC    GLOBAL DEFAULT    7 std::__malloc_alloc::allocate(unsigned int)
+  1571: 00060e0d    40 FUNC    GLOBAL DEFAULT    7 std::__malloc_alloc::set_malloc_handler(void (*)())
+  1572: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc
+  1573: 00061469     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::allocate(unsigned int&)
+  1574: 0006146d     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::deallocate(void*, unsigned int)
+  1575: 00061471     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::allocate(unsigned int&, std::priv::_Pthread_alloc_per_thread_state*)
+  1576: 00061475     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::deallocate(void*, unsigned int, std::priv::_Pthread_alloc_per_thread_state*)
+  1577: 00061479     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::reallocate(void*, unsigned int, unsigned int&)
+  1578: 0006147d     4 FUNC    GLOBAL DEFAULT    7 std::priv::_Pthread_alloc::_S_get_per_thread_state()
+  1579: 000632e4    36 FUNC    GLOBAL DEFAULT    7 _Unwind_Resume
+  1580: 000614c1   116 FUNC    GLOBAL DEFAULT    7 __cxa_type_match
+  1581: 0006d704    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decltype(nullptr) const*
+  1582: 0006a8b4     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for decltype(nullptr) const*
+  1583: 0006d724     8 OBJECT  WEAK   DEFAULT   13 typeinfo for decltype(nullptr)
+  1584: 0006d714    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decltype(nullptr)*
+  1585: 0006a8b0     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for decltype(nullptr)*
+  1586: 0006a8ac     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for decltype(nullptr)
+  1587: 0006d72c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal128 const*
+  1588: 0006a8a4     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal128 const*
+  1589: 0006d74c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal128
+  1590: 0006d73c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal128*
+  1591: 0006a8a0     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal128*
+  1592: 0006a89c     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal128
+  1593: 0006d754    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal64 const*
+  1594: 0006a894     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal64 const*
+  1595: 0006d774     8 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal64
+  1596: 0006d764    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal64*
+  1597: 0006a890     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal64*
+  1598: 0006a88c     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal64
+  1599: 0006d77c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal32 const*
+  1600: 0006a884     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal32 const*
+  1601: 0006d79c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal32
+  1602: 0006d78c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for decimal32*
+  1603: 0006a880     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal32*
+  1604: 0006a87c     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for decimal32
+  1605: 0006d7a4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long double const*
+  1606: 0006a878     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for long double const*
+  1607: 0006d7c4     8 OBJECT  WEAK   DEFAULT   13 typeinfo for long double
+  1608: 0006d7b4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long double*
+  1609: 0006a874     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for long double*
+  1610: 0006a870     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for long double
+  1611: 0006d7cc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for double const*
+  1612: 0006a86c     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for double const*
+  1613: 0006d7ec     8 OBJECT  WEAK   DEFAULT   13 typeinfo for double
+  1614: 0006d7dc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for double*
+  1615: 0006a868     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for double*
+  1616: 0006a864     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for double
+  1617: 0006d7f4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for float const*
+  1618: 0006a860     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for float const*
+  1619: 0006d814     8 OBJECT  WEAK   DEFAULT   13 typeinfo for float
+  1620: 0006d804    16 OBJECT  WEAK   DEFAULT   13 typeinfo for float*
+  1621: 0006a85c     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for float*
+  1622: 0006a858     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for float
+  1623: 0006d81c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long long const*
+  1624: 0006a854     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long long const*
+  1625: 0006d83c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long long
+  1626: 0006d82c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long long*
+  1627: 0006a850     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long long*
+  1628: 0006a84c     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long long
+  1629: 0006d844    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long long const*
+  1630: 0006a848     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for long long const*
+  1631: 0006d864     8 OBJECT  WEAK   DEFAULT   13 typeinfo for long long
+  1632: 0006d854    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long long*
+  1633: 0006a844     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for long long*
+  1634: 0006a840     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for long long
+  1635: 0006d86c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long const*
+  1636: 0006a83c     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long const*
+  1637: 0006d88c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long
+  1638: 0006d87c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned long*
+  1639: 0006a838     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long*
+  1640: 0006a834     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned long
+  1641: 0006d894    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long const*
+  1642: 0006a830     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for long const*
+  1643: 0006d8b4     8 OBJECT  WEAK   DEFAULT   13 typeinfo for long
+  1644: 0006d8a4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for long*
+  1645: 0006a82c     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for long*
+  1646: 0006a828     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for long
+  1647: 0006d8bc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned int const*
+  1648: 0006a824     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned int const*
+  1649: 0006d8dc     8 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned int
+  1650: 0006d8cc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned int*
+  1651: 0006a820     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned int*
+  1652: 0006a81c     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned int
+  1653: 0006d8e4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for int const*
+  1654: 0006a818     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for int const*
+  1655: 0006d904     8 OBJECT  WEAK   DEFAULT   13 typeinfo for int
+  1656: 0006d8f4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for int*
+  1657: 0006a814     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for int*
+  1658: 0006a810     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for int
+  1659: 0006d90c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned short const*
+  1660: 0006a80c     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned short const*
+  1661: 0006d92c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned short
+  1662: 0006d91c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned short*
+  1663: 0006a808     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned short*
+  1664: 0006a804     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned short
+  1665: 0006d934    16 OBJECT  WEAK   DEFAULT   13 typeinfo for short const*
+  1666: 0006a800     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for short const*
+  1667: 0006d954     8 OBJECT  WEAK   DEFAULT   13 typeinfo for short
+  1668: 0006d944    16 OBJECT  WEAK   DEFAULT   13 typeinfo for short*
+  1669: 0006a7fc     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for short*
+  1670: 0006a7f8     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for short
+  1671: 0006d95c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned char const*
+  1672: 0006a7f4     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned char const*
+  1673: 0006d97c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned char
+  1674: 0006d96c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for unsigned char*
+  1675: 0006a7f0     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned char*
+  1676: 0006a7ec     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for unsigned char
+  1677: 0006d984    16 OBJECT  WEAK   DEFAULT   13 typeinfo for signed char const*
+  1678: 0006a7e8     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for signed char const*
+  1679: 0006d9a4     8 OBJECT  WEAK   DEFAULT   13 typeinfo for signed char
+  1680: 0006d994    16 OBJECT  WEAK   DEFAULT   13 typeinfo for signed char*
+  1681: 0006a7e4     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for signed char*
+  1682: 0006a7e0     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for signed char
+  1683: 0006d9ac    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char const*
+  1684: 0006a7dc     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for char const*
+  1685: 0006d9cc     8 OBJECT  WEAK   DEFAULT   13 typeinfo for char
+  1686: 0006d9bc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char*
+  1687: 0006a7d8     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for char*
+  1688: 0006a7d4     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for char
+  1689: 0006d9d4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char32_t const*
+  1690: 0006a7cc     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for char32_t const*
+  1691: 0006d9f4     8 OBJECT  WEAK   DEFAULT   13 typeinfo for char32_t
+  1692: 0006d9e4    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char32_t*
+  1693: 0006a7c8     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for char32_t*
+  1694: 0006a7c4     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for char32_t
+  1695: 0006d9fc    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char16_t const*
+  1696: 0006a7bc     5 OBJECT  WEAK   DEFAULT   10 typeinfo name for char16_t const*
+  1697: 0006da1c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for char16_t
+  1698: 0006da0c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for char16_t*
+  1699: 0006a7b8     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for char16_t*
+  1700: 0006a7b4     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for char16_t
+  1701: 0006da24    16 OBJECT  WEAK   DEFAULT   13 typeinfo for wchar_t const*
+  1702: 0006a7b0     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for wchar_t const*
+  1703: 0006da44     8 OBJECT  WEAK   DEFAULT   13 typeinfo for wchar_t
+  1704: 0006da34    16 OBJECT  WEAK   DEFAULT   13 typeinfo for wchar_t*
+  1705: 0006a7ac     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for wchar_t*
+  1706: 0006a7a8     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for wchar_t
+  1707: 0006da4c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for bool const*
+  1708: 0006a7a4     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for bool const*
+  1709: 0006da6c     8 OBJECT  WEAK   DEFAULT   13 typeinfo for bool
+  1710: 0006da5c    16 OBJECT  WEAK   DEFAULT   13 typeinfo for bool*
+  1711: 0006a7a0     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for bool*
+  1712: 0006a79c     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for bool
+  1713: 0006da74    16 OBJECT  WEAK   DEFAULT   13 typeinfo for void const*
+  1714: 0006a798     4 OBJECT  WEAK   DEFAULT   10 typeinfo name for void const*
+  1715: 0006da84    16 OBJECT  WEAK   DEFAULT   13 typeinfo for void*
+  1716: 0006a794     3 OBJECT  WEAK   DEFAULT   10 typeinfo name for void*
+  1717: 0006a790     2 OBJECT  WEAK   DEFAULT   10 typeinfo name for void
+  1718: 00061b58   168 FUNC    GLOBAL DEFAULT    7 __udivsi3
+  1719: 00062264    16 FUNC    WEAK   DEFAULT    7 __aeabi_idiv0
+  1720: 00061c20     0 FUNC    GLOBAL DEFAULT    7 __aeabi_drsub
+  1721: 00061c28   688 FUNC    GLOBAL DEFAULT    7 __subdf3
+  1722: 00061c28   688 FUNC    GLOBAL DEFAULT    7 __aeabi_dsub
+  1723: 00061c2c   684 FUNC    GLOBAL DEFAULT    7 __adddf3
+  1724: 00061c2c   684 FUNC    GLOBAL DEFAULT    7 __aeabi_dadd
+  1725: 00061ed8    36 FUNC    GLOBAL DEFAULT    7 __floatunsidf
+  1726: 00061ed8    36 FUNC    GLOBAL DEFAULT    7 __aeabi_ui2d
+  1727: 00061efc    40 FUNC    GLOBAL DEFAULT    7 __floatsidf
+  1728: 00061efc    40 FUNC    GLOBAL DEFAULT    7 __aeabi_i2d
+  1729: 00061f24    64 FUNC    GLOBAL DEFAULT    7 __extendsfdf2
+  1730: 00061f24    64 FUNC    GLOBAL DEFAULT    7 __aeabi_f2d
+  1731: 00061f64   116 FUNC    GLOBAL DEFAULT    7 __floatundidf
+  1732: 00061f78    96 FUNC    GLOBAL DEFAULT    7 __floatdidf
+  1733: 00061f78    96 FUNC    GLOBAL DEFAULT    7 __aeabi_l2d
+  1734: 00061fd8   412 FUNC    GLOBAL DEFAULT    7 __aeabi_frsub
+  1735: 00061fe0   404 FUNC    GLOBAL DEFAULT    7 __subsf3
+  1736: 00061fe0   404 FUNC    GLOBAL DEFAULT    7 __aeabi_fsub
+  1737: 00061fe4   400 FUNC    GLOBAL DEFAULT    7 __addsf3
+  1738: 00061fe4   400 FUNC    GLOBAL DEFAULT    7 __aeabi_fadd
+  1739: 00062174    40 FUNC    GLOBAL DEFAULT    7 __floatunsisf
+  1740: 00062174    40 FUNC    GLOBAL DEFAULT    7 __aeabi_ui2f
+  1741: 0006217c    32 FUNC    GLOBAL DEFAULT    7 __floatsisf
+  1742: 0006217c    32 FUNC    GLOBAL DEFAULT    7 __aeabi_i2f
+  1743: 0006219c   140 FUNC    GLOBAL DEFAULT    7 __floatundisf
+  1744: 000621ac   124 FUNC    GLOBAL DEFAULT    7 __floatdisf
+  1745: 000621ac   124 FUNC    GLOBAL DEFAULT    7 __aeabi_l2f
+  1746: 00062264    16 FUNC    WEAK   DEFAULT    7 __aeabi_ldiv0
+  1747: 000623c4    60 FUNC    GLOBAL DEFAULT    7 __gnu_uldivmod_helper
+  1748: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise
+  1749: 0006a908   256 OBJECT  GLOBAL DEFAULT   10 __popcount_tab
+  1750: 00063814   620 FUNC    GLOBAL DEFAULT    7 __aeabi_dmul
+  1751: 00063c84    84 FUNC    GLOBAL DEFAULT    7 __aeabi_d2uiz
+  1752: 000622ac   112 FUNC    GLOBAL DEFAULT    7 __fixunssfdi
+  1753: 0006231c   108 FUNC    GLOBAL DEFAULT    7 __fixunsdfdi
+  1754: 00062388    60 FUNC    GLOBAL DEFAULT    7 __gnu_ldivmod_helper
+  1755: 00063cd8  1124 FUNC    GLOBAL DEFAULT    7 __divdi3
+  1756: 0006413c  1036 FUNC    GLOBAL DEFAULT    7 __udivdi3
+  1757: 00000000     0 FUNC    WEAK   DEFAULT  UND __gnu_Unwind_Find_exidx
+  1758: 00062c30     8 FUNC    WEAK   DEFAULT    7 __aeabi_unwind_cpp_pr2
+  1759: 000631f0     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Restore_VFP_D
+  1760: 000631e0     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Restore_VFP
+  1761: 00063200     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Restore_VFP_D_16_to_31
+  1762: 00063210     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Restore_WMMXD
+  1763: 00063298     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Restore_WMMXC
+  1764: 000631cc    20 FUNC    GLOBAL DEFAULT    7 restore_core_regs
+  1765: 000633cc   916 FUNC    GLOBAL DEFAULT    7 __gnu_unwind_execute
+  1766: 00062c48   844 FUNC    GLOBAL DEFAULT    7 _Unwind_VRS_Pop
+  1767: 000631f8     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Save_VFP_D
+  1768: 000631e8     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Save_VFP
+  1769: 00063208     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Save_VFP_D_16_to_31
+  1770: 00063254     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Save_WMMXD
+  1771: 000632ac     0 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Save_WMMXC
+  1772: 00062f94     8 FUNC    GLOBAL DEFAULT    7 _Unwind_GetCFA
+  1773: 00062f9c   164 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_RaiseException
+  1774: 00063040    28 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_ForcedUnwind
+  1775: 0006305c   108 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Resume
+  1776: 000630c8    32 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Resume_or_Rethrow
+  1777: 000630e8     4 FUNC    GLOBAL DEFAULT    7 _Unwind_Complete
+  1778: 0006310c   192 FUNC    GLOBAL DEFAULT    7 __gnu_Unwind_Backtrace
+  1779: 000631cc    20 FUNC    GLOBAL DEFAULT    7 __restore_core_regs
+  1780: 000632c0    36 FUNC    GLOBAL DEFAULT    7 ___Unwind_RaiseException
+  1781: 000632e4    36 FUNC    GLOBAL DEFAULT    7 ___Unwind_Resume
+  1782: 00063308    36 FUNC    GLOBAL DEFAULT    7 ___Unwind_Resume_or_Rethrow
+  1783: 00063308    36 FUNC    GLOBAL DEFAULT    7 _Unwind_Resume_or_Rethrow
+  1784: 0006332c    36 FUNC    GLOBAL DEFAULT    7 ___Unwind_ForcedUnwind
+  1785: 0006332c    36 FUNC    GLOBAL DEFAULT    7 _Unwind_ForcedUnwind
+  1786: 00063350    36 FUNC    GLOBAL DEFAULT    7 ___Unwind_Backtrace
+  1787: 00063350    36 FUNC    GLOBAL DEFAULT    7 _Unwind_Backtrace
+  1788: 00063804     8 FUNC    GLOBAL DEFAULT    7 _Unwind_GetDataRelBase
+  1789: 0006380c     8 FUNC    GLOBAL DEFAULT    7 _Unwind_GetTextRelBase
+  1790: 00063814   620 FUNC    GLOBAL DEFAULT    7 __muldf3
+  1791: 00063a80   516 FUNC    GLOBAL DEFAULT    7 __divdf3
+  1792: 00063a80   516 FUNC    GLOBAL DEFAULT    7 __aeabi_ddiv
+  1793: 00063c84    84 FUNC    GLOBAL DEFAULT    7 __fixunsdfsi
+  1794: 00064a68   296 FUNC    GLOBAL DEFAULT    7 sqrtf
+  1795: 00064880   488 FUNC    GLOBAL DEFAULT    7 sqrt
+  1796: 00064880   488 FUNC    WEAK   DEFAULT    7 sqrtl
+  1797: 00065a38  2096 FUNC    GLOBAL DEFAULT    7 __kernel_rem_pio2
+  1798: 000663c0   328 FUNC    GLOBAL DEFAULT    7 scalbn
+  1799: 00066268   344 FUNC    GLOBAL DEFAULT    7 floor
+  1800: 00066268   344 FUNC    WEAK   DEFAULT    7 floorl
+  1801: 000663c0   328 FUNC    WEAK   DEFAULT    7 ldexpl
+  1802: 000663c0   328 FUNC    WEAK   DEFAULT    7 scalbnl
+  1803: 0006e014     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+  1804: 0006e014     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+  1805: 0006f89c     0 NOTYPE  GLOBAL DEFAULT  ABS _end

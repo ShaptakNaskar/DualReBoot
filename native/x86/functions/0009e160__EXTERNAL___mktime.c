@@ -1,0 +1,12 @@
+/* 0009e160 | <EXTERNAL>::mktime */
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+
+time_t mktime(tm *__tp)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

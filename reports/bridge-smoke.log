@@ -1,0 +1,15 @@
+ELF loaded and constructors executed
+Engine created: 0x500470
+Scene loaded, heap=1014080
+Resources loaded, heap=1027152
+Frame 0: 5.73585 ms; heap=1043760
+Frame 1: 1.50997 ms; heap=1043760
+Frame 2: 1.46188 ms; heap=1043760
+Frame 3: 1.44098 ms; heap=1043760
+Frame 4: 1.44219 ms; heap=1043760
+Frame 5: 1.4691 ms; heap=1043760
+Frame 6: 1.42545 ms; heap=1043760
+Frame 7: 1.43093 ms; heap=1043760
+Frame 8: 1.47248 ms; heap=1043760
+Frame 9: 1.48427 ms; heap=1043760
+PASS: creation, original scene, original textures, 10 frames, destruction; see GL mode above.
