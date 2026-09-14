@@ -1,0 +1,27 @@
+{
+  "input_sha256": "2b5a71d39208c885ebc1f78b763211febb7f140595a2b004f46b61d6de7fe635",
+  "profile": "My Beach HD",
+  "version": "2.2",
+  "required_entries_verified": 247,
+  "output": "my-beach-hd-arm64.apk",
+  "output_sha256": "5b85801572a2099ae00e428c304c9d8c8b75a5f484658106e766e66f8f5ebf9e",
+  "native_libraries": [
+    {
+      "abi": "arm64-v8a",
+      "elf_class": 64,
+      "machine": 183,
+      "load_alignments": [
+        16384,
+        16384,
+        16384
+      ]
+    }
+  ],
+  "original_assets_verified": 102,
+  "min_sdk": 24,
+  "target_sdk": 24,
+  "debuggable": true,
+  "implementation": "ARM32 instruction translation inside a 64-bit process; GLES 2 shader bridge",
+  "known_issue": "Panning stutter on Nothing Phone 2; performance work is incomplete",
+  "verification_context": "Fresh local Git clone; external user-supplied APK; fresh extraction/native build; previously checksum/revision-verified tool cache reused"
+}

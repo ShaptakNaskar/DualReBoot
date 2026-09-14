@@ -15,7 +15,7 @@ The command successfully:
 - Checked all required JNI exports, ELF64/AArch64 type and 16 KB LOAD alignment.
 - Checked APK alignment/CRC, included only the selected 64-bit ABI, and preserved the original 102 assets byte for byte.
 
-A fresh clone test is recorded separately when completed. These packaging checks do not assert smoothness or feature parity.
+A fresh local Git clone also completed the full build. Its checkout path contained spaces; the build used explicit whitespace-free work/cache/SDK paths, exercising the documented Unicorn workaround. It used a fresh decode and native build, reusing the already verified tool/dependency cache. See [the resulting provenance report](../reports/public-clean-checkout-build.json). These packaging checks do not assert smoothness or feature parity.
 
 ## Automated source/build-tool checks
 
