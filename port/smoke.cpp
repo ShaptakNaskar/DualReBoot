@@ -99,6 +99,11 @@ int main(int argc, char **argv) {
                     540 * 3);
       std::cerr << "GL error after readback: " << glGetError() << "\n";
     }
+    std::cerr << "Native math calls:";
+    for (auto count : vm.nativeMathCalls)
+      std::cerr << " " << count;
+    std::cerr << "; vertices=" << vm.nativeMathVertices
+              << "; fallbacks=" << vm.nativeMathFallbacks << "\n";
     if (vm.invoke("Destroy", {engine}) != 0)
       throw std::runtime_error("Destroy did not clear engine");
     std::cout << "PASS: creation, original scene, original textures, 10 "

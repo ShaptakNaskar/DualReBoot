@@ -13,3 +13,7 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Check Python syntax
         run: python3 -m py_compile scripts/*.py tests/*.py port/embed.py
+      - name: Test reconstructed native math without proprietary inputs
+        run: |
+          c++ -std=c++17 -O2 -ffp-contract=off -Iport port/native_math.cpp tests/native_math_unit.cpp -o "$RUNNER_TEMP/native-math-unit"
+          "$RUNNER_TEMP/native-math-unit"

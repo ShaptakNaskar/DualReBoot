@@ -3,7 +3,9 @@
 #include <cstring>
 #include <dlfcn.h>
 #include <stdexcept>
+#include <string_view>
 #include <type_traits>
+#include <unordered_map>
 #ifndef BEACH_HOST_TEST
 #include "fixed_pipeline.hpp"
 #include <android/log.h>
@@ -17,6 +19,92 @@ bool mockGraphics() {
   return false;
 #endif
 }
+// Android's exported GLES stubs dispatch through the calling thread's EGL
+// context. Their addresses (and our fixed-pipeline entry points) do not change
+// per material, frame or context, so resolve once and share an immutable table.
+void *resolveGraphicsFunction(std::string_view name) {
+  static const auto functions = [] {
+    void *library = dlopen(
+#ifdef BEACH_HOST_TEST
+        "libGL.so.1",
+#else
+        "libGLESv2.so",
+#endif
+        RTLD_NOW | RTLD_LOCAL);
+    if (!library)
+      throw std::runtime_error("Cannot open graphics library");
+    const char *names[] = {"glNormalPointer",
+                           "glBlendFunc",
+                           "glAlphaFunc",
+                           "glEnable",
+                           "glDisable",
+                           "glCullFace",
+                           "glFrontFace",
+                           "glDepthFunc",
+                           "glDepthMask",
+                           "glColor4f",
+                           "glColorMask",
+                           "glLogicOp",
+                           "glClientActiveTexture",
+                           "glDisableClientState",
+                           "glEnableClientState",
+                           "glDrawElements",
+                           "glClearColor",
+                           "glClear",
+                           "glFinish",
+                           "glFlush",
+                           "glMatrixMode",
+                           "glLoadMatrixf",
+                           "glLoadIdentity",
+                           "glGenTextures",
+                           "glDeleteTextures",
+                           "glBindTexture",
+                           "glActiveTexture",
+                           "glTexParameteri",
+                           "glTexEnvi",
+                           "glTexEnvf",
+                           "glTexParameterf",
+                           "glTexEnvfv",
+                           "glFogf",
+                           "glFogfv",
+                           "glCopyTexImage2D",
+                           "glGenBuffers",
+                           "glDeleteBuffers",
+                           "glBindBuffer",
+                           "glBufferData",
+                           "glBufferSubData",
+                           "glGetError",
+                           "glDepthRangef",
+                           "glViewport",
+                           "glReadPixels",
+                           "glTexImage2D",
+                           "glCompressedTexImage2D",
+                           "glGetString",
+                           "glGetFloatv",
+                           "glVertexPointer",
+                           "glColorPointer",
+                           "glTexCoordPointer"};
+    std::unordered_map<std::string_view, void *> result;
+    result.reserve(sizeof(names) / sizeof(names[0]));
+    for (const char *entry : names) {
+      void *address = nullptr;
+#ifndef BEACH_HOST_TEST
+      address = fixedPipelineProc(entry);
+#endif
+      if (!address)
+        address = dlsym(library, entry);
+      // Optional/unused legacy functions can be absent from GLES 2. Keep the
+      // same explicit error if one is actually invoked; do not fail at startup.
+      result.emplace(entry, address);
+    }
+    return result;
+  }();
+  auto found = functions.find(name);
+  if (found == functions.end() || !found->second)
+    throw std::runtime_error("Missing graphics function " + std::string(name));
+  return found->second;
+}
+
 template <class R, class... A> R gl(const char *name, A... args) {
   if (mockGraphics()) {
     if constexpr (!std::is_void_v<R>)
@@ -24,24 +112,7 @@ template <class R, class... A> R gl(const char *name, A... args) {
     else
       return;
   }
-  static void *library = dlopen(
-#ifdef BEACH_HOST_TEST
-      "libGL.so.1",
-#else
-      "libGLESv2.so",
-#endif
-      RTLD_NOW | RTLD_LOCAL);
-  if (!library)
-    throw std::runtime_error("Cannot open graphics library");
-  void *address = nullptr;
-#ifndef BEACH_HOST_TEST
-  address = fixedPipelineProc(name);
-#endif
-  if (!address)
-    address = dlsym(library, name);
-  auto fn = reinterpret_cast<R (*)(A...)>(address);
-  if (!fn)
-    throw std::runtime_error(std::string("Missing graphics function ") + name);
+  auto fn = reinterpret_cast<R (*)(A...)>(resolveGraphicsFunction(name));
   if constexpr (std::is_void_v<R>)
     fn(args...);
   else

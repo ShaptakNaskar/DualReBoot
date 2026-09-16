@@ -160,13 +160,19 @@ extern "C" JNIEXPORT jint JNICALL JNI_METHOD(Update)(
          uint32_t(time), uint32_t(uint64_t(time) >> 32), uint32_t(p),
          uint32_t(p >> 32), bits(fade), uint32_t(vignette)});
     if (++vm().frames % 300 == 0)
-      __android_log_print(ANDROID_LOG_INFO, "BeachArm64",
-                          "Frame %llu: %.1f ms, guest heap %u",
-                          static_cast<unsigned long long>(vm().frames),
-                          std::chrono::duration<double, std::milli>(
-                              std::chrono::steady_clock::now() - start)
-                              .count(),
-                          vm().heapBytes());
+      __android_log_print(
+          ANDROID_LOG_INFO, "BeachArm64",
+          "Frame %llu: %.1f ms, guest heap %u, native vertices %llu, native "
+          "matrices %llu",
+          static_cast<unsigned long long>(vm().frames),
+          std::chrono::duration<double, std::milli>(
+              std::chrono::steady_clock::now() - start)
+              .count(),
+          vm().heapBytes(),
+          static_cast<unsigned long long>(vm().nativeMathVertices),
+          static_cast<unsigned long long>(
+              vm().nativeMathCalls[2] + vm().nativeMathCalls[3] +
+              vm().nativeMathCalls[4] + vm().nativeMathCalls[5]));
     return value;
   });
 }

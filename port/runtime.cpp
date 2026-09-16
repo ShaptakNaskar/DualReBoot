@@ -163,9 +163,10 @@ void BeachRuntime::trapHook(uc_engine *u, uint64_t address, uint32_t,
     }
     self->importsUsed[name]++;
     self->dispatch(name);
-    uint32_t lr = 0;
-    self->check(uc_reg_read(u, UC_ARM_REG_LR, &lr), "bridge return");
-    self->check(uc_reg_write(u, UC_ARM_REG_PC, &lr), "bridge branch");
+    // The trampoline already contains an ARM `bx lr`. Let the guest execute
+    // that return, including the ARM/Thumb state change. Writing PC from the
+    // hook forces Unicorn out of its translated execution loop on every import.
+    // Result registers were updated by dispatch(); LR/SP remain untouched.
   } catch (const std::exception &error) {
     self->callbackError = "Import at 0x" + hex(address) + ": " + error.what();
     uc_emu_stop(u);
@@ -179,8 +180,9 @@ bool BeachRuntime::faultHook(uc_engine *u, uc_mem_type t, uint64_t a, int n,
   uc_emu_stop(u);
   return false;
 }
-BeachRuntime::BeachRuntime(const uint8_t *elf, size_t size, Assets reader)
-    : assets(std::move(reader)) {
+BeachRuntime::BeachRuntime(const uint8_t *elf, size_t size, Assets reader,
+                           MathBackend backend)
+    : assets(std::move(reader)), mathBackend(backend) {
   if (size < sizeof(Elf32_Ehdr))
     throw std::runtime_error("Truncated ELF");
   Elf32_Ehdr h;
@@ -202,7 +204,14 @@ BeachRuntime::BeachRuntime(const uint8_t *elf, size_t size, Assets reader)
   try {
     check(uc_open(UC_ARCH_ARM, UC_MODE_ARM, &uc), "uc_open");
     check(uc_ctl_set_cpu_model(uc, UC_CPU_ARM_CORTEX_A15), "cpu model");
-    check(uc_mem_map_ptr(uc, Base, RamSize, UC_PROT_ALL, ram), "guest memory");
+    // Data writes must not enter Unicorn's self-modifying-code path. Only ELF
+    // code pages and import return stubs are executable; heap/stack stay RW.
+    check(uc_mem_map_ptr(uc, Base, RamSize, UC_PROT_READ | UC_PROT_WRITE, ram),
+          "guest memory");
+    size_t pageSize = 0;
+    check(uc_query(uc, UC_QUERY_PAGE_SIZE, &pageSize), "guest page size");
+    check(uc_mem_protect(uc, Trap, Env - Trap, UC_PROT_READ | UC_PROT_EXEC),
+          "import code permissions");
     uint32_t fpexc = 0x40000000;
     check(uc_reg_write(uc, UC_ARM_REG_FPEXC, &fpexc), "enable VFP");
     for (unsigned j = 0; j < h.e_phnum; j++) {
@@ -213,6 +222,15 @@ BeachRuntime::BeachRuntime(const uint8_t *elf, size_t size, Assets reader)
           throw std::runtime_error("ELF exceeds image area");
         memcpy(memory(Base + p.p_vaddr, p.p_memsz),
                bytes(p.p_offset, p.p_filesz), p.p_filesz);
+        if (p.p_flags & PF_X) {
+          const uint64_t start = (Base + uint64_t(p.p_vaddr)) & ~(pageSize - 1);
+          const uint64_t end = (Base + uint64_t(p.p_vaddr) + p.p_memsz +
+                                pageSize - 1) & ~(pageSize - 1);
+          check(uc_mem_protect(uc, start, end - start,
+                               UC_PROT_READ | UC_PROT_EXEC |
+                                   ((p.p_flags & PF_W) ? UC_PROT_WRITE : 0)),
+                "ELF code permissions");
+        }
       }
     }
     available[Heap] = Base + RamSize - Heap;
@@ -318,6 +336,8 @@ BeachRuntime::BeachRuntime(const uint8_t *elf, size_t size, Assets reader)
     check(uc_hook_add(uc, &hook, UC_HOOK_MEM_INVALID,
                       reinterpret_cast<void *>(faultHook), this, 1, 0),
           "fault hook");
+    if (mathBackend == MathBackend::Native)
+      installNativeMath();
     for (auto &section : sections)
       if (section.sh_type == SHT_INIT_ARRAY)
         for (unsigned j = 0; j < section.sh_size; j += 4) {
@@ -943,4 +963,18 @@ void BeachRuntime::dispatch(const std::string &n) {
       n == "raise")
     throw std::runtime_error("Engine requested fatal termination: " + n);
   throw std::runtime_error("Unimplemented import: " + n);
+}
+
+uint32_t BeachRuntime::callSymbol(const std::string &name,
+                                  const std::vector<uint32_t> &args,
+                                  const std::vector<float> &vfpArgs) {
+  auto function = symbols.find(name);
+  if (function == symbols.end())
+    throw std::runtime_error("Unknown guest export: " + name);
+  if (vfpArgs.size() > 16)
+    throw std::runtime_error("Too many VFP test arguments");
+  for (size_t i = 0; i < vfpArgs.size(); i++)
+    check(uc_reg_write(uc, UC_ARM_REG_S0 + int(i), &vfpArgs[i]),
+          "VFP argument");
+  return execute(function->second, args);
 }

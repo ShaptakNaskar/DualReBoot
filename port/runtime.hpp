@@ -1,4 +1,5 @@
 #pragma once
+#include <array>
 #include <cstdint>
 #include <cstdio>
 #include <functional>
@@ -12,7 +13,15 @@
 class BeachRuntime {
 public:
   using Assets = std::function<std::vector<uint8_t>(const std::string &)>;
-  BeachRuntime(const uint8_t *elf, size_t size, Assets assets);
+  enum class MathBackend { Guest, Native };
+  BeachRuntime(const uint8_t *elf, size_t size, Assets assets,
+               MathBackend backend = MathBackend::Native);
+  // Differential-test seam; production Java only sees the JNI interface.
+  uint32_t callSymbol(const std::string &name,
+                      const std::vector<uint32_t> &args,
+                      const std::vector<float> &vfpArgs = {});
+  std::array<uint64_t, 6> nativeMathCalls{};
+  uint64_t nativeMathVertices = 0, nativeMathFallbacks = 0;
   ~BeachRuntime();
   BeachRuntime(const BeachRuntime &) = delete;
   uint32_t invoke(const std::string &method, std::vector<uint32_t> args = {});
@@ -37,6 +46,8 @@ private:
   uc_engine *uc = nullptr;
   uint8_t *ram = nullptr;
   Assets assets;
+  MathBackend mathBackend;
+  std::unordered_map<uint32_t, unsigned> mathEntries;
   std::unordered_map<std::string, uint32_t> symbols, imports;
   std::unordered_map<uint32_t, std::string> traps;
   std::map<uint32_t, uint32_t> available, allocated;
@@ -55,6 +66,9 @@ private:
   static void trapHook(uc_engine *, uint64_t, uint32_t, void *);
   static bool faultHook(uc_engine *, uc_mem_type, uint64_t, int, int64_t,
                         void *);
+  void installNativeMath();
+  static void mathHook(uc_engine *, uint64_t, uint32_t, void *);
+  bool nativeMath(unsigned operation);
   void check(uc_err error, const char *operation);
   uint32_t resolve(const std::string &name);
   uint32_t execute(uint32_t address, const std::vector<uint32_t> &args);
