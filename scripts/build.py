@@ -99,7 +99,7 @@ def main() -> None:
                          ndk=ndk, unicorn=unicorn, apktool=apktool,
                          libraries=libraries, profile=profile, provenance=provenance)
     print(f"\nBuilt and signature-verified: {result}\n"
-          "This experimental build still has a known panning performance regression; see docs/PERFORMANCE.md.")
+          "Panning performance has improved, but high-refresh pacing remains experimental; see docs/PERFORMANCE.md.")
 
 
 if __name__ == "__main__":

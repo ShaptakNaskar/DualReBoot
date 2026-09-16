@@ -65,3 +65,11 @@ The owner requested a public repository named **DualReBoot**, containing project
 The publication preserves text decompilations, smali/XML references, symbols, pseudocode, research and sanitized logs. It excludes binaries, encoded engine headers, tool installations, signing material and private phone backups. A new build entry point validates an external APK, restores the complete extraction locally, fetches pinned tools/dependencies, compiles and signs the result.
 
 The initial repository explicitly records that the panning regression remains open. Publishing a build workflow is not presented as a performance fix.
+
+## 10. Isolate performance costs and begin native reconstruction
+
+The measurement harness was corrected to wait for advancing timestamps on the newest wallpaper layer and restart the preview camera sweep after resource loading. A stale layer or a sweep that expired during loading can otherwise produce misleading results. Touch replay reliably exposed slower presentation; `input swipe` is stress input and is not calibrated to physical finger event frequency.
+
+Caching all 51 graphics import targets improved a controlled Noon touch test from about 43 to 56 FPS. Letting the existing guest `bx lr` stubs return naturally improved it to about 61 FPS. Native math reconstruction passed 2,200 differential cases on the physical ARM64 phone, but did not show an isolated FPS gain. A uniform-cache experiment was slower and was reverted.
+
+Thread CPU-time probes showed around 14 ms of CPU work in roughly 14–15 ms of wall time during panning, supporting a CPU bottleneck. A new profile confirmed repeated graphics symbol resolution had gone. Restricting executable guest memory removed the self-modifying-code invalidation hotspot and produced about 68 FPS in the touch test. An alternate virtual-TLB mode increased CPU time to roughly 20 ms and was rejected. Temporary CPU probes were removed from the final build. Detailed results and caveats are maintained in PERFORMANCE.md.

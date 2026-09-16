@@ -1,6 +1,6 @@
 # Technical deep dive
 
-DualReBoot preserves the original scene/simulation code by executing its ARMv7 machine code inside an ARM64 library. It rebuilds the Android/native boundary and graphics path. It does **not** turn Ghidra's output into a natively recompiled copy of every original engine function.
+DualReBoot preserves the original scene/simulation code by executing its ARMv7 machine code inside an ARM64 library. It rebuilds the Android/native boundary and graphics path. Six math routines now have tested native C++ replacements; the rest of the simulation still executes as original ARM32 instructions. It does **not** turn Ghidra's output into a natively recompiled copy of every original engine function.
 
 ## Original application structure
 
@@ -160,6 +160,18 @@ Input hashes validate the known program/data revision. They do not prove the use
 
 ## What remains difficult
 
-Rendering in a compatibility runtime is not equivalent to the original app's native performance. The phone now exposes a reproducible panning regression that the desktop/emulator functional checks did not settle. CPU sampling identifies dynamic-linker and translation overhead, but not yet the dominant source of frame gaps. Read [PERFORMANCE.md](PERFORMANCE.md) for measurements and proposed isolated tests.
+Rendering in a compatibility runtime is not equivalent to the original app's native performance. The phone now exposes a reproducible panning regression that the desktop/emulator functional checks did not settle. Measured improvements cache graphics symbols, let import stubs return naturally, and restrict executable guest pages. CPU timing confirms that translated execution remains significant during touch-driven panning. Read [PERFORMANCE.md](PERFORMANCE.md) for the comparison protocol and remaining limitations.
 
 A future fully native port would still need accurate engine types, serializers, resource ownership, animation/logic behavior and rendering semantics. The preserved symbols and multiple-ABI decompilations are starting points for that work, not a finished reconstruction.
+
+## Incremental native reconstruction
+
+`port/native_math.cpp` reconstructs the original software XYZ blend, three-bone skinning and four matrix products. `runtime_math.cpp` intercepts those exact exports, validates guest ranges and uses original instructions for overlapping operands where equivalence has not been established. Source CI tests the pure native functions; `math-differential` compares them with the locally supplied original ARM32 engine. The 2,200-case comparison passes on the host and on the physical ARM64 phone. This is finite numerical testing, not a proof for every floating-point bit pattern.
+
+The internal blend routine uses AAPCS-VFP (weight in S0, count in R3), unlike the JNI boundary. Software blend/skinning process XYZ at a four-float stride and preserve W. `Transform3x3_Transpose` computes transpose(B) × A in row-major storage. Fused multiply/add is disabled to preserve the original scalar operation order. These details were checked against instructions and differential results rather than inferred solely from decompiler signatures.
+
+The native routines execute during real beach animation, but the isolated phone comparison has not demonstrated a separate FPS benefit from this small native subset. A full native engine still requires reconstructing types, resource ownership, animation and serialization; generated Ghidra pseudocode cannot simply be compiled for ARM64.
+
+Guest memory starts read/write. Only executable ELF segments and the import-stub region receive execute permission. The original validated ELF has separate code and data pages. This avoids Unicorn checking heap and stack writes for self-modifying code. These are emulator permissions; the embedded ARM32 ELF remains data from Android's perspective. Import stubs already contain `bx lr`, so ordinary host calls no longer write the guest program counter and force an emulator exit. Calls that reenter guest execution (`pthread_once`) still use the deferred outer loop.
+
+The guest page permissions are a performance and guest-instruction access policy, not a sandbox boundary. Host bridge routines write through the backing pointer and do not enforce those permissions. This runtime accepts only the pinned, validated engine; it is not intended to safely execute arbitrary or self-modifying guest code.

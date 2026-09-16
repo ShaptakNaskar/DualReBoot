@@ -4,7 +4,7 @@ A preservation and compatibility project for **DualBoot Games' My Beach HD 2.2**
 
 DualReBoot builds an ARM64 Android live wallpaper from an APK **you supply from a legitimate source**. It runs the original ARM32 engine through a bundled Unicorn instruction translator inside a native 64-bit library, and reproduces its fixed-function graphics through OpenGL ES 2 shaders. It does not require Android's ARM32 runtime.
 
-**Current status: functional, experimental, and not yet smooth enough.** Rendering, wallpaper installation, and settings work. A Nothing Phone 2 running Android 16 reproduces severe panning stutter, especially between the umbrella and the far-right scene. That regression is **not fixed in this repository's initial version**. Read the [performance investigation](docs/PERFORMANCE.md) before building.
+**Current status: functional and experimental, with measured panning improvements.** On a Nothing Phone 2 running Android 16, a controlled touch-driven preview test improved from 42.77 to 67.99 FPS, with p95 frame intervals falling from 33.34 to 22.24 ms. Perfect high-refresh pacing and full original-app parity are not established. Read the [performance measurements and limitations](docs/PERFORMANCE.md) before building.
 
 This repository contains source and text research artifacts. APKs, native binaries, textures/images, scene binaries, screenshots, profiler recordings, downloaded tools, and signing keys are not published. There are no binary release downloads.
 

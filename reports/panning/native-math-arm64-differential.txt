@@ -1,0 +1,8 @@
+PASS: 2200 differential cases against original ARM32 instructions; XYZ/stride, matrix variants and alias fallbacks verified.
+_ZN3STG5MSIMD16BlendVector4f_SWEPfPKfS3_fm native calls=320
+_ZN3STG5MSIMD16Skin3Vector4f_SWEPfPKfS3_S3_S3_S3_m native calls=200
+_ZNK3STG7MMatrix9TransformERKS0_RS0_ native calls=100
+_ZNK3STG7MMatrix12Transform4x3ERKS0_RS0_ native calls=100
+_ZNK3STG7MMatrix12Transform3x3ERKS0_RS0_ native calls=100
+_ZNK3STG7MMatrix22Transform3x3_TransposeERKS0_RS0_ native calls=100
+Fallbacks=1280 vertices=27700

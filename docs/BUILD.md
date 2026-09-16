@@ -167,3 +167,16 @@ That produces `dist/my-beach-hd-64bit.apk`, containing ARM64 and x86_64. It stil
 | The wallpaper works but pans badly | Known regression; see [PERFORMANCE.md](PERFORMANCE.md). |
 
 Build checks do not establish full feature parity, smoothness, battery behavior or thermal performance. See [VERIFICATION.md](VERIFICATION.md).
+
+## Verify reconstructed native math locally
+
+The ordinary build includes six reconstructed native math routines. CI tests their standalone semantics without an APK. To compare them against the original instructions, first complete the normal build above, then run the generated Android executable on your own authorized ARM64 test device:
+
+```sh
+adb push build/work/native-arm64-v8a/math-differential /data/local/tmp/dualreboot-math-test
+adb push build/work/decoded/lib/armeabi-v7a/libdbgengine.so /data/local/tmp/dualreboot-original-engine.bin
+adb shell /data/local/tmp/dualreboot-math-test /data/local/tmp/dualreboot-original-engine.bin
+adb shell rm /data/local/tmp/dualreboot-math-test /data/local/tmp/dualreboot-original-engine.bin
+```
+
+Use your configured work directory if different. Expected result: 2,200 passing differential cases. Keep the original engine and generated executable local; neither belongs in Git. Run correctness tests separately from FPS measurements so their CPU load does not distort the result.

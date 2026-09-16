@@ -44,8 +44,16 @@ The owner subsequently confirmed the build worked on their physical Nothing Phon
 
 - **Panning stutter remains unresolved in the initial public version.**
 - No claim of parity across every holiday, effect, optional purchase or user-image path.
-- No battery/thermal certification or unbiased performance result after a fix.
+- No battery/thermal certification or controlled long-session performance study.
 - The binary has 16 KB-compatible LOAD alignment, but execution on a physical 16 KB-page device has not been tested.
 - The app retains legacy Java/UI behavior and target SDK 24.
 - Ghidra/JADX output is reference material with known inference/control-flow limitations, not recovered original compilable source.
 - Original purchase/licensing behavior is preserved and has not been comprehensively validated.
+
+## Performance revision verification
+
+The 17 Python input-validation, compatibility-patch and source-only tests pass. A new source-only C++ test covers reconstructed native vector/matrix semantics and runs in CI. The 2,200-case differential executable passes against the locally supplied original engine on both the development host and the physical ARM64 phone. The host scene/texture/render smoke test passes with a real GL context.
+
+The optimized APK was rebuilt, checked for ABI/alignment/signature/asset preservation by the normal builder, then signed with the existing local development key for an in-place device update. A fresh baseline-versus-optimized touch comparison measured 42.77 versus 67.99 FPS. See PERFORMANCE.md for actual home/manual checks and the remaining frame-pacing limitation.
+
+An independent read-only code review found no blocking correctness or security regression in the graphics cache, import returns, guest code-page permissions or six native math replacements. It noted that guest permissions do not restrict direct host writes through the backing pointer; this is now explicit in the technical documentation. Temporary CPU probes were removed. Raw private phone data and all APK/profiler binaries remain outside Git.
