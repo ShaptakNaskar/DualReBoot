@@ -1,8 +1,10 @@
-# DualReBoot
+# MyBeachDecompHD
 
-A preservation and compatibility project for **DualBoot Games' My Beach HD 2.2**. The name is a play on DualBoot.
+A preservation, decompilation and native reconstruction project for **DualBoot Games' My Beach HD 2.2**. Previously named DualReBoot.
 
-DualReBoot builds an ARM64 Android live wallpaper from an APK **you supply from a legitimate source**. It runs the original ARM32 engine through a bundled Unicorn instruction translator inside a native 64-bit library, and reproduces its fixed-function graphics through OpenGL ES 2 shaders. It does not require Android's ARM32 runtime.
+**Native reconstruction — milestone 1:** the `native-decomp` branch starts a shared C++ engine for fully native Linux and Android ports. The [asset library](native-port/) decodes all 100 original textures and reads scene metadata without instruction translation or the original engine binary. Rendering, animation and platform hosts remain to be reconstructed. See [milestone results](reports/NATIVE-PORT.md).
+
+MyBeachDecompHD builds an ARM64 Android live wallpaper from an APK **you supply from a legitimate source**. It runs the original ARM32 engine through a bundled Unicorn instruction translator inside a native 64-bit library, and reproduces its fixed-function graphics through OpenGL ES 2 shaders. It does not require Android's ARM32 runtime.
 
 **Current status: functional and experimental, with measured panning improvements.** On a Nothing Phone 2 running Android 16, a controlled touch-driven preview test improved from 42.77 to 67.99 FPS, with p95 frame intervals falling from 33.34 to 22.24 ms. Perfect high-refresh pacing and full original-app parity are not established. Read the [performance measurements and limitations](docs/PERFORMANCE.md) before building.
 
@@ -13,8 +15,8 @@ This repository contains source and text research artifacts. APKs, native binari
 The documented host is Linux x86_64, including a Linux environment under WSL2. Install Java 17+, Python 3.10+, Git, CMake 3.22+, Ninja, and Android SDK components as described in the [step-by-step build guide](docs/BUILD.md).
 
 ```sh
-git clone https://github.com/ShaptakNaskar/DualReBoot.git
-cd DualReBoot
+git clone https://github.com/ShaptakNaskar/MyBeachDecompHD.git
+cd MyBeachDecompHD
 python3 scripts/build.py \
   --apk "/path/to/your/legitimately-obtained/My Beach HD 2.2.apk" \
   --sdk "/path/to/Android/Sdk"
@@ -34,6 +36,7 @@ Output: `dist/my-beach-hd-arm64.apk`, plus `dist/my-beach-hd-arm64.json` with pr
 | Current panning regression, measurements and hypotheses | [Performance investigation](docs/PERFORMANCE.md) |
 | Tests, evidence and limits of validation | [Verification](docs/VERIFICATION.md) |
 | What was included, excluded or sanitized for publication | [Repository contents](docs/REPOSITORY-CONTENTS.md) |
+| Native reconstruction for Linux and Android | [native-port/](native-port/) |
 | Original native interface and shader/runtime implementation | [port/](port/) and [native/jni/](native/jni/) |
 | Original Java decompilation and fallback output | [decompiled/](decompiled/) |
 | Original manifest, XML resources, settings text and smali | [decoded/](decoded/) |

@@ -4,6 +4,8 @@ The public tree was exported from the working research directory as text only. T
 
 Included:
 
+- Portable native C++ asset loader, inspection tool and tests for the Linux/Android reconstruction.
+
 - Buildable C++ compatibility runtime, shader implementation, JNI declarations and source-generation script.
 - Active APK validation/build/packaging tools and tests.
 - Decompiled Java, fallback Java-like output, original smali, readable manifest/resources and settings text.

@@ -27,6 +27,7 @@ __pycache__/
 *.pvr
 *.stg-scene
 *.ppm
+*.pam
 *.mp4
 *.data
 *.idsig

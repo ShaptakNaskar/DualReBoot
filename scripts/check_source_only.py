@@ -8,7 +8,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DENIED = {'.apk', '.aab', '.apks', '.dex', '.so', '.a', '.o', '.class', '.jar', '.zip', '.gz', '.7z', '.tar',
-          '.png', '.jpg', '.jpeg', '.webp', '.gif', '.ico', '.pvr', '.stg-scene', '.ppm', '.mp4', '.data',
+          '.png', '.jpg', '.jpeg', '.webp', '.gif', '.ico', '.pvr', '.stg-scene', '.ppm', '.pam', '.mp4', '.data',
           '.idsig', '.jks', '.keystore', '.pem', '.key', '.rsa', '.dsa', '.ec'}
 BASENAMES = {'engine_bytes.hpp', 'original-preferences.xml', 'original-screen-timeout.txt', '.env'}
 

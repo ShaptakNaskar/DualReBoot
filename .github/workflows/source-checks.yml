@@ -17,3 +17,8 @@ jobs:
         run: |
           c++ -std=c++17 -O2 -ffp-contract=off -Iport port/native_math.cpp tests/native_math_unit.cpp -o "$RUNNER_TEMP/native-math-unit"
           "$RUNNER_TEMP/native-math-unit"
+      - name: Test native asset loader without proprietary inputs
+        run: |
+          cmake -S native-port -B build/native-port-ci -DCMAKE_BUILD_TYPE=Release
+          cmake --build build/native-port-ci
+          ctest --test-dir build/native-port-ci --output-on-failure

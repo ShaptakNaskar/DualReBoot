@@ -69,8 +69,8 @@ A legitimate copy can still be a different, unsupported revision. If validation 
 ## 4. Clone the source repository
 
 ```sh
-git clone https://github.com/ShaptakNaskar/DualReBoot.git
-cd DualReBoot
+git clone https://github.com/ShaptakNaskar/MyBeachDecompHD.git
+cd MyBeachDecompHD
 ```
 
 The reference directories deliberately contain no binary assets. Do not try to run `apktool b decoded` on the published text-only tree.

@@ -143,7 +143,7 @@ def package_apk(*, apk: Path, decoded: Path, work: Path, output: Path,
         (notices / "NOTICE.txt").write_text(
             "DualReBoot experimental 64-bit compatibility runtime, using Unicorn 2.1.4.\n"
             "The original ARM32 engine is translated inside a 64-bit process.\n"
-            "Source/build instructions: https://github.com/ShaptakNaskar/DualReBoot\n"
+            "Source/build instructions: https://github.com/ShaptakNaskar/MyBeachDecompHD\n"
             "Original application and artwork retain their original ownership.\n")
         unsigned, aligned = temp / "unsigned.apk", temp / "aligned.apk"
         run(apktool + ["b", str(stage), "-p", str(work / "framework"), "-o", str(unsigned)],
