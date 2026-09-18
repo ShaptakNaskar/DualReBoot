@@ -2,7 +2,7 @@
 
 A preservation, decompilation and native reconstruction project for **DualBoot Games' My Beach HD 2.2**. Previously named DualReBoot.
 
-**Native reconstruction — milestone 1:** the `native-decomp` branch starts a shared C++ engine for fully native Linux and Android ports. The [asset library](native-port/) decodes all 100 original textures and reads scene metadata without instruction translation or the original engine binary. Rendering, animation and platform hosts remain to be reconstructed. See [milestone results](reports/NATIVE-PORT.md).
+**Native reconstruction — milestone 2:** the `native-decomp` branch builds a shared C++ core for fully native Linux and Android ports. The [asset library](native-port/) decodes all 100 textures and the scene's preferences, environment and texture resources through the model-count table, without instruction translation or the original engine binary. Linux tests and an Android ARM64 cross-build pass. Model geometry, rendering, animation and platform hosts remain to be reconstructed. See [milestone results](reports/NATIVE-PORT.md).
 
 MyBeachDecompHD builds an ARM64 Android live wallpaper from an APK **you supply from a legitimate source**. It runs the original ARM32 engine through a bundled Unicorn instruction translator inside a native 64-bit library, and reproduces its fixed-function graphics through OpenGL ES 2 shaders. It does not require Android's ARM32 runtime.
 

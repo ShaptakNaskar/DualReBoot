@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(BeachNative LANGUAGES CXX)
 
 # Independent of port/: no Unicorn, JNI, Android SDK, or original engine binary.
-add_library(beach-assets src/assets.cpp)
+add_library(beach-assets src/assets.cpp src/preferences.cpp src/scene.cpp src/scene_validation.cpp)
 target_include_directories(beach-assets PUBLIC include)
 target_compile_features(beach-assets PUBLIC cxx_std_17)
 target_compile_options(beach-assets PRIVATE -Wall -Wextra -Wpedantic)
@@ -17,10 +17,14 @@ if(BUILD_TESTING)
   add_executable(beach-assets-tests tests/assets_test.cpp)
   target_link_libraries(beach-assets-tests PRIVATE beach-assets)
   add_test(NAME asset-unit COMMAND beach-assets-tests)
+  add_executable(beach-scene-tests tests/scene_test.cpp)
+  target_link_libraries(beach-scene-tests PRIVATE beach-assets)
+  add_test(NAME scene-unit COMMAND beach-scene-tests)
   # Explicit input path keeps the library and CLI independent of this checkout.
   if(EXISTS "${BEACH_ASSET_DIR}/beach.stg-scene")
     add_test(NAME original-assets COMMAND beach-assets-tests
       "${BEACH_ASSET_DIR}")
+    add_test(NAME original-scene COMMAND beach-scene-tests "${BEACH_ASSET_DIR}")
     add_test(NAME asset-cli-export COMMAND ${CMAKE_COMMAND}
       "-DINSPECTOR=$<TARGET_FILE:beach-assets-inspect>"
       "-DASSETS=${BEACH_ASSET_DIR}"

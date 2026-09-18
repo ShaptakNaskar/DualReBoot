@@ -1,4 +1,5 @@
 #include "beach/assets.hpp"
+#include "beach/scene.hpp"
 
 #include <algorithm>
 #include <iomanip>
@@ -22,12 +23,24 @@ int main(int argc, char** argv) {
             std::filesystem::create_directories(output);
         }
         const auto scene = beach::readFile(assets / "beach.stg-scene");
-        const auto header = beach::readSceneHeader(scene);
+        const auto structure = beach::readSceneStructure(scene);
+        const auto& header = structure.header;
         std::cout << "Scene version " << header.version << '\n';
         for (const auto& [key, value] : header.metadata)
             std::cout << "  " << std::quoted(key) << " = " << std::quoted(value) << '\n';
-        std::cout << "Scene body starts at byte " << header.payloadOffset << " ("
-                  << scene.size() - header.payloadOffset << " bytes not decoded yet)\n";
+        for (std::size_t i = 0; i < structure.preferences.groups.size(); ++i)
+            std::cout << "Preferences " << beach::preferenceKindName(static_cast<beach::PreferenceKind>(i))
+                      << ": " << structure.preferences.groups[i].size() << '\n';
+        std::cout << "Environment groups: " << structure.environments.size()
+                  << " at byte " << structure.environmentOffset << '\n'
+                  << "Texture resources at byte " << structure.textureModifierOffset << ": "
+                  << structure.textureSwaps.size() << " swaps, " << structure.fonts.size()
+                  << " fonts, " << structure.textureFonts.size() << " text textures, "
+                  << structure.modifiers.size() << " modifiers\n"
+                  << "Scene declares " << structure.modelCount << " models, "
+                  << structure.matrixCount << " matrices, " << structure.cameraCount << " cameras\n"
+                  << "Model data starts at byte " << structure.modelsOffset << " ("
+                  << scene.size() - structure.modelsOffset << " bytes not decoded yet)\n";
 
         std::vector<std::filesystem::path> paths;
         for (const auto& entry : std::filesystem::directory_iterator(assets / "tex"))
