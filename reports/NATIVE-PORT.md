@@ -1,11 +1,38 @@
-# Native Linux and Android engine: milestones 1 and 2
+# Native Linux and Android engine: milestone progress
 
-Status: the native asset library builds and runs on Linux x86-64. This is a
+For a concise status table and current checklist, see the [milestone tracker](../docs/MILESTONES.md).
+
+Status: the native asset library and static GLES2 renderer run on Linux x86-64. This is a
 source reconstruction, with no execution of the original engine instructions.
 Development lives on `native-decomp`, targeting a shared native core for both
-Linux and Android. No scene rendering, KDE wallpaper integration or native
-Android host is implemented yet. Runtime tests run on Linux x86-64; the core and
-inspection CLI also compile/link for Android ARM64 with NDK r27b, API 24.
+Linux and Android. KDE integration and a native Android wallpaper host are not
+implemented yet. Runtime tests run on Linux x86-64; the core, inspection CLI and
+renderer also compile/link for Android ARM64 with NDK r27b, API 24.
+
+## Milestone 3: first native static frame
+
+The native parser now reads all 167 models, 184 vertex buffers, 4,347 triangles,
+materials, 167 matrices, two cameras, one camera set and the transform order
+(143 roots and 24 children). It reaches **byte 372,259**, leaving **387,633 bytes**
+of animation and logic sections undecoded.
+
+An optional EGL/GLES2 tool renders an RGBA frame from these records, applying
+the first theme, static model choices, noon texture swaps, parent transforms,
+camera-relative backgrounds, two texture stages, blending/culling/depth state
+and the original texture matrices. The authored-frame preview rendered 134
+surfaces on the local NVIDIA GPU with no reported GL errors. It loads only the
+original scene and textures, never the engine binary.
+
+This proves the native geometry/render path, **not full visual parity**. The
+preview still shows time-dependent day/night effects together, and sign text,
+animated props and other effects do not yet match the running app. The existing
+compatibility reference was inspected, but its camera/time/simulation state is
+different, so it is not a valid pixel-comparison baseline. A matched-state
+comparison remains outstanding.
+
+See [native geometry and rendering](NATIVE-GEOMETRY.md) for evidence, test results
+and the next reconstruction boundary. Milestone 2 was committed and pushed as
+`e03cca1`; milestone 3 is the subsequent static-render prototype checkpoint.
 
 ## Milestone 2: scene structure
 
@@ -102,10 +129,10 @@ cover the supplied assets and can be revisited deliberately if the scope grows.
 
 ## Next research boundary
 
-The first `GEModel` at byte 100,065 has observed version **16**. Reconstruct
-[`USerialize::Load(GEModel)`](../native/armeabi-v7a/functions/0005a9d8_STG__USerialize__Load.c)
-and its mesh/material/transform dependencies, then matrix and camera records.
-Compare x86 pseudocode where ARM output is ambiguous. Continue sequential parsing;
-the measured offsets are test expectations, never fixed offsets in production code.
+At byte 372,259, the scene declares **14 vertex-animation records**. Continue
+through those records, skeletal data and the subsequent animation/logic tables
+to reconstruct the initial visible state and motion. Compare x86 pseudocode where
+ARM output is ambiguous. Continue sequential parsing; measured offsets are test
+expectations, never fixed offsets in production code.
 
 Build and usage instructions: [native-port/README.md](../native-port/README.md).

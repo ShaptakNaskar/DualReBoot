@@ -1,9 +1,12 @@
 # Native Beach reconstruction
 
+**Progress and current tasks: [milestone tracker](../docs/MILESTONES.md).**
+
 This is the beginning of a shared native engine for Linux and Android ports of
-My Beach HD 2.2, developed on the `native-decomp` branch. Milestones 1 and 2
-provide an asset library and scene inspection tool; **it does not render or animate
-the beach yet**. It compiles ordinary C++17 for the host CPU, with no instruction
+My Beach HD 2.2, developed on the `native-decomp` branch. Milestone 3 adds a
+standalone GLES2 static-frame renderer to the asset library and inspection tool.
+**The preview does not yet reproduce the original app's complete scene state or
+animation.** It compiles ordinary C++17 for the host CPU, with no instruction
 translation, Unicorn, Android runtime, JNI, or original `libdbgengine.so`.
 
 The library reads the original assets directly:
@@ -14,13 +17,15 @@ The library reads the original assets directly:
 - All 57 serialized preference records, environment settings for eight phases,
   eight texture-swap tables, two embedded fonts, five text textures and 48
   texture-modifier records. UTF-16 messages and signed glyph metrics are preserved.
-- The declared 167 models, 167 matrices and two cameras, and their next parsing
-  boundary at byte 100,065. Known index references are checked before returning.
+- All 167 model records, 184 vertex buffers, 4,347 triangles and their materials,
+  167 matrices, two cameras, a camera group, and the parent-first transform order.
+  The next parsing boundary is byte 372,259. Known references are checked.
 - Optional base-level PAM image exports, preserving transparency and stored row
   order. These are texture sheets, not images of the assembled beach.
 
-The remaining scene body, meshes, cameras, materials, preference evaluation,
-font rasterization, animation and logic are not implemented. Unknown formats are rejected explicitly. This reader supports
+The remaining animation and logic sections, font rasterization, and full preference
+evaluation are not implemented. The static renderer applies the first serialized
+theme, model-toggle defaults, model choices, and noon texture swaps. Unknown formats are rejected explicitly. This reader supports
 the subset present in this APK, not arbitrary PVR or STG files.
 
 ## Build and inspect
@@ -62,11 +67,41 @@ magick montage build/native-port/textures/*.pam -background '#30343b' \
 No graphics libraries are required for this milestone. Build-time tests against
 the original files are registered when `BEACH_ASSET_DIR/beach.stg-scene` exists;
 the synthetic parser tests also work without the APK assets. With original
-assets, CTest runs five tests; without them, it runs the two synthetic suites.
+assets, CTest runs seven tests; without them, it runs three synthetic suites.
+Enabling the renderer adds a synthetic GPU test which needs a working EGL driver.
+
+## Render a native static frame
+
+On Linux, install the EGL and OpenGL ES 2 development headers/libraries provided
+by your distribution. The parser-only build above does not require these.
+
+```sh
+cmake -S native-port -B build/native-port -DBEACH_BUILD_RENDERER=ON
+cmake --build build/native-port
+ctest --test-dir build/native-port --output-on-failure
+build/native-port/beach-render build/work/decoded/assets build/native-port/static-beach.pam
+```
+
+The default output is 960×540 using serialized camera 1. To select a camera and
+size, append `CAMERA WIDTH HEIGHT`, for example `0 540 960`. On a headless Mesa
+setup, `EGL_PLATFORM=surfaceless` can select an offscreen display. The tool writes
+one RGBA PAM image and exits; it does not install a wallpaper or start animation.
+You can convert the image locally with ImageMagick:
+
+```sh
+magick build/native-port/static-beach.pam build/native-port/static-beach.png
+```
+
+This is an authored static-pose preview. Camera-relative backgrounds and parent
+transforms are applied, but time-dependent visibility, skeletal/vertex animation,
+procedural effects, camera motion and dynamic sign text are not. Day/night
+effects can appear together, and text/signs can differ from the original app.
+No model names are used to hide those discrepancies. See
+[geometry/render evidence](../reports/NATIVE-GEOMETRY.md).
 
 ## Android ARM64 build check
 
-The same library and command-line tool cross-compile with NDK r27b for Android
+The same library, inspection CLI and optional GLES renderer cross-compile with NDK r27b for Android
 ARM64/API 24. This checks compiler/linker portability only: no APK, wallpaper
 service, Android asset adapter or on-device execution is part of this milestone.
 
@@ -74,7 +109,7 @@ service, Android asset adapter or on-device execution is part of this milestone.
 cmake -S native-port -B build/native-port-android-arm64 \
   -DCMAKE_TOOLCHAIN_FILE=/path/to/ndk/27.1.12297006/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-24 \
-  -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
+  -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DBEACH_BUILD_RENDERER=ON
 cmake --build build/native-port-android-arm64
 ```
 
@@ -106,9 +141,9 @@ and mark partial implementations explicitly.
 2. **Scene structure — complete:** decode the preference blocks after byte 78,
    environment and texture resources, including embedded fonts, through the three
    model/matrix/camera counts. This is a partial scene reader, not a full engine.
-3. **Static scene — next:** reconstruct transforms, meshes, camera projection and material
-   state; draw a single original beach frame in a standalone Linux viewer. Compare
-   it to reference frames for a fixed camera, settings and time of day.
+3. **Static scene — prototype working:** decode geometry, materials, cameras and
+   transform hierarchy; render a native static frame. Matched-state visual parity
+   remains unverified because animation/logic establish additional initial state.
 4. **Animation:** add water, texture motion, sky/time-of-day and object movement
    in independently checked increments; then interactions, effects and settings.
 5. **Platform hosts:** connect the shared native renderer to Plasma and to an

@@ -4,6 +4,8 @@ All integers are little endian with explicit serialized widths; native pointer
 sizes and Ghidra object offsets are not file layouts. This describes the supported
 My Beach HD 2.2 subset, not all historical STG format versions. Decoding does not
 run the engine or apply preferences. Unknown versions are rejected.
+The extended milestone 3 reader continues from this prefix through geometry,
+cameras and parent transforms; see [native geometry](NATIVE-GEOMETRY.md).
 
 ## Observed boundaries
 
