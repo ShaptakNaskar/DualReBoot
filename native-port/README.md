@@ -19,7 +19,10 @@ The library reads the original assets directly:
   texture-modifier records. UTF-16 messages and signed glyph metrics are preserved.
 - All 167 model records, 184 vertex buffers, 4,347 triangles and their materials,
   167 matrices, two cameras, a camera group, and the parent-first transform order.
-  The next parsing boundary is byte 372,259. Known references are checked.
+  The geometry boundary is byte 372,259. Known references are checked.
+- The first animation checkpoint reads 14 vertex-animation blocks (228 frames)
+  through byte 445,981 and provides tested native XYZ interpolation. The sampler
+  takes resolved track ticks; clocks/logic and renderer integration are pending.
 - Optional base-level PAM image exports, preserving transparency and stored row
   order. These are texture sheets, not images of the assembled beach.
 
@@ -67,7 +70,7 @@ magick montage build/native-port/textures/*.pam -background '#30343b' \
 No graphics libraries are required for this milestone. Build-time tests against
 the original files are registered when `BEACH_ASSET_DIR/beach.stg-scene` exists;
 the synthetic parser tests also work without the APK assets. With original
-assets, CTest runs seven tests; without them, it runs three synthetic suites.
+assets, CTest runs nine tests; without them, it runs four synthetic suites.
 Enabling the renderer adds a synthetic GPU test which needs a working EGL driver.
 
 ## Render a native static frame
@@ -144,7 +147,8 @@ and mark partial implementations explicitly.
 3. **Static scene — prototype working:** decode geometry, materials, cameras and
    transform hierarchy; render a native static frame. Matched-state visual parity
    remains unverified because animation/logic establish additional initial state.
-4. **Animation:** add water, texture motion, sky/time-of-day and object movement
+4. **Animation — in progress:** vertex-animation decoding and sampling are implemented;
+   clocks, visibility and renderer integration are pending. Add water, texture motion, sky/time-of-day and object movement
    in independently checked increments; then interactions, effects and settings.
 5. **Platform hosts:** connect the shared native renderer to Plasma and to an
    Android NDK/live-wallpaper host. Handle resize, visibility/pause, input,

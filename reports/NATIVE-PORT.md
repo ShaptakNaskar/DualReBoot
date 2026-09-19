@@ -9,6 +9,15 @@ Linux and Android. KDE integration and a native Android wallpaper host are not
 implemented yet. Runtime tests run on Linux x86-64; the core, inspection CLI and
 renderer also compile/link for Android ARM64 with NDK r27b, API 24.
 
+## Milestone 4: vertex-animation checkpoint (in progress)
+
+The next native reader decodes 14 vertex-animation blocks and 228 frames through
+byte **445,981**. A native sampler interpolates XYZ at resolved track ticks while
+preserving destination W. It is covered by synthetic and original-asset tests.
+The preview renderer has not been connected to this sampler; clock drivers,
+trigger/looping behavior, skeletons, visibility and later logic remain ahead.
+See [animation evidence and limitations](NATIVE-ANIMATION.md).
+
 ## Milestone 3: first native static frame
 
 The native parser now reads all 167 models, 184 vertex buffers, 4,347 triangles,
@@ -129,8 +138,8 @@ cover the supplied assets and can be revisited deliberately if the scope grows.
 
 ## Next research boundary
 
-At byte 372,259, the scene declares **14 vertex-animation records**. Continue
-through those records, skeletal data and the subsequent animation/logic tables
+At byte 445,981, the scene declares **three skeletal records**. Continue
+through those records and the subsequent animation/logic tables
 to reconstruct the initial visible state and motion. Compare x86 pseudocode where
 ARM output is ambiguous. Continue sequential parsing; measured offsets are test
 expectations, never fixed offsets in production code.

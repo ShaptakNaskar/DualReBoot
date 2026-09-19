@@ -1,6 +1,7 @@
 #include "beach/assets.hpp"
 #include "beach/scene.hpp"
 #include "beach/geometry.hpp"
+#include "beach/animation.hpp"
 
 #include <algorithm>
 #include <iomanip>
@@ -24,7 +25,8 @@ int main(int argc, char** argv) {
             std::filesystem::create_directories(output);
         }
         const auto scene = beach::readFile(assets / "beach.stg-scene");
-        const auto geometry = beach::readSceneGeometry(scene);
+        const auto animation = beach::readSceneAnimation(scene);
+        const auto& geometry = animation.geometry;
         const auto& structure = geometry.structure;
         const auto& header = structure.header;
         std::cout << "Scene version " << header.version << '\n';
@@ -43,7 +45,8 @@ int main(int argc, char** argv) {
                   << structure.matrixCount << " matrices, " << structure.cameraCount << " cameras\n"
                   << "Model data starts at byte " << structure.modelsOffset << '\n'
                   << "Decoded geometry and cameras through byte " << geometry.remainingOffset
-                  << " (" << scene.size() - geometry.remainingOffset << " bytes remain)\n";
+                  << '\n' << "Decoded " << animation.vertexAnimations.size() << " vertex animations through byte "
+                  << animation.remainingOffset << " (" << scene.size()-animation.remainingOffset << " bytes remain)\n";
 
         std::vector<std::filesystem::path> paths;
         for (const auto& entry : std::filesystem::directory_iterator(assets / "tex"))
