@@ -1,11 +1,18 @@
-#include "beach/animation.hpp"
-#include "reader.hpp"
+#include "animation_internal.hpp"
 #include <algorithm>
 #include <cstring>
 
 namespace beach {
 namespace {
-void checkPositionBuffer(const Model& model, std::uint32_t vertices) {
+AnimationTrack readVertexTrack(Reader& reader, std::uint32_t frames) {
+    auto track = readAnimationTrack(reader);
+    if (track.curves.size() != std::size_t(frames)-1)
+        reader.fail("vertex track must have one segment per frame pair");
+    return track;
+}
+} // namespace
+
+void requirePackedPositions(const Model& model, std::uint32_t vertices) {
     if (model.buffers.empty()) throw std::runtime_error("animated model has no vertex buffer");
     const auto& buffer = model.buffers.front();
     if (buffer.count != vertices || buffer.stride != 16 || buffer.components.size() != 1 ||
@@ -14,15 +21,18 @@ void checkPositionBuffer(const Model& model, std::uint32_t vertices) {
         buffer.data.size() != std::uint64_t(vertices)*16)
         throw std::runtime_error("unsupported animated position-buffer layout");
 }
-AnimationTrack readTrack(Reader& reader, std::uint32_t frames) {
-    reader.version(5,"vertex animation track");
+
+AnimationTrack readAnimationTrack(Reader& reader) {
+    reader.version(5,"animation track");
     AnimationTrack track;
     track.defaultValue = reader.f32();
     const auto count = reader.count(68,4095);
-    if (count != frames-1) reader.fail("vertex track must have one segment per frame pair");
     track.start = reader.u64(); track.end = reader.u64();
     track.driverOverride = reader.flag(); track.driver = reader.u32(); track.timeOffset = reader.u64();
-    if (track.start >= track.end || track.driver > 12) reader.fail("invalid animation track range/driver");
+    // A bone channel that never moves stores no curves and an empty range;
+    // GEAnimationTrack::Evaluate returns the default value for it.
+    if (track.driver > 12 || (count ? track.start >= track.end : track.start || track.end))
+        reader.fail("invalid animation track range/driver");
     for (std::uint32_t i = 0; i < count; ++i) {
         reader.version(2,"animation curve");
         AnimationCurve curve;
@@ -36,18 +46,17 @@ AnimationTrack readTrack(Reader& reader, std::uint32_t frames) {
     for (std::uint32_t i = 0; i < count; ++i) {
         const auto start = reader.u64();
         const auto end = reader.u64();
-        // This is the observed exported vertex-track subset. Retain both the
-        // curve and explicit v5 interval table, and reject other remappings.
+        // This is the observed exported subset. Retain both the curve and the
+        // explicit v5 interval table, and reject other remappings.
         if (start != expectedStart || start != track.curves[i].times.front() ||
             end != track.curves[i].times.back() || end > track.end)
-            reader.fail("unsupported vertex-track interval mapping");
+            reader.fail("unsupported animation-track interval mapping");
         track.intervals.emplace_back(start,end);
         expectedStart = end;
     }
-    if (expectedStart != track.end) reader.fail("incomplete vertex-track interval coverage");
+    if (expectedStart != track.end) reader.fail("incomplete animation-track interval coverage");
     return track;
 }
-} // namespace
 
 SceneAnimation readSceneAnimation(const Bytes& data) {
     SceneAnimation scene;
@@ -66,8 +75,8 @@ SceneAnimation readSceneAnimation(const Bytes& data) {
         if (frames < 2) reader.fail("vertex animation needs at least two frames");
         animation.vertexCount = reader.count(16);
         if (!animation.vertexCount) reader.fail("vertex animation has no vertices");
-        checkPositionBuffer(scene.geometry.models[animation.modelIndex],animation.vertexCount);
-        animation.track = readTrack(reader,frames);
+        requirePackedPositions(scene.geometry.models[animation.modelIndex],animation.vertexCount);
+        animation.track = readVertexTrack(reader,frames);
         const auto bytes = std::uint64_t(frames)*animation.vertexCount*16;
         if (bytes > reader.remaining()) reader.fail("truncated animation frames");
         for (std::uint32_t frame = 0; frame < frames; ++frame) {
@@ -93,7 +102,7 @@ bool sampleVertexAnimation(const VertexAnimation& animation, std::uint64_t tick,
         [&](const auto& range) { return range.first <= tick && tick < range.second; });
     if (interval == track.intervals.end()) throw std::runtime_error("tick has no vertex-animation segment");
     const auto segment = static_cast<std::size_t>(interval-track.intervals.begin());
-    checkPositionBuffer(model,animation.vertexCount);
+    requirePackedPositions(model,animation.vertexCount);
     const auto& first = animation.frames.at(segment);
     const auto& second = animation.frames.at(segment+1);
     if (first.size() != animation.vertexCount || second.size() != animation.vertexCount)

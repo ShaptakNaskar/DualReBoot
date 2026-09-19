@@ -3,10 +3,10 @@
 **Progress and current tasks: [milestone tracker](../docs/MILESTONES.md).**
 
 This is the beginning of a shared native engine for Linux and Android ports of
-My Beach HD 2.2, developed on the `native-decomp` branch. Milestone 3 adds a
-standalone GLES2 static-frame renderer to the asset library and inspection tool.
+My Beach HD 2.2, developed on the `native-decomp` branch. A standalone GLES2
+tool renders one static frame for a chosen time of day and date.
 **The preview does not yet reproduce the original app's complete scene state or
-animation.** It compiles ordinary C++17 for the host CPU, with no instruction
+animation: nothing in it moves.** It compiles ordinary C++17 for the host CPU, with no instruction
 translation, Unicorn, Android runtime, JNI, or original `libdbgengine.so`.
 
 The library reads the original assets directly:
@@ -20,16 +20,23 @@ The library reads the original assets directly:
 - All 167 model records, 184 vertex buffers, 4,347 triangles and their materials,
   167 matrices, two cameras, a camera group, and the parent-first transform order.
   The geometry boundary is byte 372,259. Known references are checked.
-- The first animation checkpoint reads 14 vertex-animation blocks (228 frames)
-  through byte 445,981 and provides tested native XYZ interpolation. The sampler
-  takes resolved track ticks; clocks/logic and renderer integration are pending.
+- 14 vertex-animation blocks (228 frames) with tested native XYZ interpolation.
+  The sampler takes resolved track ticks; clocks and renderer integration are pending.
+- Three skinned skeletons: 21 bones, 63 bone tracks, 1,023 curves, 513 weighted
+  vertices, bind and inverse-bind matrices, update order and bone parents.
+- The scene's visibility tables through byte 537,888: 103 time-of-day masks,
+  41 date masks, 13 inherited-visibility pairs and 9 intersectable models.
+  `computeShownModels` evaluates them for an explicit time of day, date,
+  environment and camera set, with no access to a system clock or location.
 - Optional base-level PAM image exports, preserving transparency and stored row
   order. These are texture sheets, not images of the assembled beach.
 
-The remaining animation and logic sections, font rasterization, and full preference
-evaluation are not implemented. The static renderer applies the first serialized
-theme, model-toggle defaults, model choices, and noon texture swaps. Unknown formats are rejected explicitly. This reader supports
-the subset present in this APK, not arbitrary PVR or STG files.
+The animation-track tables, scene logic, vertex skinning, font rasterization and
+full preference evaluation are not implemented. The static renderer applies the
+first serialized theme, model-toggle defaults, model choices, the texture swaps
+authored for the selected phase, and the evaluated visibility masks. Unknown
+formats are rejected explicitly. This reader supports the subset present in this
+APK, not arbitrary PVR or STG files.
 
 ## Build and inspect
 
@@ -70,7 +77,7 @@ magick montage build/native-port/textures/*.pam -background '#30343b' \
 No graphics libraries are required for this milestone. Build-time tests against
 the original files are registered when `BEACH_ASSET_DIR/beach.stg-scene` exists;
 the synthetic parser tests also work without the APK assets. With original
-assets, CTest runs nine tests; without them, it runs four synthetic suites.
+assets, CTest runs eleven tests; without them, it runs five synthetic suites.
 Enabling the renderer adds a synthetic GPU test which needs a working EGL driver.
 
 ## Render a native static frame
@@ -85,8 +92,11 @@ ctest --test-dir build/native-port --output-on-failure
 build/native-port/beach-render build/work/decoded/assets build/native-port/static-beach.pam
 ```
 
-The default output is 960×540 using serialized camera 1. To select a camera and
-size, append `CAMERA WIDTH HEIGHT`, for example `0 540 960`. On a headless Mesa
+The default output is 960×540 using serialized camera 1, at noon on June 15 — a
+date no holiday mask selects. To choose a camera and size, append
+`CAMERA WIDTH HEIGHT`; to also choose the scene state, append `PHASE MONTH DAY`,
+where phase 0-7 is midnight, night, dawn, morning, noon, afternoon, dusk and
+evening. For example, `1 960 540 0 12 25` renders Christmas at midnight. On a headless Mesa
 setup, `EGL_PLATFORM=surfaceless` can select an offscreen display. The tool writes
 one RGBA PAM image and exits; it does not install a wallpaper or start animation.
 You can convert the image locally with ImageMagick:
@@ -95,12 +105,13 @@ You can convert the image locally with ImageMagick:
 magick build/native-port/static-beach.pam build/native-port/static-beach.png
 ```
 
-This is an authored static-pose preview. Camera-relative backgrounds and parent
-transforms are applied, but time-dependent visibility, skeletal/vertex animation,
-procedural effects, camera motion and dynamic sign text are not. Day/night
-effects can appear together, and text/signs can differ from the original app.
-No model names are used to hide those discrepancies. See
-[geometry/render evidence](../reports/NATIVE-GEOMETRY.md).
+This is an authored static-pose preview. Camera-relative backgrounds, parent
+transforms and the serialized visibility masks are applied, so day and night
+models are no longer drawn together. Skeletal and vertex animation, procedural
+effects, camera motion and dynamic sign text are not: signs render untextured and
+nothing moves. No model names are used to hide those discrepancies. See
+[geometry/render evidence](../reports/NATIVE-GEOMETRY.md) and
+[skeleton/visibility evidence](../reports/NATIVE-SKELETON.md).
 
 ## Android ARM64 build check
 

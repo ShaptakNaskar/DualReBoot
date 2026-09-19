@@ -9,13 +9,26 @@ Linux and Android. KDE integration and a native Android wallpaper host are not
 implemented yet. Runtime tests run on Linux x86-64; the core, inspection CLI and
 renderer also compile/link for Android ARM64 with NDK r27b, API 24.
 
-## Milestone 4: vertex-animation checkpoint (in progress)
+## Milestone 4: skeletons and deterministic visibility (in progress)
 
-The next native reader decodes 14 vertex-animation blocks and 228 frames through
+The reader now continues through the three skeleton records and the scene's
+visibility tables, reaching byte **537,888** and leaving 222,004 bytes of
+animation tables and scene logic undecoded. It recovers 21 bones, 63 bone tracks
+and 1,023 curves across the three skinned seagulls, plus 103 time-of-day masks,
+41 date masks, 13 inherited-visibility pairs and 9 intersectable models.
+
+`computeShownModels` reproduces `GEScene::ComputeShownModelsList` from an
+explicit scene state, and the standalone renderer applies it: a frame can now be
+exported for a chosen phase and date, and day and night models are no longer
+drawn together. Nothing moves yet. See
+[skeleton and visibility evidence](NATIVE-SKELETON.md).
+
+## Milestone 4: vertex-animation checkpoint
+
+An earlier checkpoint decodes 14 vertex-animation blocks and 228 frames through
 byte **445,981**. A native sampler interpolates XYZ at resolved track ticks while
-preserving destination W. It is covered by synthetic and original-asset tests.
-The preview renderer has not been connected to this sampler; clock drivers,
-trigger/looping behavior, skeletons, visibility and later logic remain ahead.
+preserving destination W. The renderer is still not connected to that sampler:
+the driver clocks come from the undecoded logic section.
 See [animation evidence and limitations](NATIVE-ANIMATION.md).
 
 ## Milestone 3: first native static frame
@@ -138,10 +151,12 @@ cover the supplied assets and can be revisited deliberately if the scope grows.
 
 ## Next research boundary
 
-At byte 445,981, the scene declares **three skeletal records**. Continue
-through those records and the subsequent animation/logic tables
-to reconstruct the initial visible state and motion. Compare x86 pseudocode where
-ARM output is ambiguous. Continue sequential parsing; measured offsets are test
-expectations, never fixed offsets in production code.
+At byte 537,888 the scene stores a 64-bit time value, three counts and the
+scene-wide animation-track tables that `GEScene::InitializeAnimations` sizes,
+followed by `LLogicScene::Load` and a second camera-set table. Decode those
+tables, then the logic section that supplies `GEAnimationTimeData`: without it
+no track can be placed on a clock. Compare x86 pseudocode where ARM output is
+ambiguous. Continue sequential parsing; measured offsets are test expectations,
+never fixed offsets in production code.
 
 Build and usage instructions: [native-port/README.md](../native-port/README.md).

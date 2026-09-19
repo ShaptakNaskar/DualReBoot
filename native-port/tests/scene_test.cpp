@@ -12,9 +12,6 @@ void rejects(const beach::Bytes& bytes, const std::string& context) {
     catch (const std::runtime_error&) { return; }
     throw std::runtime_error("accepted malformed scene: " + context);
 }
-void set32(beach::Bytes& bytes, std::size_t at, std::uint32_t value) {
-    for (unsigned i = 0; i < 4; ++i) bytes.at(at + i) = (value >> (i * 8)) & 255;
-}
 template<class T> const T& preference(const beach::SceneStructure& scene, beach::PreferenceKind kind) {
     return std::get<T>(scene.preferences.groups.at(static_cast<std::size_t>(kind)).at(0).data);
 }

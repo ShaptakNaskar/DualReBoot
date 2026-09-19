@@ -1,4 +1,5 @@
 #include "beach/appearance.hpp"
+#include "beach/skeleton.hpp"
 #include <EGL/egl.h>
 #include <EGL/eglext.h>
 #include <GLES2/gl2.h>
@@ -239,16 +240,25 @@ unsigned number(const char* text, unsigned minimum, unsigned maximum) {
 } // namespace
 
 int main(int argc, char** argv) {
-    if (argc != 3 && argc != 6) {
-        std::cerr << "Usage: beach-render ASSET_DIR OUTPUT.pam [CAMERA WIDTH HEIGHT]\n"; return 2;
+    if (argc != 3 && argc != 6 && argc != 9) {
+        std::cerr << "Usage: beach-render ASSET_DIR OUTPUT.pam [CAMERA WIDTH HEIGHT [PHASE MONTH DAY]]\n"
+                  << "  PHASE 0-7: midnight, night, dawn, morning, noon, afternoon, dusk, evening\n"
+                  << "  MONTH 1-12 and DAY 1-31 select the serialized date visibility masks\n"; return 2;
     }
     try {
-        const auto camera = argc == 6 ? number(argv[3],0,4095) : 1;
-        const auto width = argc == 6 ? number(argv[4],16,4096) : 960;
-        const auto height = argc == 6 ? number(argv[5],16,4096) : 540;
+        const auto camera = argc >= 6 ? number(argv[3],0,4095) : 1;
+        const auto width = argc >= 6 ? number(argv[4],16,4096) : 960;
+        const auto height = argc >= 6 ? number(argv[5],16,4096) : 540;
+        SceneState state;
+        // June 15 is a deliberate default: no holiday date mask selects it.
+        state.timeOfDay = argc == 9 ? number(argv[6],0,7) : 4;
+        state.month = (argc == 9 ? number(argv[7],1,12) : 6)-1;
+        state.day = argc == 9 ? number(argv[8],1,31) : 15;
         const std::filesystem::path assets(argv[1]);
-        const auto scene = readSceneGeometry(readFile(assets/"beach.stg-scene"));
-        const auto appearance = defaultAppearance(scene);
+        const auto behavior = readSceneBehavior(readFile(assets/"beach.stg-scene"));
+        const auto& scene = behavior.animation.geometry;
+        auto appearance = defaultAppearance(scene,state.timeOfDay);
+        appearance.visible = computeShownModels(behavior,state,appearance.visible);
         Context context; context.create(width,height);
         Renderer renderer(assets,appearance);
         std::cout << "Native GLES renderer: " << glGetString(GL_RENDERER) << '\n';
@@ -261,7 +271,8 @@ int main(int argc, char** argv) {
             std::swap_ranges(image.rgba.begin()+y*row,image.rgba.begin()+(y+1)*row,image.rgba.begin()+(height-1-y)*row);
         writePam(argv[2],image);
         std::cout << "Rendered " << draws << " surfaces to " << argv[2]
-                  << "; authored static transforms, default theme, noon textures.\n"
-                  << "Animation, dynamic text and time-driven model visibility are not evaluated.\n";
+                  << "; authored static transforms, default theme, phase " << state.timeOfDay
+                  << " textures,\nvisibility for month " << state.month+1 << " day " << state.day
+                  << ".\nAnimation, skinning, dynamic text and effects are not evaluated.\n";
     } catch (const std::exception& error) { std::cerr << "ERROR: " << error.what() << '\n'; return 1; }
 }

@@ -4,6 +4,10 @@
 #include <cstring>
 #include <map>
 
+inline void set32(beach::Bytes& bytes, std::size_t offset, std::uint32_t value) {
+    for (unsigned i = 0; i < 4; ++i) bytes.at(offset+i) = (value >> (i*8)) & 255;
+}
+
 // Synthetic, authored fixture: no original scene/font/texture bytes are included.
 struct SceneFixture {
     beach::Bytes bytes;

@@ -3,10 +3,13 @@
 #include <stdexcept>
 
 namespace beach {
-StaticAppearance defaultAppearance(const SceneGeometry& scene) {
+StaticAppearance defaultAppearance(const SceneGeometry& scene, std::uint32_t timeOfDay) {
     const auto& groups = scene.structure.preferences.groups;
     StaticAppearance result;
-    result.visible.resize(scene.models.size(), true);
+    // GEScene::ComputeShownModelsList starts from each model's hidden flag;
+    // ApplyPreferences overwrites it for every model a preference references.
+    result.visible.reserve(scene.models.size());
+    for (const auto& model : scene.models) result.visible.push_back(!model.flag9D);
     std::map<std::string, std::string> settings;
     const auto& themes = groups[static_cast<std::size_t>(PreferenceKind::theme)];
     if (!themes.empty())
@@ -18,7 +21,7 @@ StaticAppearance defaultAppearance(const SceneGeometry& scene) {
         if (swap.choices.empty()) throw std::runtime_error("empty texture swap: " + swap.name);
         if (swap.flags[0]) {
             const auto match = std::find_if(swap.choices.begin(), swap.choices.end(),
-                                            [](const TextureChoice& choice) { return choice.phase == 4; });
+                [&](const TextureChoice& choice) { return choice.phase == timeOfDay; });
             if (match != swap.choices.end()) choices[i] = match - swap.choices.begin();
         }
     }

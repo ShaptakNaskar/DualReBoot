@@ -3,7 +3,8 @@ project(BeachNative LANGUAGES CXX)
 
 # Independent of port/: no Unicorn, JNI, Android SDK, or original engine binary.
 add_library(beach-assets src/assets.cpp src/preferences.cpp src/scene.cpp src/scene_validation.cpp
-  src/geometry.cpp src/camera.cpp src/appearance.cpp src/animation.cpp)
+  src/geometry.cpp src/camera.cpp src/appearance.cpp src/animation.cpp
+  src/skeleton.cpp src/visibility.cpp)
 target_include_directories(beach-assets PUBLIC include)
 target_compile_features(beach-assets PUBLIC cxx_std_17)
 target_compile_options(beach-assets PRIVATE -Wall -Wextra -Wpedantic)
@@ -36,6 +37,9 @@ if(BUILD_TESTING)
   add_executable(beach-animation-tests tests/animation_test.cpp)
   target_link_libraries(beach-animation-tests PRIVATE beach-assets)
   add_test(NAME animation-unit COMMAND beach-animation-tests)
+  add_executable(beach-skeleton-tests tests/skeleton_test.cpp)
+  target_link_libraries(beach-skeleton-tests PRIVATE beach-assets)
+  add_test(NAME skeleton-unit COMMAND beach-skeleton-tests)
   if(BEACH_BUILD_RENDERER)
     add_test(NAME render-fixture COMMAND ${CMAKE_COMMAND}
       "-DTESTER=$<TARGET_FILE:beach-geometry-tests>" "-DRENDERER=$<TARGET_FILE:beach-render>"
@@ -48,6 +52,7 @@ if(BUILD_TESTING)
     add_test(NAME original-scene COMMAND beach-scene-tests "${BEACH_ASSET_DIR}")
     add_test(NAME original-geometry COMMAND beach-geometry-tests "${BEACH_ASSET_DIR}")
     add_test(NAME original-animation COMMAND beach-animation-tests "${BEACH_ASSET_DIR}")
+    add_test(NAME original-skeleton COMMAND beach-skeleton-tests "${BEACH_ASSET_DIR}")
     add_test(NAME asset-cli-export COMMAND ${CMAKE_COMMAND}
       "-DINSPECTOR=$<TARGET_FILE:beach-assets-inspect>"
       "-DASSETS=${BEACH_ASSET_DIR}"

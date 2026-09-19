@@ -7,9 +7,6 @@
 
 namespace {
 void check(bool condition, const char* message) { if (!condition) throw std::runtime_error(message); }
-void set32(beach::Bytes& bytes, std::size_t offset, std::uint32_t value) {
-    for (unsigned i = 0; i < 4; ++i) bytes.at(offset+i) = (value >> (i*8)) & 255;
-}
 void rejects(const beach::Bytes& bytes) {
     try { beach::readSceneGeometry(bytes); } catch (const std::runtime_error&) { return; }
     throw std::runtime_error("accepted malformed geometry");
@@ -86,6 +83,10 @@ void writeFixture(const std::filesystem::path& directory, bool invisible = false
     const GeometryFixture fixture;
     auto bytes = fixture.bytes;
     if (invisible) set32(bytes,fixture.offsets.at("geometry_opacity"),0x3b800000); // Exactly 1/256.
+    // The renderer also reads the behaviour sections: replace the unparsed
+    // geometry marker with the nine empty counts of an unanimated scene.
+    bytes.resize(fixture.offsets.at("geometry_end"));
+    bytes.resize(bytes.size()+9*4);
     std::ofstream file(directory/"beach.stg-scene",std::ios::binary);
     file.write(reinterpret_cast<const char*>(bytes.data()),bytes.size());
     file.close();

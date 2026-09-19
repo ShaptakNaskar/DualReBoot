@@ -1,7 +1,7 @@
 #include "beach/assets.hpp"
 #include "beach/scene.hpp"
 #include "beach/geometry.hpp"
-#include "beach/animation.hpp"
+#include "beach/skeleton.hpp"
 
 #include <algorithm>
 #include <iomanip>
@@ -25,7 +25,8 @@ int main(int argc, char** argv) {
             std::filesystem::create_directories(output);
         }
         const auto scene = beach::readFile(assets / "beach.stg-scene");
-        const auto animation = beach::readSceneAnimation(scene);
+        const auto behavior = beach::readSceneBehavior(scene);
+        const auto& animation = behavior.animation;
         const auto& geometry = animation.geometry;
         const auto& structure = geometry.structure;
         const auto& header = structure.header;
@@ -46,7 +47,19 @@ int main(int argc, char** argv) {
                   << "Model data starts at byte " << structure.modelsOffset << '\n'
                   << "Decoded geometry and cameras through byte " << geometry.remainingOffset
                   << '\n' << "Decoded " << animation.vertexAnimations.size() << " vertex animations through byte "
-                  << animation.remainingOffset << " (" << scene.size()-animation.remainingOffset << " bytes remain)\n";
+                  << animation.remainingOffset << '\n';
+        std::size_t bones = 0;
+        for (const auto& skeleton : behavior.skeletons)
+            for (const auto& pose : skeleton.animations) bones += pose.local.size();
+        const auto& visibility = behavior.visibility;
+        std::cout << "Decoded " << behavior.skeletons.size() << " skeletons with " << bones
+                  << " bones, then " << visibility.timeOfDay.size() << " time-of-day, "
+                  << visibility.weekDay.size() << " week-day, " << visibility.date.size()
+                  << " date and " << visibility.environment.size() << " environment visibility masks,\n"
+                  << visibility.inheritVisibility.size() << " inherited visibility and "
+                  << visibility.intersectables.size() << " intersectable models through byte "
+                  << behavior.remainingOffset << " (" << scene.size()-behavior.remainingOffset
+                  << " bytes of animation tables and scene logic remain)\n";
 
         std::vector<std::filesystem::path> paths;
         for (const auto& entry : std::filesystem::directory_iterator(assets / "tex"))
