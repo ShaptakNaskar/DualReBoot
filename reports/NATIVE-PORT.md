@@ -9,7 +9,19 @@ Linux and Android. KDE integration and a native Android wallpaper host are not
 implemented yet. Runtime tests run on Linux x86-64; the core, inspection CLI and
 renderer also compile/link for Android ARM64 with NDK r27b, API 24.
 
-## Milestone 4: skeletons and deterministic visibility (in progress)
+## Milestone 4: the scene file is fully decoded (in progress)
+
+The reader now consumes the whole **759,892**-byte scene. The eight animation
+tables hold 212 records, 604 tracks and 2,867 curves driving model position and
+rotation, camera targets, 68 animated texture layers and 50 model visibility
+tracks, and the logic-scene array that follows them is empty. `evaluateTrack`
+returns a track's cubic Bezier value at a resolved tick.
+
+Nothing animates yet, and what is missing is no longer in the file: the twelve
+animation drivers are built at runtime from the scene's clock, not serialized.
+See [animation tables and evaluation](NATIVE-TRACKS.md).
+
+## Milestone 4: skeletons and deterministic visibility
 
 The reader now continues through the three skeleton records and the scene's
 visibility tables, reaching byte **537,888** and leaving 222,004 bytes of
@@ -151,12 +163,14 @@ cover the supplied assets and can be revisited deliberately if the scope grows.
 
 ## Next research boundary
 
-At byte 537,888 the scene stores a 64-bit time value, three counts and the
-scene-wide animation-track tables that `GEScene::InitializeAnimations` sizes,
-followed by `LLogicScene::Load` and a second camera-set table. Decode those
-tables, then the logic section that supplies `GEAnimationTimeData`: without it
-no track can be placed on a clock. Compare x86 pseudocode where ARM output is
-ambiguous. Continue sequential parsing; measured offsets are test expectations,
-never fixed offsets in production code.
+There is no parsing boundary left: the scene file is decoded end to end, and the
+recovered textures were decoded in milestone 1. The remaining work is behaviour
+rather than format recovery — reconstruct the twelve animation drivers that
+`GEScene::Internal_UpdateAnimationTime` builds, the track wrap and trigger rules,
+per-model local time offsets, bone matrix composition and vertex skinning, then
+apply the evaluated values to matrices, texture layers and visibility and compare
+frames at a matched camera, settings and time. Compare x86 pseudocode where ARM
+output is ambiguous. Measured offsets stay test expectations, never fixed offsets
+in production code.
 
 Build and usage instructions: [native-port/README.md](../native-port/README.md).

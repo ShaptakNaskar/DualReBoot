@@ -4,7 +4,7 @@ project(BeachNative LANGUAGES CXX)
 # Independent of port/: no Unicorn, JNI, Android SDK, or original engine binary.
 add_library(beach-assets src/assets.cpp src/preferences.cpp src/scene.cpp src/scene_validation.cpp
   src/geometry.cpp src/camera.cpp src/appearance.cpp src/animation.cpp
-  src/skeleton.cpp src/visibility.cpp)
+  src/skeleton.cpp src/tracks.cpp src/visibility.cpp)
 target_include_directories(beach-assets PUBLIC include)
 target_compile_features(beach-assets PUBLIC cxx_std_17)
 target_compile_options(beach-assets PRIVATE -Wall -Wextra -Wpedantic)

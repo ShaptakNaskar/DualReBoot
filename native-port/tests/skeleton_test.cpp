@@ -1,6 +1,7 @@
 #include "beach/appearance.hpp"
-#include "beach/skeleton.hpp"
+#include "beach/behavior.hpp"
 #include "animation_fixture.hpp"
+#include <algorithm>
 #include <cmath>
 #include <iostream>
 #include <stdexcept>
@@ -9,6 +10,13 @@ namespace {
 void check(bool value, const char* message) { if (!value) throw std::runtime_error(message); }
 struct Fixture : AnimationFixture {
     void emptyTrack() { u32(5); f32(0); u32(0); u64(0); u64(0); u8(0); u32(12); u64(0); }
+    void bezierTrack(float defaultValue, float a, float b, float c, float d) {
+        u32(5); f32(defaultValue); u32(1);
+        u64(start); u64(start+1000); u8(1); u32(3); u64(0);
+        u32(2); for (auto delta : {0,250,750,1000}) u64(start+delta);
+        for (float point : {a,b,c,d}) f32(point);
+        u64(start); u64(start+1000);
+    }
     void curveTrack(float value) {
         u32(5); f32(value); u32(1);
         u64(start); u64(start+1000); u8(1); u32(3); u64(0);
@@ -53,6 +61,23 @@ struct Fixture : AnimationFixture {
         mark("date_months");
         for (unsigned month = 0; month < 12; ++month) u32(month == 5 ? 1u << 14 : 0);
         mark("environment"); u32(0);
+        mark("tracks"); u64(12000000);
+        // Counts precede the tables in their own order: model position, camera
+        // position, texture, interact, visibility, model rotation, camera target
+        // and local time offset.
+        mark("count_model_position"); u32(1); u32(0); mark("count_texture"); u32(1);
+        u32(0); mark("count_visibility"); u32(1); u32(1); u32(1); u32(0);
+        mark("model_position"); u32(3); mark("position_target"); u32(0);
+        bezierTrack(5,0,0,0,8); emptyTrack(); emptyTrack();
+        mark("model_rotation"); u32(3); u32(1);
+        emptyTrack(); emptyTrack(); emptyTrack();
+        mark("camera_target"); u32(3); mark("camera_target_index"); u32(0);
+        emptyTrack(); emptyTrack(); emptyTrack();
+        mark("texture_tracks"); u32(4); mark("texture_model"); u32(0);
+        mark("texture_surface"); u32(0); mark("texture_stage"); u32(0);
+        emptyTrack(); emptyTrack(); emptyTrack(); emptyTrack();
+        mark("visibility_tracks"); u32(1); u32(1); emptyTrack();
+        mark("logic"); u32(0);
         mark("behavior_end");
     }
 };
@@ -71,6 +96,8 @@ void unitTests() {
     auto scene = readSceneBehavior(fixture.bytes);
     check(scene.skeletonsOffset == fixture.offsets.at("skeleton_start") &&
           scene.visibilityOffset == fixture.offsets.at("intersectables") &&
+          scene.tracksOffset == fixture.offsets.at("tracks") &&
+          scene.logicOffset == fixture.offsets.at("logic") &&
           scene.remainingOffset == fixture.offsets.at("behavior_end"), "section boundaries");
     check(scene.skeletons.size() == 1 && scene.skeletons[0].modelIndex == 0 &&
           scene.skeletons[0].offset == fixture.offsets.at("skeleton_model"), "skeleton model reference");
@@ -104,6 +131,29 @@ void unitTests() {
     check(visibility.timeOfDay.at(0) == std::make_pair(0u,0x10u) &&
           visibility.weekDay.at(0) == std::make_pair(1u,std::uint8_t(2)) &&
           visibility.date.at(0).months[5] == 1u << 14, "serialized visibility masks");
+
+    const auto& tables = scene.tracks.tables;
+    const auto sized = [&](TrackTable which) { return tables[std::size_t(which)].size(); };
+    check(scene.tracks.duration == 12000000 && scene.logicScenes == 0, "scene duration and empty logic array");
+    check(sized(TrackTable::modelPosition) == 1 && sized(TrackTable::modelRotation) == 1 &&
+          sized(TrackTable::cameraPosition) == 0 && sized(TrackTable::cameraTarget) == 1 &&
+          sized(TrackTable::texture) == 1 && sized(TrackTable::interact) == 0 &&
+          sized(TrackTable::visibility) == 1 && sized(TrackTable::localTimeOffset) == 0,
+          "counts are matched to their own tables");
+    const auto& texture = tables[std::size_t(TrackTable::texture)].at(0);
+    check(texture.tracks.size() == 4 && texture.target == 0 && texture.surface == 0 && texture.stage == 0 &&
+          texture.offset == fixture.offsets.at("texture_tracks"), "texture record names a surface and layer");
+    const auto& position = tables[std::size_t(TrackTable::modelPosition)].at(0);
+    check(position.target == 0 && position.tracks.size() == 3, "model position record");
+    const auto& bezier = position.tracks.at(0);
+    // Cubic Bezier over the four value points: 1/8, 3/8, 3/8, 1/8 at the midpoint.
+    check(evaluateTrack(bezier,AnimationFixture::start-1) == 5 &&
+          evaluateTrack(bezier,AnimationFixture::start+1000) == 5, "outside the track the default applies");
+    check(evaluateTrack(bezier,AnimationFixture::start) == 0 &&
+          std::abs(evaluateTrack(bezier,AnimationFixture::start+500)-1) < 1e-6f &&
+          evaluateTrack(bezier,AnimationFixture::start+999) > 3, "Bezier value at the segment fraction");
+    check(evaluateTrack(position.tracks.at(1),AnimationFixture::start) == 0,
+          "a track with no curves stays at its default");
 
     const std::vector<bool> base(2,true);
     SceneState state; state.timeOfDay = 4; state.month = 5; state.day = 15; state.weekDay = 1;
@@ -149,7 +199,11 @@ void unitTests() {
              {"order",1},{"order_first",1},{"parents",1},{"parents_first",0},{"mesh_groups_again",1},
              {"group_version",2},{"group_bones",4},{"group_first",1},{"group_bone_index",2},{"weights",4},
              {"intersectables",2},{"intersect_model",2},{"inherit_child",0},{"time_of_day_model",2},
-             {"time_of_day_mask",0x100},{"week_day_mask",0x80},{"date_months",0x80000000}}) {
+             {"time_of_day_mask",0x100},{"week_day_mask",0x80},{"date_months",0x80000000},
+             {"count_model_position",2},{"count_texture",2},{"count_visibility",2},
+             {"model_position",4},{"position_target",2},{"model_rotation",0},
+             {"camera_target_index",1},{"texture_tracks",5},{"texture_model",2},
+             {"texture_surface",1},{"texture_stage",1},{"visibility_tracks",2},{"logic",1}}) {
         auto bytes = fixture.bytes;
         set32(bytes,fixture.offsets.at(field),value);
         rejects(bytes);
@@ -160,7 +214,9 @@ void original(const std::filesystem::path& assets) {
     const auto data = readFile(assets/"beach.stg-scene");
     const auto scene = readSceneBehavior(data);
     check(scene.skeletonsOffset == 445981 && scene.visibilityOffset == 534692 &&
-          scene.remainingOffset == 537888, "original boundaries from an independent serializer trace");
+          scene.tracksOffset == 537888 && scene.logicOffset == 759888 &&
+          scene.remainingOffset == data.size(),
+          "original boundaries from an independent serializer trace");
     check(scene.skeletons.size() == 3, "original skeleton count");
     std::size_t tracks = 0, curves = 0;
     for (const auto& skeleton : scene.skeletons) {
@@ -260,8 +316,58 @@ void original(const std::filesystem::path& assets) {
     check(festive(christmas,"0001e_Umbrella_Day_Xmas") && !festive(ordinary,"0001e_Umbrella_Day_Xmas") &&
           !festive(christmas,"0001e_Umbrella_Night") && festive(ordinary,"0001e_Umbrella_Night"),
           "December 25 swaps the umbrella");
-    std::cout << "Original behaviour: 3 skeletons, 21 bones, 1023 bone curves; visibility through byte 537888\n"
-              << "Models shown at noon: " << perPhase[4] << " of " << shownCount(base) << " enabled by preferences\n";
+    // Every table, then the empty logic-scene array, consuming the whole file.
+    check(scene.tracks.duration == 12000000 && scene.logicScenes == 0,
+          "scene duration and empty logic-scene array");
+    const auto& tables = scene.tracks.tables;
+    std::vector<std::size_t> sizes, trackCounts;
+    std::size_t tableCurves = 0;
+    for (const auto& records : tables) {
+        sizes.push_back(records.size());
+        std::size_t counted = 0;
+        for (const auto& record : records) {
+            check(record.tracks.size() == trackTableCapacity(TrackTable(&records-tables.data())),
+                  "original records fill their table's track capacity");
+            counted += record.tracks.size();
+            for (const auto& track : record.tracks) {
+                tableCurves += track.curves.size();
+                // Each segment boundary evaluates to that curve's first value.
+                for (std::size_t i = 0; i < track.curves.size(); ++i)
+                    check(evaluateTrack(track,track.intervals[i].first) == track.curves[i].values[0],
+                          "segment start evaluates to the curve's first control value");
+                check(!track.curves.empty() || evaluateTrack(track,0) == track.defaultValue,
+                      "an empty track always returns its default");
+            }
+        }
+        trackCounts.push_back(counted);
+    }
+    check(sizes == std::vector<std::size_t>{50,42,0,2,68,0,50,0}, "original table record counts");
+    check(trackCounts == std::vector<std::size_t>{150,126,0,6,272,0,50,0} && tableCurves == 2867,
+          "original track and curve totals");
+    std::vector<std::size_t> perModel(models.size());
+    for (const auto& record : tables[std::size_t(TrackTable::texture)]) {
+        check(record.stage < 2 && record.surface == 0, "texture records name a layer of the first surface");
+        ++perModel[record.target];
+    }
+    check(std::count(perModel.begin(),perModel.end(),std::size_t(2)) == 7,
+          "seven models animate both texture layers");
+    const auto named = [&](TrackTable which, const std::string& name) -> const TrackRecord& {
+        for (const auto& record : tables[std::size_t(which)])
+            if (models[record.target].name == name) return record;
+        throw std::runtime_error("no " + std::string(trackTableName(which)) + " track for " + name);
+    };
+    // The shark fin surfaces late in a long cycle and travels while it is up.
+    const auto& shark = named(TrackTable::modelPosition,"0001q_SharkFin").tracks.at(0);
+    check(shark.start == 180000000 && shark.end == 192000000 && shark.driver == 3 && shark.driverOverride,
+          "shark fin position track window");
+    check(evaluateTrack(shark,shark.start-1) == shark.defaultValue &&
+          evaluateTrack(shark,shark.start) == shark.defaultValue &&
+          evaluateTrack(shark,(shark.start+shark.end)/2) > shark.defaultValue+50,
+          "the fin only moves inside its window");
+    std::cout << "Original behaviour: 3 skeletons, 21 bones, 1023 bone curves; "
+              << "212 animation records, " << tableCurves << " curves\n"
+              << "Decoded the whole " << data.size() << "-byte scene; models shown at noon: "
+              << perPhase[4] << " of " << shownCount(base) << " enabled by preferences\n";
 }
 } // namespace
 int main(int argc, char** argv) {

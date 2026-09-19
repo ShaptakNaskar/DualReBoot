@@ -1,4 +1,4 @@
-#include "beach/skeleton.hpp"
+#include "beach/behavior.hpp"
 #include "animation_internal.hpp"
 #include <algorithm>
 
@@ -205,6 +205,13 @@ SceneBehavior readSceneBehavior(const Bytes& data) {
     }
     scene.visibilityOffset = reader.offset();
     scene.visibility = sceneVisibility(reader,models.size());
+    scene.tracksOffset = reader.offset();
+    scene.tracks = readSceneTracks(reader,scene.animation.geometry);
+    scene.logicOffset = reader.offset();
+    // LLogicScene::Load reads a counted array of logic scenes. This scene stores
+    // none, so no scripted behaviour has to be reconstructed to drive it.
+    scene.logicScenes = reader.u32();
+    if (scene.logicScenes) reader.fail("scripted logic scenes are not reconstructed");
     scene.remainingOffset = reader.offset();
     return scene;
 }

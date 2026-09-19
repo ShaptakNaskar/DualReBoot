@@ -24,15 +24,21 @@ The library reads the original assets directly:
   The sampler takes resolved track ticks; clocks and renderer integration are pending.
 - Three skinned skeletons: 21 bones, 63 bone tracks, 1,023 curves, 513 weighted
   vertices, bind and inverse-bind matrices, update order and bone parents.
-- The scene's visibility tables through byte 537,888: 103 time-of-day masks,
-  41 date masks, 13 inherited-visibility pairs and 9 intersectable models.
-  `computeShownModels` evaluates them for an explicit time of day, date,
-  environment and camera set, with no access to a system clock or location.
+- The scene's visibility tables: 103 time-of-day masks, 41 date masks, 13
+  inherited-visibility pairs and 9 intersectable models. `computeShownModels`
+  evaluates them for an explicit time of day, date, environment and camera set,
+  with no access to a system clock or location.
+- All eight animation-track tables and the logic-scene array that follows them:
+  212 records, 604 tracks and 2,867 curves covering model position and rotation,
+  camera targets, 68 animated texture layers and 50 visibility tracks.
+  `evaluateTrack` returns a track's cubic Bezier value at a resolved tick.
+  **This reads the whole scene file: 759,892 of 759,892 bytes.**
 - Optional base-level PAM image exports, preserving transparency and stored row
   order. These are texture sheets, not images of the assembled beach.
 
-The animation-track tables, scene logic, vertex skinning, font rasterization and
-full preference evaluation are not implemented. The static renderer applies the
+Animation playback, vertex skinning, font rasterization and full preference
+evaluation are not implemented: the clock that drives the decoded tracks has
+still to be reconstructed. The static renderer applies the
 first serialized theme, model-toggle defaults, model choices, the texture swaps
 authored for the selected phase, and the evaluated visibility masks. Unknown
 formats are rejected explicitly. This reader supports the subset present in this

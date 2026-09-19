@@ -83,10 +83,12 @@ void writeFixture(const std::filesystem::path& directory, bool invisible = false
     const GeometryFixture fixture;
     auto bytes = fixture.bytes;
     if (invisible) set32(bytes,fixture.offsets.at("geometry_opacity"),0x3b800000); // Exactly 1/256.
-    // The renderer also reads the behaviour sections: replace the unparsed
-    // geometry marker with the nine empty counts of an unanimated scene.
+    // The renderer reads to the end of the scene, so replace the unparsed
+    // geometry marker with an unanimated tail: empty vertex-animation, skeleton
+    // and visibility counts, a zero duration with eight empty table counts, and
+    // an empty logic-scene array. Every field is zero.
     bytes.resize(fixture.offsets.at("geometry_end"));
-    bytes.resize(bytes.size()+9*4);
+    bytes.resize(bytes.size()+9*4+8+8*4+4);
     std::ofstream file(directory/"beach.stg-scene",std::ios::binary);
     file.write(reinterpret_cast<const char*>(bytes.data()),bytes.size());
     file.close();

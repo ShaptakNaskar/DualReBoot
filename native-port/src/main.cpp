@@ -1,7 +1,7 @@
 #include "beach/assets.hpp"
 #include "beach/scene.hpp"
 #include "beach/geometry.hpp"
-#include "beach/skeleton.hpp"
+#include "beach/behavior.hpp"
 
 #include <algorithm>
 #include <iomanip>
@@ -58,8 +58,26 @@ int main(int argc, char** argv) {
                   << " date and " << visibility.environment.size() << " environment visibility masks,\n"
                   << visibility.inheritVisibility.size() << " inherited visibility and "
                   << visibility.intersectables.size() << " intersectable models through byte "
-                  << behavior.remainingOffset << " (" << scene.size()-behavior.remainingOffset
-                  << " bytes of animation tables and scene logic remain)\n";
+                  << behavior.tracksOffset << '\n';
+        std::size_t records = 0, animationTracks = 0, curves = 0;
+        for (std::size_t i = 0; i < std::size_t(beach::TrackTable::count); ++i) {
+            const auto& table = behavior.tracks.tables[i];
+            if (table.empty()) continue;
+            std::size_t tableTracks = 0;
+            for (const auto& record : table) tableTracks += record.tracks.size();
+            for (const auto& record : table)
+                for (const auto& track : record.tracks) curves += track.curves.size();
+            records += table.size();
+            animationTracks += tableTracks;
+            std::cout << "  " << beach::trackTableName(beach::TrackTable(i)) << ": "
+                      << table.size() << " records, " << tableTracks << " tracks\n";
+        }
+        std::cout << "Decoded " << records << " animation records, " << animationTracks
+                  << " tracks and " << curves << " curves over a " << behavior.tracks.duration
+                  << "-tick scene, then " << behavior.logicScenes << " logic scenes at byte "
+                  << behavior.logicOffset << '\n'
+                  << "Scene fully decoded through byte " << behavior.remainingOffset
+                  << " of " << scene.size() << '\n';
 
         std::vector<std::filesystem::path> paths;
         for (const auto& entry : std::filesystem::directory_iterator(assets / "tex"))

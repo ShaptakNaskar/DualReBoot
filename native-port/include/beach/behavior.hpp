@@ -44,16 +44,45 @@ struct SceneVisibility {
     std::vector<std::pair<std::uint32_t, std::uint8_t>> weekDay;
     std::vector<DateVisibility> date;
 };
+// GEScene::InitializeAnimations allocates eight parallel tables. Each record
+// names what it drives and holds the tracks the original loader keeps for it.
+enum class TrackTable : std::size_t {
+    modelPosition, modelRotation, cameraPosition, cameraTarget,
+    texture, interact, visibility, localTimeOffset, count
+};
+const char* trackTableName(TrackTable table);
+// Tracks the original keeps per record: x/y/z, u/v/scaleU/scaleV, or one value.
+std::uint32_t trackTableCapacity(TrackTable table);
+struct TrackRecord {
+    std::size_t offset = 0;
+    std::uint32_t target = 0;             // Model index, or camera index for the camera tables.
+    std::uint32_t surface = 0, stage = 0; // Texture table only: which surface and texture layer.
+    std::vector<AnimationTrack> tracks;
+};
+struct SceneTracks {
+    std::uint64_t duration = 0; // Scene-wide time value serialized before the tables.
+    std::array<std::vector<TrackRecord>, std::size_t(TrackTable::count)> tables;
+};
+
 struct SceneBehavior {
     SceneAnimation animation;
     std::vector<Skeleton> skeletons;
     SceneVisibility visibility;
-    std::size_t skeletonsOffset = 0, visibilityOffset = 0, remainingOffset = 0;
+    SceneTracks tracks;
+    std::uint32_t logicScenes = 0;
+    std::size_t skeletonsOffset = 0, visibilityOffset = 0, tracksOffset = 0;
+    std::size_t logicOffset = 0, remainingOffset = 0;
 };
 
-// Continues past the vertex animations through the visibility tables. Stops
-// before the scene's animation-track, logic and camera-set sections.
+// Continues past the vertex animations through the skeletons, visibility tables,
+// animation-track tables and the logic-scene array, which is empty in this scene.
+// For the original file remainingOffset is the end of the data.
 SceneBehavior readSceneBehavior(const Bytes& data);
+
+// GEAnimationTrack::Evaluate at an ALREADY RESOLVED track tick: the cubic Bezier
+// value of the segment holding that tick, or the track's default value outside
+// it. Driver clocks, wrapping and trigger latching are not implemented.
+float evaluateTrack(const AnimationTrack& track, std::uint64_t tick);
 
 // Deterministic inputs. Nothing here reads a system clock, timezone or location.
 struct SceneState {

@@ -125,11 +125,13 @@ matrices and tracks, and the renderer still submits the authored vertex position
 
 `GEAnimationTrack::Evaluate` resolves a track time as the driver's clock plus
 the track's offset, wrapped modulo the larger of the track's end and the driver's
-period, except for drivers 2 and 4, which latch on a trigger instead. The driver
-clocks themselves come from `LLogicSceneWrapper::GetAnimTimeData`, inside the
-undecoded logic section, so no clock is wired up and the wrapping rule is not
-implemented. Intersectables and inherited intersection are parsed and validated
-but unused: touch interaction is a later task.
+period, except for drivers 2 and 4, which latch on a trigger instead. No clock is
+wired up, so that rule is not implemented. (This section originally said the
+driver clocks came from an undecoded logic section; the [animation-table
+checkpoint](NATIVE-TRACKS.md) decoded that section and found it empty. The
+drivers are built at runtime by `GEScene::Internal_UpdateAnimationTime`.)
+Intersectables and inherited intersection are parsed and validated but unused:
+touch interaction is a later task.
 
 ## Tests
 
@@ -140,8 +142,8 @@ Android ARM64 with NDK r27b, API 24; none of this code has run on a device.
 
 - A synthetic skeleton and visibility fixture covers two bones, both channel
   kinds, two vertex groups, and one mask of each kind. Every truncation of it is
-  rejected, along with 35 field mutations: unknown versions, mismatched repeated
-  counts, an out-of-range or duplicated bone, a channel that is not three tracks,
+  rejected, along with field mutations covering unknown versions, mismatched
+  repeated counts, an out-of-range or duplicated bone, a channel that is not three tracks,
   groups that do not tile the mesh, an unknown skin bone, a weight count other
   than three, a root bone with a parent, a duplicated update order, self-
   inheritance, unknown mask bits and out-of-range model references.

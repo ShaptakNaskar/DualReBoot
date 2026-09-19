@@ -1,4 +1,4 @@
-#include "beach/skeleton.hpp"
+#include "beach/behavior.hpp"
 #include <stdexcept>
 
 namespace beach {

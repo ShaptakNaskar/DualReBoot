@@ -10,12 +10,13 @@ Update this file with each phase's implementation, validation and remaining gaps
 | 1. Assets | Read original textures, mip levels and scene metadata | Complete — `3249ff4` | 100 textures / 748 mip levels; [asset results](../reports/NATIVE-PORT.md) |
 | 2. Scene structure | Preferences, environment, fonts and texture resources | Complete — `e03cca1` | 57 preferences; [format notes](../reports/NATIVE-SCENE-FORMAT.md) |
 | 3. Static rendering | Geometry, materials, cameras, parent transforms and a native rendered frame | Prototype committed — `2d9a3b6`; visual parity still open | 167 models / 4,347 triangles; [render results](../reports/NATIVE-GEOMETRY.md) |
-| 4. Animation and behavior | Correct initial visibility, time of day, water/object motion, effects and dynamic text | In progress — vertex animations, skeletons and initial visibility delivered | 14 vertex-animation blocks / 228 frames, 3 skeletons, 103 time-of-day masks; [animation](../reports/NATIVE-ANIMATION.md) and [skeleton/visibility](../reports/NATIVE-SKELETON.md) notes |
+| 4. Animation and behavior | Correct initial visibility, time of day, water/object motion, effects and dynamic text | In progress — the scene file is fully decoded; no clock drives it yet | 604 animation tracks / 2,867 curves, 3 skeletons, 103 time-of-day masks; [tables](../reports/NATIVE-TRACKS.md), [skeletons/visibility](../reports/NATIVE-SKELETON.md) and [vertex animation](../reports/NATIVE-ANIMATION.md) notes |
 | 5. Platform integration | KDE wallpaper plugin and Android live-wallpaper host using the shared core | Not started | Android core/renderer cross-build already passes; no native wallpaper app yet |
 
 ## What works now
 
-- The original scene and textures load in native C++ without executing the old engine.
+- The **entire** original scene file and all its textures load in native C++
+  without executing the old engine: 759,892 of 759,892 bytes, nothing left over.
 - A standalone EGL/GLES2 tool exports a static beach frame for a chosen time of
   day and date, with the serialized visibility masks applied.
 - Linux tests cover parsing, malformed inputs, hierarchy/matrix math, evaluated
@@ -37,8 +38,11 @@ original engine is still required. These gaps are not counted as finished.
 - [x] Decode skeletal data: 3 skinned meshes, 21 bones, 63 bone tracks, 1,023 curves.
 - [x] Evaluate deterministic initial scene state, including time-driven visibility,
       and apply it to the renderer.
-- [ ] Decode the remaining animation-track tables and the scene logic section.
-- [ ] Resolve clock drivers, looping, triggers and local offsets; connect animation to rendering.
+- [x] Decode the remaining animation-track tables and the scene logic section:
+      212 records, 604 tracks, 2,867 curves; the logic-scene array is empty.
+- [x] Evaluate a track to its cubic Bezier value at a resolved tick.
+- [ ] Reconstruct the twelve animation drivers, wrapping, triggers and per-model
+      local time offsets, then connect animation to rendering.
 - [ ] Implement bone matrix composition and vertex skinning.
 - [ ] Add a clock and evaluate water, material and object motion.
 - [ ] Reconstruct text composition, effects, interactions and preference behavior.
@@ -48,11 +52,11 @@ Milestone 4 is complete when these behaviors are implemented and tested; parsing
 an animation table alone does not make the scene animated. Publish incremental
 checkpoints with explicit evidence and keep unimplemented items unchecked.
 
-Current boundary: byte **537,888** in the original scene, where the animation
-track tables begin; 222,004 bytes remain. Visibility is connected to the
-renderer, which now takes a time-of-day phase and date. The vertex-animation
-sampler and the skeleton tracks are still not connected to rendering, because
-their driver clocks live in the undecoded logic section.
+Current boundary: **none left in the file**. Parsing reaches byte 759,892 of
+759,892 and the logic-scene array is empty, so no scripted behaviour has to be
+recovered. Visibility is connected to the renderer, which takes a time-of-day
+phase and date. The remaining milestone 4 work is a runtime clock model and the
+code that applies evaluated values, not more format recovery.
 
 ## Milestone 5 tasks
 
@@ -65,8 +69,9 @@ their driver clocks live in the undecoded logic section.
 - [Build and render commands](../native-port/README.md)
 - [Detailed milestone results](../reports/NATIVE-PORT.md)
 - [Scene format](../reports/NATIVE-SCENE-FORMAT.md), [geometry](../reports/NATIVE-GEOMETRY.md),
-  [vertex animation](../reports/NATIVE-ANIMATION.md) and
-  [skeletons/visibility](../reports/NATIVE-SKELETON.md) evidence
+  [vertex animation](../reports/NATIVE-ANIMATION.md),
+  [skeletons/visibility](../reports/NATIVE-SKELETON.md) and
+  [animation tables](../reports/NATIVE-TRACKS.md) evidence
 - [Current native source](../native-port/)
 - Preview outputs stay local in ignored `build/native-port/`; original artwork is
   not published to GitHub. Generate the PNG using the documented ImageMagick command.
